@@ -37,7 +37,7 @@ input {outline:none;}
 .header .nav > ul > li > a.select {color:#fff100;}
 
 .header .nav .sub-brand {display:none;position:fixed;top:160px;left:0;right:0;background-color:rgba(255,255,255,0.95);}
-.header .nav > ul > li > a.on + .sub-brand {display:block;}
+.header .nav > ul > li.on > a + .sub-menu {display:block;}
 .header .nav .sub-brand ul {max-width:1280px;margin:0 auto;padding:1rem 0 2rem 3rem;}
 .header .nav .sub-brand ul:after {content:"";display:block;clear:both;}
 .header .nav .sub-brand ul h2 {font-size:2rem;padding-top:1rem;font-weight:800;text-align:center;}
@@ -75,6 +75,7 @@ input {outline:none;}
 .main-img .title strong {font-size:2.5em;}
 .main-img .title strong span {color:#fff100;}
 
+/* 간편견적문의 */
 .simple-estimate {position:absolute;bottom:0;left:0;right:0;height:150px;background-color:rgba(0,0,0,0.7);z-index:3;color:#fff;}
 .simple-estimate-form {max-width:1200px;margin:0 auto;z-index:1;}
 .simple-estimate-form:after {content:"";display:block;clear:both;}
@@ -99,20 +100,95 @@ input {outline:none;}
 .simple-estimate-form .form-input button:hover {background-color:#ffff00;}
 .simple-estimate-form .form-input button:hover i.i-clipboard:before {content:"\e95a";}
 
+
+/* Hot Deal */
 .hotdeal-item {position:relative;}
 .rev_slider_wrapper {background:transparent url("../img/hotdeal-bg.jpg") center 0 no-repeat;}
 .tp-parallax-wrap {width:100%;}
 .tp-loop-wrap,
 .tp-mask-wrap {width:100%;text-align:center;}
 
+.hotdeal-content {position:relative;text-align:center;z-index:5;}
 .hot-type {padding-top:70px;}
-.hot-type span {display:inline-block;padding:5px 7px 3px 7px;background-color:#fff;color:#028ed8;font-size:20px;line-height:20px;}
+.hot-type span {display:inline-block;color:#878787;padding:3px 4px 1px 4px;font-size:15px;line-height:20px;}
 .hot-tt {padding-top:15px;}
-.hot-tt strong {display:inline-block;font-size:26px;font-weight:800;color:#fff;font-style:italic;line-height:30px;}
+.hot-tt strong {display:inline-block;font-size:36px;padding:5px 13px 3px 7px;font-weight:800;color:#878787;font-style:italic;line-height:36px;}
 .hot-price {padding-top:60px;font-style:italic;}
-.hot-price span {display:inline-block;font-size:20px;color:#fff;font-weight:700;}
-.hot-price strong {display:inline-block;font-size:24px;color:#ffff00;font-weight:700;padding:0 5px;}
-
-.hot-btn {padding-top:316px;}
-.hot-btn .hot-detail {display:inline-block;width:370px;height:89px;background:transparent url("../img/hotdeal-btn.png") 0 0 no-repeat;}
+.hot-price span {display:inline-block;font-size:20px;color:#878787;font-weight:700;}
+.hot-price strong {display:inline-block;font-size:24px;color:#878787;font-weight:700;padding:0 5px;}
+.hot-btn {opacity:0;padding-top:282px;z-index:0;}
+.hot-btn .hot-detail {display:inline-block;width:370px;height:89px;background:transparent url("../img/hotdeal-btn.png") 0 0 no-repeat;cursor:default;}
 .hot-btn .hot-detail span {padding-top:40px;line-height:115px;font-size:20px;}
+
+.active-revslide .hot-type span {background-color:#fff;color:#028ed8;}
+.active-revslide .hot-tt strong {color:#fff;}
+.active-revslide .hot-price span {color:#fff;}
+.active-revslide .hot-price strong {color:#ffff00}
+.active-revslide .hot-btn {opacity:1;transition:all 1s;z-index:1;}
+.active-revslide .hot-btn .hot-detail {cursor:pointer;}
+
+/* Hot Cars */
+.hotcar {padding:60px 0 50px 0;}
+.hotcar h2 {text-align:center;font-size:40px;}
+.hotcar h2 small {display:block;font-size:15px;color:#555555;padding-top:15px;}
+
+.hotcar-list {margin:0 auto;max-width:1200px;}
+.hotcar-list > ul:after {content:"";display:block;clear:both;}
+.hotcar-list > ul > li {float:left;width:25%;}
+
+.hotcar-item {position:relative;}
+.hotcar-item .car-img {height:200px;line-height:180px;text-align:center;}
+.hotcar-item .car-img img {min-width:80%;vertical-align:bottom;}
+.hotcar-item .car-info .car-name {display:block;text-align:center;font-size:24px;font-weight:800;}
+.hotcar-item .car-info ul:after {content:"";display:block;clear:both;}
+.hotcar-item .car-info li {float:left;width:50%;padding:15px 0 5px 0;font-size:15px;}
+.hotcar-item .car-info li span {padding-right:5px;}
+.hotcar-item .car-info li strong {font-size:18px;color:#eb3a3a;}
+
+
+.hotcar-btn {opacity:0;position:absolute;top:70px;left:50%;margin-left:-50px;cursor:default;}
+.hotcar-btn a {display:block;width:100px;height:100px;background-color:rgba(255,222,0,0.9);color:#000;border-radius:50%;text-align:center;}
+.hotcar-btn a i {font-size:32px;padding:25px 0 10px 0;}
+.hotcar-btn a span {display:block;}
+.hotcar-item:hover .hotcar-btn {opacity:0.9;transition:all 0.6s;cursor:pointer;}
+
+.magazine {padding:60px 0 50px 0;}
+.magazine h2 {text-align:center;font-size:40px;}
+.magazine h2 small {display:block;font-size:15px;color:#555555;padding-top:15px;}
+
+.magazine-list {max-width:1200px;margin:0 auto;}
+.magazine-list ul:after {content:"";display:block;clear:both;}
+.magazine-list li {float:left;height:240px;box-sizing:border-box;padding:10px;position:relative;}
+.magazine-list li .magazine-info {display:block;opacity:0;position:absolute;top:10px;right:10px;bottom:10px;left:10px;z-index:1;text-align:center;background-color:rgba(0,0,0,0.4);color:#fff;}
+.magazine-list li .magazine-info span {margin-top:60px;display:inline-block;font-size:16px;background-color:#fff;color:#555;padding:5px 10px 3px 10px;}
+.magazine-list li .magazine-info strong {margin-top:10px;padding:0 20px;display:block;font-size:20px;font-weight:700;}
+.magazine-list li:hover .magazine-info {opacity:1;transition:all .5s;box-shadow:inset 0 0 100px #555;}
+.magazine-list li .magazine-img {overflow:hidden;text-align:center;height:100%;}
+.magazine-list li .magazine-img img {height:100%;transform:translate(-17.5%,0);}
+.magazine-list li:nth-child(1) {width:40%;height:480px;}
+.magazine-list li:nth-child(2) {width:40%;}
+.magazine-list li:nth-child(2) .magazine-img img {width:100%;height:auto;transform:translate(0,-10%);}
+.magazine-list li:nth-child(1) .magazine-info span {margin-top:200px;}
+.magazine-list li:nth-child(2) .magazine-info span {margin-top:70px;}
+.magazine-list li:nth-child(1) .magazine-info strong {font-size:24px;}
+.magazine-list li:nth-child(2) .magazine-info strong {font-size:24px;}
+.magazine-list li:nth-child(3) {width:20%;}
+.magazine-list li:nth-child(4) {width:20%;}
+.magazine-list li:nth-child(5) {width:20%;}
+.magazine-list li:nth-child(6) {width:20%;}
+
+
+.footer {background-color:#646464;}
+.footer-wrap {max-width:1200px;margin:0 auto;padding:30px 20px 50px 20px;}
+.footer-wrap:after {content:"";display:block;clear:both;}
+.footer-logo {float:left;padding-right:30px;}
+.footer-info {float:left;}
+.footer-info ul {margin:0;padding:0;}
+.footer-info li {line-height:22px;font-size:13px;font-weight:400;color:#ddd;}
+.footer-info li a {color:#fff;display:inline-block;padding-right:10px;font-weight:700;line-height:24px;font-size:15px;}
+.footer-info li a strong {font-size:24px;color:#ffff00;}
+.footer-info li:last-child {padding-top:20px;}
+.footer-social {float:right;}
+.footer-social ul {margin:0;padding:0;}
+.footer-social ul:after {content:"";display:block;clear:both;}
+.footer-social li {float:left;padding-left:15px;}

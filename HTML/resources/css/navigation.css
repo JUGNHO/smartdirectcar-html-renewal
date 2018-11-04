@@ -507,9 +507,9 @@ website:    http://www.themepunch.com
 .erinyen.tparrows {
   cursor:pointer;
   background:#000;
-  background:rgba(0,0,0,0.5);
-  min-width:70px;
-  min-height:70px;
+  background:rgba(0,0,0,0.3);
+  min-width:50px;
+  min-height:50px;
   position:absolute;
   display:block;
   z-index:1000;
@@ -521,8 +521,8 @@ website:    http://www.themepunch.com
   font-size:20px;
   color:#fff;
   display:block;
-  line-height: 70px;
-  text-align: center;    
+  line-height: 50px;
+  text-align: center;
   z-index:2;
   position:relative;
 }
@@ -539,11 +539,11 @@ website:    http://www.themepunch.com
   display:inline-block;
   background:#000;
   background:rgba(0,0,0,0.5);
-  min-height:70px;
-  line-height:70px;
+  min-height:50px;
+  line-height:50px;
   top:0px;
   margin-left:0px;
-  border-radius:35px;
+  border-radius:25px;
   overflow:hidden; 
   transition: opacity 0.3s;
   -webkit-transition:opacity 0.3s;
@@ -588,7 +588,7 @@ website:    http://www.themepunch.com
   color:#fff;
   font-weight:600;
   font-size:13px;
-  line-height:70px;
+  line-height:50px;
   white-space:nowrap;
   padding:0px 20px;
   margin-left:11px;
@@ -1248,8 +1248,8 @@ website:    http://www.themepunch.com
 .hebe.tparrows {
   cursor:pointer;
   background:#fff;
-  min-width:70px;
-    min-height:70px;
+  min-width:50px;
+  min-height:50px;
   position:absolute;
   display:block;
   z-index:1000;
