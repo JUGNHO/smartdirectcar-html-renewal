@@ -1,0 +1,101 @@
+
+@import url('brand.css');
+@import url('smart-icons.css');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+html {font-size:15px;}
+html, body, h1, h2, h3, h4, h5, h6, p, div, img {margin:0; padding:0; border:0; font-family:'NanumSquare', sans-serif;font-weight:700;}
+h1,h2{font-weight:bold;}
+table,tr,td,thead,tbody,tfoot{border-style:solid; border-color:#333; 	border-spacing:0; border-collapse:collapse;}
+ul, ol, li{list-style: none;}
+a{text-decoration: none !important; color: #000;}
+a hover{color: #c2c2c2;}
+button:focus{outline:none;}
+input {outline:none;}
+
+
+.header-top {position:fixed;top:0;left:0;right:0;background-color:#232628;color:#fff;height:55px;z-index:10;}
+.header-top-wrap {max-width:1280px;margin:0 auto;line-height:55px;}
+.header-top-wrap i {color:#fff100;padding-right:3px;}
+.header-top-wrap .address {float:left;margin-left:2rem;}
+.header-top-wrap .phone {float:left;margin-left:2rem;}
+.header-top-wrap .member {float:right;margin-right:2rem;}
+.header-top-wrap .member a {color:#fff100;padding:0 3px;}
+
+.header {position:absolute;top:55px;left:0;right:0;bottom:0;height:105px;background-color:rgba(35,38,40,0.7);z-index:10;}
+.header-wrap {position:relative;max-width:1280px;margin:0 auto;}
+.header-wrap:after {content:"";display:block;clear:both;}
+.header .nav-ctr {display:none;}
+.header .logo {float:left;margin:1.5rem 0 0 2rem;}
+
+.header .nav {float:right;margin:0 10rem 0 0;line-height:2rem;font-size:1.2rem;}
+.header .nav ul {margin:0;padding:0;}
+.header .nav ul:after {content:"";display:block;clear:both;}
+.header .nav > ul > li {float:left;padding:0 1rem;}
+.header .nav > ul > li > a {color:#fff;display:block;height:105px;line-height:105px;padding:0 1rem;}
+.header .nav > ul > li > a:hover {color:#fff100;}
+.header .nav > ul > li > a.select {color:#fff100;}
+
+.header .nav .sub-brand {display:none;position:fixed;top:160px;left:0;right:0;background-color:rgba(255,255,255,0.95);}
+.header .nav > ul > li > a.on + .sub-brand {display:block;}
+.header .nav .sub-brand ul {max-width:1280px;margin:0 auto;padding:1rem 0 2rem 3rem;}
+.header .nav .sub-brand ul:after {content:"";display:block;clear:both;}
+.header .nav .sub-brand ul h2 {font-size:2rem;padding-top:1rem;font-weight:800;text-align:center;}
+.header .nav .sub-brand ul h2 small {font-size:.8rem;font-weight:400;display:block;}
+.header .nav .sub-brand ul li {float:left;}
+.header .nav .sub-brand ul li a {display:block;height:auto;margin:1rem 1rem 0 1rem;padding:0 1rem;color:#323232;}
+.header .nav .sub-brand ul li a:hover {background-color:#fff100;border-radius:10px;transition:all 0.1s;}
+.header .nav .sub-brand ul li a i{font-size:5rem;display:inline-block;text-align:center;line-height:3rem;padding-top:1rem;}
+.header .nav .sub-brand ul li a span {font-size:0.8rem;display:block;text-align:center;line-height:1rem;padding-bottom:1rem;}
+
+.header .btn-estimate {position:absolute;top:1.1rem;right:2rem;width:70px;height:70px;border-radius:50%;background-color:#fff100;text-align:center;cursor:pointer;}
+.header .btn-estimate:hover {background-color:#ffff00;}
+.header .btn-estimate i {display:block;font-size:1.6em;padding:1rem 0 0.3rem 0;}
+.header .btn-estimate:hover i.i-clipboard:before {content:"\e95a";}
+.header .btn-estimate span {display:block;font-size:0.8rem;padding-top:.1rem;}
+
+.header-top.fixed {height:40px;}
+.header-top.fixed .header-top-wrap {font-size:0.9rem;line-height:40px;}
+
+.header.fixed {position:fixed;top:40px;height:70px;}
+.header.fixed .logo {margin-top:0.7rem;}
+.header.fixed .logo img {max-width:130px;}
+.header.fixed .nav .sub-brand {top:105px;}
+.header.fixed .nav > ul > li a {height:70px;line-height:70px;}
+.header.fixed .btn-estimate {top:0;border-radius:0;}
+
+.content {padding-top:55px;}
+.header.fixed .content {padding-top:40px;}
+
+.main-img {position:relative;height:750px;background:url(../img/main-img-1.jpg) 0 0 no-repeat;background-size:100% 100%;}
+.main-img .img-shadow {position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.4);z-index:1;}
+.main-img .main-img-wrap {position:relative;max-width:1280px;margin:0 auto;}
+.main-img .title {position:absolute;top:9em;left:2em;font-weight:800;font-size:2em;margin:0 auto;color:#fff;font-style:italic;z-index:2;text-shadow:0 0 5px #333;}
+.main-img .title p {padding-top:.8em;}
+.main-img .title strong {font-size:2.5em;}
+.main-img .title strong span {color:#fff100;}
+
+.simple-estimate {position:absolute;bottom:0;left:0;right:0;height:150px;background-color:rgba(0,0,0,0.7);z-index:3;color:#fff;}
+.simple-estimate-form {max-width:1200px;margin:0 auto;z-index:1;}
+.simple-estimate-form:after {content:"";display:block;clear:both;}
+.simple-estimate-form h3 {float:left;font-size:1.3rem;font-weight:800;line-height:2rem;padding-top:2.8rem;padding-left:1.5rem;}
+.simple-estimate-form h3 strong {display:block;font-size:2rem;color:#fff100;}
+.simple-estimate-form .form-input {float:left;padding-left:1rem;line-height:2.5rem;vertical-align:middle;padding-top:2.6rem;}
+.simple-estimate-form .form-input:nth-of-type(1) {margin-left:2rem;}
+.simple-estimate-form .form-input label {display:none;}
+.simple-estimate-form .form-input input {border:0 none;border-radius:1.1rem;height:2.2rem;line-height:2.2rem;color:#000;padding:0 1rem;box-sizing:border-box;vertical-align:middle;}
+.simple-estimate-form .form-input input::placeholder {color:#000;opacity:1;}
+.simple-estimate-form .form-input input:-ms-input-placeholder {color:#000;opacity:1;}
+.simple-estimate-form .form-input input::-ms-input-placeholder {color:#000;opacity:1;}
+.simple-estimate-form .form-input.name input {width:150px;text-align:center;}
+.simple-estimate-form .form-input.tel input {width:200px;}
+.simple-estimate-form .form-input.car-type input {width:350px;}
+.simple-estimate-form .form-input.checkbox {padding-top:0.2rem;padding-left:3rem;}
+.simple-estimate-form .form-input.checkbox input {width:20px;height:20px;background-color:#fff;}
+.simple-estimate-form .form-input.checkbox label {color:#fff;display:inline-block;cursor:pointer;font-size:.85rem;}
+.simple-estimate-form .form-input.checkbox a {display:inline-block;color:#fff;font-size:.85rem;}
+.simple-estimate-form .form-input.checkbox a:hover {color:#fff100;}
+.simple-estimate-form .form-input button {border:0 none;height:2.5rem;line-height:1rem;padding:0 3rem;cursor:pointer;border-radius:1.3rem;font-size:1.2rem;font-weight:800;background-color:#fff100;vertical-align:middle;}
+.simple-estimate-form .form-input button:hover {background-color:#ffff00;}
+.simple-estimate-form .form-input button:hover i.i-clipboard:before {content:"\e95a";}
+
