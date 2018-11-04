@@ -36,8 +36,12 @@ input {outline:none;}
 .header .nav > ul > li > a:hover {color:#fff100;}
 .header .nav > ul > li > a.select {color:#fff100;}
 
-.header .nav .sub-brand {display:none;position:fixed;top:160px;left:0;right:0;background-color:rgba(255,255,255,0.95);}
-.header .nav > ul > li.on > a + .sub-menu {display:block;}
+/* Sub Menu - Common */
+.header .nav > ul > li > a + .sub-menu {display:none;opacity:0;}
+.header .nav > ul > li.on > a + .sub-menu {display:block;opacity:1;transition:all 0.8s;}
+
+/* Brands */
+.header .nav .sub-brand {position:fixed;top:160px;left:0;right:0;background-color:rgba(255,255,255,0.95);}
 .header .nav .sub-brand ul {max-width:1280px;margin:0 auto;padding:1rem 0 2rem 3rem;}
 .header .nav .sub-brand ul:after {content:"";display:block;clear:both;}
 .header .nav .sub-brand ul h2 {font-size:2rem;padding-top:1rem;font-weight:800;text-align:center;}
@@ -57,10 +61,10 @@ input {outline:none;}
 .header-top.fixed {height:40px;}
 .header-top.fixed .header-top-wrap {font-size:0.9rem;line-height:40px;}
 
-.header.fixed {position:fixed;top:40px;height:70px;}
+.header.fixed {position:fixed;top:40px;height:70px;background-color:rgba(35,38,40,0.85);}
 .header.fixed .logo {margin-top:0.7rem;}
 .header.fixed .logo img {max-width:130px;}
-.header.fixed .nav .sub-brand {top:105px;}
+.header.fixed .nav .sub-brand {top:110px;}
 .header.fixed .nav > ul > li > a {height:70px;line-height:70px;}
 .header.fixed .btn-estimate {top:0;border-radius:0;}
 

@@ -6,7 +6,6 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="스마트다이렉트카 - 신차 장기렌트카 자동차리스 비교견적, 오토리스 장기렌트카 가격비교 사이트">
 <meta property="og:description" content="신차구매, 국산차 수입차 할부 리스 장기렌트, 오토리스, 장기렌트카 가격비교사이트, 보증금없는장기렌트카, 무보증 비교견적">
-<meta property="og:image" content="resources/img/logo.png">
 <meta property="og:url" content="http://smartdirectcar.com">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,9 +30,9 @@
         <div class="logo"><a href="index.html"><img src="resources/img/smart-logo.svg"></a></div>
         <div class="nav">
             <ul>
-                <li><a href="javascript:void(0)">About US</a></li>
-                <li><a href="javascript:void(0)">HOT Deal</a></li>
-                <li><a href="javascript:void(0)">BRAND</a>
+                <li class="nav-menu"><a href="javascript:void(0)">About US</a></li>
+                <li class="nav-menu"><a href="javascript:void(0)">HOT Deal</a></li>
+                <li class="nav-menu"><a href="javascript:void(0)">BRAND</a>
                     <div class="sub-menu sub-brand">
                         <ul>
                             <h2>BRAND <small>스마트다이렉트카에서 제공하는 다양한 브랜드를 저렴한 가격에 만나보세요.</small></h2>
@@ -59,8 +58,8 @@
                         <div class="brand-allview"><a href="javascript:void(0);"></a></div>
                     </div>
                 </li>
-                <li><a href="javascript:void(0)" class="magazine">Smmart Magazine</a></li>
-                <li><a href="javascript:void(0)" class="brand">Smart Service</a></li>
+                <li class="nav-menu"><a href="javascript:void(0)" class="magazine">Smmart Magazine</a></li>
+                <li class="nav-menu"><a href="javascript:void(0)" class="brand">Smart Service</a></li>
             </ul>
         </div>
         <div class="btn-estimate"><i class="i-clipboard"></i><span>견적문의</span></div>
@@ -346,7 +345,7 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="resources/js/jquery.themepunch.tools.min.js"></script>
 <script src="resources/js/jquery.themepunch.revolution.min.js"></script>
 <script type="text/javascript" src="resources/js/revolution.extension.carousel.min.js"></script>
@@ -369,34 +368,33 @@ $(window).scroll(function(){
   }
 });
 
-$(document).ready(
-function() {
-    $('#rev_slider_1').show().revolution({
-        sliderLayout : 'auto',
-        responsiveLevels : [ 768 ],
-        gridwidth : [ 768 ],
-        gridheight : [ 570 ],
-        visibilityLevels : [ 768 ],
+// $(document).ready(
+// function() {
+// // $('#rev_slider_1').show().revolution({
+// //     sliderLayout : 'auto',
+// //     responsiveLevels : [ 768 ],
+// //     gridwidth : [ 768 ],
+// //     gridheight : [ 570 ],
+// //     visibilityLevels : [ 768 ],
 
-        navigation : {
-            arrows : {
-                enable : true,
-                style : 'uranus',
-                hide_onleave : true
-            },
-            bullets : {
-                enable : true,
-                style : 'hermes',
-                hide_onleave : true,
-                h_align : 'center',
-                v_align : 'bottom',
-                h_offset : 0,
-                v_offset : 20,
-                space : 4
-            }
-        }
-        });
-    });
+// //     navigation : {
+// //         arrows : {
+// //             enable : true,
+// //             style : 'uranus',
+// //             hide_onleave : true
+// //         },
+// //         bullets : {
+// //             enable : true,
+// //             style : 'hermes',
+// //             hide_onleave : true,
+// //             h_align : 'center',
+// //             v_align : 'bottom',
+// //             h_offset : 0,
+// //             v_offset : 20,
+// //             space : 4
+// //         }
+// //     }});
+// });
 $('#rev_slider')
 .show()
 .revolution({
@@ -469,11 +467,15 @@ $('#rev_slider')
     }
 });
 
-$(".nav li a").on('click',function(){
-    $(this).parent().toggleClass('on');
+/* Header Navigation - Sub-menu Control */
+$(".nav-menu").on('mouseenter',function(){
+    $(".nav-menu").removeClass('on');
+    $(this).addClass('on');
 });
 
-
+$('.sub-menu').on("mouseleave", function() {
+   $(this).parents().removeClass('on');
+});
 </script>
 </body>
 </html>
