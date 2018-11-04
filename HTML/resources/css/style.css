@@ -61,7 +61,7 @@ input {outline:none;}
 .header.fixed .logo {margin-top:0.7rem;}
 .header.fixed .logo img {max-width:130px;}
 .header.fixed .nav .sub-brand {top:105px;}
-.header.fixed .nav > ul > li a {height:70px;line-height:70px;}
+.header.fixed .nav > ul > li > a {height:70px;line-height:70px;}
 .header.fixed .btn-estimate {top:0;border-radius:0;}
 
 .content {padding-top:55px;}
