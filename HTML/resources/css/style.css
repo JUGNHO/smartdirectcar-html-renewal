@@ -99,3 +99,20 @@ input {outline:none;}
 .simple-estimate-form .form-input button:hover {background-color:#ffff00;}
 .simple-estimate-form .form-input button:hover i.i-clipboard:before {content:"\e95a";}
 
+.hotdeal-item {position:relative;}
+.rev_slider_wrapper {background:transparent url("../img/hotdeal-bg.jpg") center 0 no-repeat;}
+.tp-parallax-wrap {width:100%;}
+.tp-loop-wrap,
+.tp-mask-wrap {width:100%;text-align:center;}
+
+.hot-type {padding-top:70px;}
+.hot-type span {display:inline-block;padding:5px 7px 3px 7px;background-color:#fff;color:#028ed8;font-size:20px;line-height:20px;}
+.hot-tt {padding-top:15px;}
+.hot-tt strong {display:inline-block;font-size:26px;font-weight:800;color:#fff;font-style:italic;line-height:30px;}
+.hot-price {padding-top:60px;font-style:italic;}
+.hot-price span {display:inline-block;font-size:20px;color:#fff;font-weight:700;}
+.hot-price strong {display:inline-block;font-size:24px;color:#ffff00;font-weight:700;padding:0 5px;}
+
+.hot-btn {padding-top:316px;}
+.hot-btn .hot-detail {display:inline-block;width:370px;height:89px;background:transparent url("../img/hotdeal-btn.png") 0 0 no-repeat;}
+.hot-btn .hot-detail span {padding-top:40px;line-height:115px;font-size:20px;}
