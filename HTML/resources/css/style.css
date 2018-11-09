@@ -13,6 +13,8 @@ a hover{color: #c2c2c2;}
 button:focus{outline:none;}
 input {outline:none;}
 
+/* Counter */
+.counter {transition:all .4s;}
 
 .header-top {position:fixed;top:0;left:0;right:0;background-color:#232628;color:#fff;height:55px;z-index:10;}
 .header-top-wrap {max-width:1280px;margin:0 auto;line-height:55px;}
@@ -84,9 +86,7 @@ input {outline:none;}
 .sub-tt h2 {text-align:center;padding-top:7em;color:#fff;}
 .sub-tt h2 strong {display:block;font-size:3.5rem;line-height:6rem;}
 .sub-tt h2 small {display:block;font-size:1.2rem;line-height:1.5rem;}
-.sub-tt.aboutus {background-image:url(../img/title/aboutus.jpg);}
-.sub-tt.aboutus .sub-tt-wrap {background-color:rgba(0,0,0,0.55);height:550px;}
-.sub-tt.aboutus h2 {padding-top:16rem;}
+
 
 /* 간편견적문의 */
 .simple-estimate {position:absolute;bottom:0;left:0;right:0;height:150px;background-color:rgba(0,0,0,0.7);z-index:3;color:#fff;}
@@ -190,8 +190,8 @@ input {outline:none;}
 .magazine-list li:nth-child(5) {width:20%;}
 .magazine-list li:nth-child(6) {width:20%;}
 /* Image Hover Style */
-.magazine-list li:hover .magazine-img img {transform:scale(1.1) translate(-17.5%,0);transition:all 0.5s;}
-.magazine-list li:nth-child(2):hover .magazine-img img {transform:scale(1.1) translate(0,-10%);transition:all 0.5s;}
+.magazine-list li:hover .magazine-img img {transform:scale(1.03) translate(-17.5%,0);transition:all 1.5s;}
+.magazine-list li:nth-child(2):hover .magazine-img img {transform:scale(1.03) translate(0,-10%);}
 
 
 .footer {background-color:#646464;}
@@ -204,6 +204,7 @@ input {outline:none;}
 .footer-info li a {color:#fff;display:inline-block;padding-right:10px;font-weight:700;line-height:24px;font-size:15px;}
 .footer-info li a strong {font-size:24px;color:#ffde00;}
 .footer-info li:last-child {padding-top:20px;}
+.footer-info li span {padding-right:10px;}
 .footer-social {float:right;}
 .footer-social ul {margin:0;padding:0;}
 .footer-social ul:after {content:"";display:block;clear:both;}
@@ -211,6 +212,10 @@ input {outline:none;}
 
 
 /* Sub - About us */
+.sub-tt.aboutus {background-image:url(../img/title/aboutus.jpg);}
+.sub-tt.aboutus .sub-tt-wrap {background-color:rgba(0,0,0,0.55);height:550px;}
+.sub-tt.aboutus h2 {padding-top:16rem;}
+
 .about-smart h3 {text-align:center;padding-bottom:5rem;}
 .about-smart h3 span {display:block;font-size:3rem;padding:3rem 1rem 2rem 1rem;max-width:700px;margin:0 auto;font-weight:800;line-height:4rem;}
 .about-smart h3 strong {font-weight:800;color:#000;background-color:#ffde00;padding:.5rem .5rem .2rem .5rem;margin-right:.2rem;}
@@ -228,3 +233,43 @@ input {outline:none;}
 .about-img h3 strong {font-weight:800;color:#ffde00;}
 .about-img p {font-size:0;line-height:0;}
 .about-img p img {width:100%;}
+
+/* Sub - Brand */
+.sub-tt.brands .sub-tt-wrap {background-color:rgba(0,0,0,0.65);height:400px;}
+.sub-tt.brands h2 {padding-top:8rem;}
+.sub-tt.brands h2 strong {display:inline-block;font-size:8rem;line-height:5rem;background-color:rgba(255,255,255,0.6);color:#000;border-radius:50%;}
+.sub-tt.brands h2 span {font-size:3.5rem;line-height:4.5rem;display:block;font-weight:800}
+.sub-tt.brands.porsche {background-image:url(../img/title/brand-porsche.jpg)}
+
+.sub-tt.fixed {position:fixed;top:40px;left:0;right:0;transition:all 0.3s;background-position:50% 50%;z-index:9;}
+.sub-tt.fixed .sub-tt-wrap {height:170px;}
+.sub-tt.fixed h2 {padding-top:5.5rem;}
+.sub-tt.fixed h2 strong {font-size:3.5rem;line-height:80px;}
+.sub-tt.brands.fixed h2 strong {font-size:4rem;vertical-align:middle;width:60px;height:60px;line-height:60px;}
+.sub-tt.fixed h2 span {display:inline-block;font-size:2.5rem;line-height:4.5rem;vertical-align:middle;padding-left:15px;}
+.sub-tt.fixed h2 small {display:none;}
+
+.sub-tt.brands.fixed + .brands-wrap {padding-top:330px;}
+
+.brands-wrap {padding:100px 0 50px 0;}
+.brands-wrap h3 {text-align:center;}
+.brands-list {margin:0 auto;max-width:1200px;}
+.brands-list > ul:after {content:"";display:block;clear:both;}
+.brands-list > ul > li {float:left;width:25%;padding:10px;box-sizing:border-box;}
+
+.brands-item {position:relative;background-color:#fafafa;border-radius:10px;}
+.brands-item:hover {background-color:#fff;box-shadow:0 0 2rem #ccc;transition:all 0.5s;}
+.brands-item .car-img {height:240px;line-height:180px;text-align:center;}
+.brands-item .car-img img {min-width:80%;vertical-align:bottom;}
+.brands-item .car-info {padding-bottom:2rem;}
+.brands-item .car-info .car-name {display:block;text-align:center;font-size:24px;font-weight:800;}
+.brands-item .car-info ul:after {content:"";display:block;clear:both;}
+.brands-item .car-info li {float:left;width:50%;padding:15px 0 5px 0;font-size:15px;}
+.brands-item .car-info li span {padding-right:5px;}
+.brands-item .car-info li strong {font-size:18px;color:#eb3a3a;}
+
+.brands-btn {opacity:0;position:absolute;top:80px;left:0;right:0;cursor:default;text-align:center;}
+.brands-btn a {display:inline-block;width:80px;height:80px;margin:0 10px;background-color:rgba(255,222,0,0.95);color:#000;border-radius:50%;text-align:center;}
+.brands-btn a i {font-size:1.7rem;padding:1.3rem 0 .5rem 0;}
+.brands-btn a span {display:block;font-size:.9rem;}
+/* .brands-item:hover .brands-btn {opacity:0.9;transition:all 0.6s;cursor:pointer;} */

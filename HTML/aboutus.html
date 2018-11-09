@@ -30,8 +30,8 @@
         <div class="logo"><a href="index.html"><img src="resources/img/smart-logo.svg"></a></div>
         <div class="nav">
             <ul>
-                <li class="nav-menu selected"><a href="javascript:void(0)">About US</a></li>
-                <li class="nav-menu"><a href="javascript:void(0)">HOT Deal</a></li>
+                <li class="nav-menu selected"><a href="aboutus.html">About US</a></li>
+                <li class="nav-menu"><a href="brand.html">HOT Deal</a></li>
                 <li class="nav-menu"><a href="javascript:void(0)">BRAND</a>
                     <div class="sub-menu sub-brand">
                         <ul>
@@ -113,7 +113,7 @@
                     <a href="mailto:jk@smartdirectcar.com">jk@smartdirectcar.com</a>
                 </li>
                 <li>(주)스마트다이렉트카  경기도 성남시 수정구 위례서일로 22 이너매스 우남 410, 411, 412호</li>
-                <li><span>전화 : 1544-1969</span><span>FAX : 031-757-7968</span></li>
+                <li><span>전화 : 1544-1969</span> <span>FAX : 031-757-7968</span></li>
                 <li>COPYRIGHT © SINCE 2013 Smartdirectcar.ALL RIGHTS RESERVED.</li>
             </ul>
         </div>
@@ -139,15 +139,18 @@
 $(window).scroll(function(){
   var stickytop = $('.header-top'),
       sticky = $('.header'),
+      subtt = $('.sub-tt'),
       scroll = $(window).scrollTop();
 
   if (scroll >= 100) { 
     stickytop.addClass('fixed');
     sticky.addClass('fixed');
+    subtt.addClass('fixed');
   }
   else {
     stickytop.removeClass('fixed');
     sticky.removeClass('fixed');
+    subtt.removeClass('fixed');
   }
 });
 
