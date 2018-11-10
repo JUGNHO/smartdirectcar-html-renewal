@@ -43,14 +43,15 @@ input {outline:none;}
 .header .nav > ul > li.on > a + .sub-menu {display:block;opacity:1;transition:all 0.8s;}
 
 /* Brands */
-.header .nav .sub-brand {position:fixed;top:160px;left:0;right:0;background-color:rgba(255,255,255,0.95);}
+.header .nav .sub-brand {position:fixed;top:160px;left:0;right:0;background-color:rgba(252,252,252,0.95);}
 .header .nav .sub-brand ul {max-width:1280px;margin:0 auto;padding:1rem 0 2rem 3rem;}
 .header .nav .sub-brand ul:after {content:"";display:block;clear:both;}
 .header .nav .sub-brand ul h2 {font-size:2rem;padding-top:1rem;font-weight:800;text-align:center;}
 .header .nav .sub-brand ul h2 small {font-size:.8rem;font-weight:400;display:block;}
 .header .nav .sub-brand ul li {float:left;}
 .header .nav .sub-brand ul li a {display:block;height:auto;margin:1rem 1rem 0 1rem;padding:0 1rem;color:#323232;}
-.header .nav .sub-brand ul li a:hover {background-color:#fff100;border-radius:10px;transition:all 0.1s;}
+.header .nav .sub-brand ul li a:hover {background-color:#fff100;border-radius:10px;transition:all 0.3s;}
+.header .nav .sub-brand ul li a.selected {background-color:#fff100;border-radius:10px;transition:all 0.3s;}
 .header .nav .sub-brand ul li a i{font-size:5rem;display:inline-block;text-align:center;line-height:3rem;padding-top:1rem;}
 .header .nav .sub-brand ul li a span {font-size:0.8rem;display:block;text-align:center;line-height:1rem;padding-bottom:1rem;}
 
@@ -83,9 +84,50 @@ input {outline:none;}
 
 
 .sub-tt {position:relative;background:url(../img/title/aboutus.jpg) 0 100% no-repeat;background-size:100% auto;}
+.sub-tt .sub-tt-wrap {background-color:rgba(0,0,0,0.65);height:400px;}
 .sub-tt h2 {text-align:center;padding-top:7em;color:#fff;}
 .sub-tt h2 strong {display:block;font-size:3.5rem;line-height:6rem;}
 .sub-tt h2 small {display:block;font-size:1.2rem;line-height:1.5rem;}
+
+.sub-tt.aboutus {background-image:url(../img/title/aboutus.jpg);}
+.sub-tt.aboutus .sub-tt-wrap {background-color:rgba(0,0,0,0.55);height:550px;}
+.sub-tt.aboutus h2 {padding-top:16rem;}
+.sub-tt.hotdeal {background-image:url(../img/title/hotdeal.jpg);background-position: 0 0;}
+.sub-tt.hotdeal h2 {padding-top:11rem;}
+
+.sub-tt.brands .sub-tt-wrap {background-color:rgba(0,0,0,0.65);height:400px;}
+.sub-tt.brands h2 {padding-top:8rem;}
+.sub-tt.brands h2 strong {display:inline-block;font-size:8rem;line-height:5rem;background-color:rgba(255,255,255,0.6);color:#000;border-radius:50%;}
+.sub-tt.brands h2 span {font-size:3.5rem;line-height:4.5rem;display:block;font-weight:800}
+.sub-tt.brands.hyundai {background-image:url(../img/title/brand-hyundai.jpg)}
+.sub-tt.brands.kia {background-image:url(../img/title/brand-kia.jpg)}
+.sub-tt.brands.samsung {background-image:url(../img/title/brand-samsung.jpg)}
+.sub-tt.brands.chevrolet {background-image:url(../img/title/brand-chevrolet.jpg)}
+.sub-tt.brands.ssangyong {background-image:url(../img/title/brand-ssangyong.jpg)}
+.sub-tt.brands.genesis {background-image:url(../img/title/brand-genesis.jpg)}
+.sub-tt.brands.benz {background-image:url(../img/title/brand-benz.jpg)}
+.sub-tt.brands.bmw {background-image:url(../img/title/brand-bmw.jpg)}
+.sub-tt.brands.audi {background-image:url(../img/title/brand-audi.jpg)}
+.sub-tt.brands.volkswagen {background-image:url(../img/title/brand-volkswagen.jpg)}
+.sub-tt.brands.landrover {background-image:url(../img/title/brand-landrover.jpg)}
+.sub-tt.brands.volvo {background-image:url(../img/title/brand-volvo.jpg)}
+.sub-tt.brands.lexus {background-image:url(../img/title/brand-lexus.jpg)}
+.sub-tt.brands.porsche {background-image:url(../img/title/brand-porsche.jpg)}
+.sub-tt.brands.lincoln {background-image:url(../img/title/brand-lincoln.jpg)}
+.sub-tt.brands.jaguar {background-image:url(../img/title/brand-jaguar.jpg)}
+.sub-tt.brands.maserati {background-image:url(../img/title/brand-maserati.jpg)}
+.sub-tt.brands.mini {background-image:url(../img/title/brand-mini.jpg)}
+
+.sub-tt.fixed {position:fixed;top:40px;left:0;right:0;transition:all 0.3s;background-position:50% 50%;z-index:9;}
+.sub-tt.fixed .sub-tt-wrap {height:170px;}
+.sub-tt.fixed h2 {padding-top:5.5rem;}
+.sub-tt.fixed h2 strong {font-size:3.5rem;line-height:80px;}
+.sub-tt.brands.fixed h2 strong {font-size:4rem;vertical-align:middle;width:60px;height:60px;line-height:60px;}
+.sub-tt.fixed h2 span {display:inline-block;font-size:2.5rem;line-height:4.5rem;vertical-align:middle;padding-left:15px;}
+.sub-tt.fixed h2 small {display:none;}
+
+.sub-tt.fixed + .brands-wrap {padding-top:330px;}
+.sub-tt.fixed + .hotdeal-wrap {padding-top:330px;}
 
 
 /* 간편견적문의 */
@@ -164,6 +206,7 @@ input {outline:none;}
 .hotcar-btn a i {font-size:32px;padding:25px 0 10px 0;}
 .hotcar-btn a span {display:block;}
 .hotcar-item:hover .hotcar-btn {opacity:0.9;transition:all 0.6s;cursor:pointer;}
+.hotcar-item:hover .car-img img {transform:scale(1.1);transition:all .5s;}
 
 .magazine {padding:60px 0 50px 0;}
 .magazine h2 {text-align:center;font-size:40px;}
@@ -190,7 +233,7 @@ input {outline:none;}
 .magazine-list li:nth-child(5) {width:20%;}
 .magazine-list li:nth-child(6) {width:20%;}
 /* Image Hover Style */
-.magazine-list li:hover .magazine-img img {transform:scale(1.03) translate(-17.5%,0);transition:all 1.5s;}
+.magazine-list li:hover .magazine-img img {transform:scale(1.03) translate(-17.5%,0);transition:all 1s;}
 .magazine-list li:nth-child(2):hover .magazine-img img {transform:scale(1.03) translate(0,-10%);}
 
 
@@ -212,10 +255,6 @@ input {outline:none;}
 
 
 /* Sub - About us */
-.sub-tt.aboutus {background-image:url(../img/title/aboutus.jpg);}
-.sub-tt.aboutus .sub-tt-wrap {background-color:rgba(0,0,0,0.55);height:550px;}
-.sub-tt.aboutus h2 {padding-top:16rem;}
-
 .about-smart h3 {text-align:center;padding-bottom:5rem;}
 .about-smart h3 span {display:block;font-size:3rem;padding:3rem 1rem 2rem 1rem;max-width:700px;margin:0 auto;font-weight:800;line-height:4rem;}
 .about-smart h3 strong {font-weight:800;color:#000;background-color:#ffde00;padding:.5rem .5rem .2rem .5rem;margin-right:.2rem;}
@@ -235,30 +274,14 @@ input {outline:none;}
 .about-img p img {width:100%;}
 
 /* Sub - Brand */
-.sub-tt.brands .sub-tt-wrap {background-color:rgba(0,0,0,0.65);height:400px;}
-.sub-tt.brands h2 {padding-top:8rem;}
-.sub-tt.brands h2 strong {display:inline-block;font-size:8rem;line-height:5rem;background-color:rgba(255,255,255,0.6);color:#000;border-radius:50%;}
-.sub-tt.brands h2 span {font-size:3.5rem;line-height:4.5rem;display:block;font-weight:800}
-.sub-tt.brands.porsche {background-image:url(../img/title/brand-porsche.jpg)}
-
-.sub-tt.fixed {position:fixed;top:40px;left:0;right:0;transition:all 0.3s;background-position:50% 50%;z-index:9;}
-.sub-tt.fixed .sub-tt-wrap {height:170px;}
-.sub-tt.fixed h2 {padding-top:5.5rem;}
-.sub-tt.fixed h2 strong {font-size:3.5rem;line-height:80px;}
-.sub-tt.brands.fixed h2 strong {font-size:4rem;vertical-align:middle;width:60px;height:60px;line-height:60px;}
-.sub-tt.fixed h2 span {display:inline-block;font-size:2.5rem;line-height:4.5rem;vertical-align:middle;padding-left:15px;}
-.sub-tt.fixed h2 small {display:none;}
-
-.sub-tt.brands.fixed + .brands-wrap {padding-top:330px;}
-
-.brands-wrap {padding:100px 0 50px 0;}
+.brands-wrap {padding:4rem 0 3rem 0;}
 .brands-wrap h3 {text-align:center;}
 .brands-list {margin:0 auto;max-width:1200px;}
 .brands-list > ul:after {content:"";display:block;clear:both;}
-.brands-list > ul > li {float:left;width:25%;padding:10px;box-sizing:border-box;}
+.brands-list > ul > li {float:left;width:25%;padding:15px;box-sizing:border-box;}
 
-.brands-item {position:relative;background-color:#fafafa;border-radius:10px;}
-.brands-item:hover {background-color:#fff;box-shadow:0 0 2rem #ccc;transition:all 0.5s;}
+.brands-item {position:relative;background-color:#fafafa;border-radius:10px;transition:all 0.5s;cursor:pointer;}
+.brands-item:hover {background-color:#fff;box-shadow:0 0 2rem #bbb;transform:scale(1.05);}
 .brands-item .car-img {height:240px;line-height:180px;text-align:center;}
 .brands-item .car-img img {min-width:80%;vertical-align:bottom;}
 .brands-item .car-info {padding-bottom:2rem;}
@@ -269,7 +292,30 @@ input {outline:none;}
 .brands-item .car-info li strong {font-size:18px;color:#eb3a3a;}
 
 .brands-btn {opacity:0;position:absolute;top:80px;left:0;right:0;cursor:default;text-align:center;}
-.brands-btn a {display:inline-block;width:80px;height:80px;margin:0 10px;background-color:rgba(255,222,0,0.95);color:#000;border-radius:50%;text-align:center;}
-.brands-btn a i {font-size:1.7rem;padding:1.3rem 0 .5rem 0;}
-.brands-btn a span {display:block;font-size:.9rem;}
+.brands-btn a {display:inline-block;width:100px;height:100px;background-color:rgba(255,222,0,0.9);color:#000;border-radius:50%;text-align:center;}
+.brands-btn a i {font-size:32px;padding:25px 0 10px 0;}
+.brands-btn a span {display:block;}
 /* .brands-item:hover .brands-btn {opacity:0.9;transition:all 0.6s;cursor:pointer;} */
+
+/* Hot Deal */
+
+
+.hotdeal-wrap {padding:4rem 0 3rem 0;}
+.hotdeal-wrap h3 {text-align:center;}
+.hotdeal-list {margin:0 auto;max-width:1200px;}
+.hotdeal-list > ul:after {content:"";display:block;clear:both;}
+.hotdeal-list > ul > li {float:left;width:33.333333%;padding:15px;box-sizing:border-box;}
+
+.hotdeal-item {position:relative;background-color:#fafafa;border-radius:10px;transition:all 0.5s;cursor:pointer;overflow:hidden;}
+.hotdeal-item:hover {background-color:#fff;box-shadow:0 0 2rem #bbb;transform:scale(1.05);}
+.hotdeal-item .car-img {text-align:center;overflow:hidden;border-radius:10px;}
+.hotdeal-item .car-img img {width:100%;vertical-align:top;}
+.hotdeal-item .car-info {transform:rotate(-6deg);padding:1.5rem 0 1.5rem 0;position:absolute;top:1.6rem;left:-1rem;right:-1rem;color:#fff;background-color:rgba(0,0,0,0.3);}
+.hotdeal-item:hover .car-info {transform:rotate(0deg);left:0;right:0;transition:all 0.5s;}
+.hotdeal-item .car-info span {display:block;color:#ffff00;text-align:center;font-size:1.2rem;}
+.hotdeal-item .car-info .car-name {display:block;text-align:center;font-size:2rem;font-weight:800;padding:1rem 0 0 0;}
+
+
+.hotdeal-detail {position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fff;z-index:999;overflow:auto;display:none;}
+.hotdeal-detail.on {display:block;}
+.hotdeal-detail-wrap {max-width:200px;}
