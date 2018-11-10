@@ -126,6 +126,7 @@ input {outline:none;}
 .sub-tt.fixed h2 span {display:inline-block;font-size:2.5rem;line-height:4.5rem;vertical-align:middle;padding-left:15px;}
 .sub-tt.fixed h2 small {display:none;}
 
+.sub-tt.fixed + .about-smart {padding-top:330px;}
 .sub-tt.fixed + .brands-wrap {padding-top:330px;}
 .sub-tt.fixed + .hotdeal-wrap {padding-top:330px;}
 
@@ -310,10 +311,14 @@ input {outline:none;}
 .hotdeal-item:hover {background-color:#fff;box-shadow:0 0 2rem #bbb;transform:scale(1.05);}
 .hotdeal-item .car-img {text-align:center;overflow:hidden;border-radius:10px;}
 .hotdeal-item .car-img img {width:100%;vertical-align:top;}
-.hotdeal-item .car-info {transform:rotate(-6deg);padding:1.5rem 0 1.5rem 0;position:absolute;top:1.6rem;left:-1rem;right:-1rem;color:#fff;background-color:rgba(0,0,0,0.3);}
-.hotdeal-item:hover .car-info {transform:rotate(0deg);left:0;right:0;transition:all 0.5s;}
+.hotdeal-item .car-info {transform:rotate(-6deg);padding:1.5rem 0 1.5rem 0;position:absolute;top:1.6rem;left:-1rem;right:-1rem;color:#fff;background-color:rgba(0,0,0,0.3);text-shadow:0 0 3px #555;}
+.hotdeal-item:hover .car-info {transform:rotate(0deg);left:0;right:0;transition:all 0.5s;background-color:rgba(0,0,0,0.4)}
 .hotdeal-item .car-info span {display:block;color:#ffff00;text-align:center;font-size:1.2rem;}
 .hotdeal-item .car-info .car-name {display:block;text-align:center;font-size:2rem;font-weight:800;padding:1rem 0 0 0;}
+.hotdeal-item .car-cost {opacity:0;position:absolute;bottom:3rem;left:0;right:0;text-align:center;font-size:0;font-weight:800;padding:3rem 0 0 0;color:#ffff00;}
+.hotdeal-item:hover .car-cost {opacity:1;font-size:3.5rem;transition:all 0.5s;}
+.hotdeal-item .car-cost:before {content:"월";font-size:2rem;padding-right:0.5rem;color:#fff;}
+.hotdeal-item .car-cost:after {content:"만원";font-size:2rem;padding-left:0.5rem;color:#fff;}
 
 
 .hotdeal-detail {position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fff;z-index:999;overflow:auto;display:none;}
