@@ -119,22 +119,22 @@
                                         <i class="i-award"></i><span>PREMIUM CENTER</span>
                                         <small>솔라가드 프리미엄 성남위례점</small>
                                     </h3>
-                                    <ul class="gallery-new">
-                                        <h4><span>시공후기</span><button onclick="location.href='service-review.html'" class="more" type="button"><i class="i-plus"></i> 더 보기</button></h4>
-                                        <li><img src="http://prdsmartdirectcar.com/upload/gallery/711.jpg"></li>
-                                        <li><img src="http://prdsmartdirectcar.com/upload/gallery/710.jpg"></li>
-                                        <li><img src="http://prdsmartdirectcar.com/upload/gallery/170.jpg"></li>
-                                        <li><img src="http://prdsmartdirectcar.com/upload/gallery/171.jpg"></li>
-                                        <li><img src="http://prdsmartdirectcar.com/upload/gallery/172.jpg"></li>
-                                    </ul>
                                 </a>
+                                <ul class="gallery-new">
+                                    <h4><span>시공후기</span><button onclick="location.href='service-review.html'" class="more" type="button"><i class="i-plus"></i> 더 보기</button></h4>
+                                    <li><img src="http://prdsmartdirectcar.com/upload/gallery/711.jpg"></li>
+                                    <li><img src="http://prdsmartdirectcar.com/upload/gallery/710.jpg"></li>
+                                    <li><img src="http://prdsmartdirectcar.com/upload/gallery/170.jpg"></li>
+                                    <li><img src="http://prdsmartdirectcar.com/upload/gallery/171.jpg"></li>
+                                    <li><img src="http://prdsmartdirectcar.com/upload/gallery/172.jpg"></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
                 </li>
             </ul>
         </div>
-        <div class="btn-estimate"><i class="i-clipboard"></i><span>견적문의</span></div>
+        <div class="btn-estimate" onclick="location.href='contact.html'"><i class="i-clipboard"></i><span>견적문의</span></div>
     </div>
 </div>
 <div class="content">
@@ -147,8 +147,48 @@
         </div>
     </div>
     <div class="sub-wrap">
-        <div class="form used-car">
-        </div>
+        <form class="form-group used-car">
+            <h2>중고차 판매 문의</h2>
+            <div class="input-item ess w40">
+                <label for="used_name">이름</label>
+                <input type="text" name="userName" id="used_name" />
+            </div>
+            <div class="input-item ess w60">
+                <label for="used_phone">연락처</label>
+                <select id="used_phone" name="phone1" class="w30 radius-left">
+                    <option>010</option>
+                    <option>011</option>
+                    <option>018</option>
+                    <option>019</option>
+                    <option>070</option>
+                </select>
+                <input type="text" name="phone2" class="w35 radius-none border-lr-0" maxlength="4" />
+                <input type="text" name="phone3" class="w35 radius-right" maxlength="4" />
+            </div>
+            <div class="input-item">
+                <label>상담내용</label>
+                <textarea class="insert-textarea" name="content" placeholder="판매하시려는 차의 정보를 상세히 입력하시면 더욱 정확한 상담을 받으실 수 있습니다."></textarea>
+            </div>
+            <div class="input-item">
+                <label>개인정보 취급방침</label>
+                <textarea class="view-textarea" readonly="readonly">
+귀사가 취득한 개인정보는 『개인정보보호법』 및 『정보통신망이용촉진 및 정보보호에 관한 법률』 에 따라 개인정보의 수집/이용 및 타인에게 제공할 경우에는 본인의 사전 동의를 얻어야 하는 정보입니다. 이에 본인은 귀사가 본인의 개인정보를 아래와 같이 수집/이용하는 것에 대해 동의합니다.
+
+1. 개인 정보의 수집 이용 목적
+  - 제품 및 서비스 안내 : 렌터카 계약전 상담
+
+2. 수집하는 개인 정보의 항목 및 수집 밥법
+  - 수집하는 개인정보의 항목: 이 름, 핸드폰
+                </textarea>
+            </div>
+            <div class="input-item input-btn">
+                <input type="checkbox" id="agree" hidden>
+                <label for="agree">동의 합니다.</label>
+            </div>
+            <div class="btn-area">
+                <button type="submit" class="btn primary">견적 요청</button>
+            </div>
+        </form>
     </div>
 </div>
 <div class="footer">
