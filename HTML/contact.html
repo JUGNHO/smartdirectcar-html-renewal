@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="resources/css/settings.css">
 <link rel="stylesheet" type="text/css" href="resources/css/layers.css">
 <link rel="stylesheet" type="text/css" href="resources/css/navigation.css">
+<link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
 </head>
 <body>
 <div class="header-top">
@@ -205,25 +206,87 @@
                 <div class="car title"><strong>티볼리 아머</strong></div>
                 <div class="car-img"><img src="http://prdsmartdirectcar.com/upload/price/tivoli_armor.png"></div>
             </div>
-            <div class="input-item ess w40">
+            <div class="car-detail" id="car_detail">
+                <div class="car-detail-info">가솔린 + 전기 l 복합연비 19.5㎞/ℓ</div>
+                <div class="car-price type1"><em>렌트</em><strong class="counter">227,000</strong> <span>~</span> <strong class="counter">400,000</strong></div>
+                <div class="car-price type2"><em>리스</em><strong class="counter">188,000</strong> <span>~</span> <strong class="counter">370,000</strong></div>
+            </div>
+            <div class="input-item ess w100">
+                <h5>구입 방법 <small>중복선택 가능</small></h5>
+                <div class="input-group g4">
+                    <input type="checkbox" name="typech" id="lenta_type01" hidden />
+                    <label for="lenta_type01"><i class="i-check"></i> 리스</label>
+                    <input type="checkbox" name="typech" id="lenta_type02" hidden />
+                    <label for="lenta_type02"><i class="i-check"></i> 장기할부</label>
+                    <input type="checkbox" name="typech" id="lenta_type03" hidden />
+                    <label for="lenta_type03"><i class="i-check"></i> 렌트</label>
+                    <input type="checkbox" name="typech" id="lenta_type04" hidden />
+                    <label for="lenta_type04"><i class="i-check"></i> 할부형 렌트</label>
+                </div>
+            </div>
+            <div class="clear-fixed"></div>
+            <div class="input-item ess w50">
+                <h5>고객구분</h5>
+                <div class="input-group g3">
+                    <input type="radio" name="customer_type" id="customer_type1" hidden />
+                    <label for="customer_type1">개인</label>
+                    <input type="radio" name="customer_type" id="customer_type2" hidden />
+                    <label for="customer_type2">개인사업자</label>
+                    <input type="radio" name="customer_type" id="customer_type3" hidden />
+                    <label for="customer_type3">법인사업자</label>
+                </div>
+            </div>
+            <div class="input-item ess w50">
+                <h5>대여기간</h5>
+                <div class="input-group g4">
+                    <input type="radio" name="typech" id="term_value24" hidden />
+                    <label for="term_value24">24 개월</label>
+                    <input type="radio" name="typech" id="term_value36" hidden />
+                    <label for="term_value36">36 개월</label>
+                    <input type="radio" name="typech" id="term_value48" hidden />
+                    <label for="term_value48">48 개월</label>
+                    <input type="radio" name="typech" id="term_value60" hidden />
+                    <label for="term_value60">48 개월</label>
+                </div>
+            </div>
+            <div class="input-item ess w20">
                 <label for="used_name">이름</label>
                 <input type="text" name="userName" id="used_name" />
             </div>
-            <div class="input-item ess w60">
+            <div class="input-item ess w30">
                 <label for="used_phone">연락처</label>
-                <select id="used_phone" name="phone1" class="w30 radius-left">
-                    <option>010</option>
-                    <option>011</option>
-                    <option>018</option>
-                    <option>019</option>
-                    <option>070</option>
-                </select>
-                <input type="text" name="phone2" class="w35 radius-none border-lr-0" maxlength="4" />
-                <input type="text" name="phone3" class="w35 radius-right" maxlength="4" />
+                <div class="select-item w40 radius-left border-r-0">
+                    <select id="used_phone" name="phone1">
+                        <option>010</option>
+                        <option>011</option>
+                        <option>018</option>
+                        <option>019</option>
+                        <option>070</option>
+                    </select>
+                </div>
+                <input type="text" name="phone2" class="w30 radius-none" maxlength="4" />
+                <input type="text" name="phone3" class="w30 radius-right border-l-0" maxlength="4" />
+            </div>
+            <div class="input-item ess w50">
+                <label for="used_phone">이메일</label>
+                <input type="text" name="mail1" class="w55 radius-left" />
+                <div class="select-item w45 radius-right border-l-0">
+                    <select id="used_phone" name="mail2">
+                        <option value="naver.com">naver.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="nate.com">nate.com</option>
+                        <option value="hanmail.net">hanmail.net</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="hotmail.com">hotmail.com</option>
+                        <option value="N">직접입력</option>
+                    </select>
+                    <input id="email3" class="email3 mail2" type="text" style="display: none">
+                    <a id="selemail" class="email3"style="display: none; margin-left: -36px"><imgsrc="./img/select_arrow.jpg"></a>
+                </div>
             </div>
             <div class="input-item">
                 <label>상담내용</label>
-                <textarea class="insert-textarea" name="content" placeholder="판매하시려는 차의 정보를 상세히 입력하시면 더욱 정확한 상담을 받으실 수 있습니다."></textarea>
+                <textarea class="insert-textarea" name="content" placeholder="상담 희망 내용을 상세히 작성해 주시면 더욱 정확한 상담을 받으실 수 있습니다."></textarea>
             </div>
             <div class="input-item">
                 <label>개인정보 취급방침</label>
@@ -272,14 +335,24 @@
         </div>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="resources/js/jquery-2.2.4.min.js"></script>
 <script src="resources/js/jquery.themepunch.tools.min.js"></script>
 <script src="resources/js/jquery.themepunch.revolution.min.js"></script>
 <script type="text/javascript" src="resources/js/revolution.extension.carousel.min.js"></script>
 <script type="text/javascript" src="resources/js/revolution.extension.layeranimation.min.js"></script>
 <script type="text/javascript" src="resources/js/revolution.extension.navigation.min.js"></script>
 <script src="resources/js/slick.js"></script>
+<script src="resources/js/waypoints.min.js"></script>
+<script src="resources/js/jquery.counterup.min.js"></script>
 <script>
+$(document).ready(function() {
+     if(document.getElementById("car_detail")){
+      $('.counter').counterUp({
+          delay: 10,
+          time: 1000
+      });
+    }
+});
 $(window).scroll(function(){
   var stickytop = $('.header-top'),
       sticky = $('.header'),
