@@ -406,6 +406,25 @@ $('.sub-menu').on("mouseleave", function() {
    $(this).parent().removeClass('on');
 });
 
+$(".change-btn").on("click",function(){
+    $(".search-car").addClass("on");
+});
+
+$(".close-search").on("click",function(){
+    $(".search-car").removeClass("on");
+});
+
+
+$(".select-brand li").on("click",function(){
+    $(".select-brand").removeClass("on");
+    $(".select-car").addClass("on");
+});
+
+$(".back-search").on("click",function(){
+    $(".select-car").removeClass("on");
+    $(".select-brand").addClass("on");
+});
+
 
 </script>
 </body>

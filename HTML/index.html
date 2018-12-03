@@ -18,6 +18,8 @@
 <link rel="stylesheet" type="text/css" href="resources/css/settings.css">
 <link rel="stylesheet" type="text/css" href="resources/css/layers.css">
 <link rel="stylesheet" type="text/css" href="resources/css/navigation.css">
+<link rel="stylesheet" type="text/css" href="resources/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="resources/css/owl.theme.default.css">
 </head>
 <body>
 <div class="header-top">
@@ -137,12 +139,39 @@
                 </li>
             </ul>
         </div>
+        <div class="nav-m" id="nav_m">
+            <div class="user-info"></div>
+            <ul class="nav-list">
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Hot Deal</a></li>
+                <li><a href="#">Brand</a></li>
+                <li><a href="#">Smmart Magazine</a>
+                    <ul>
+                        <li><a href="#">신차소식</a></li>
+                        <li><a href="#">시승기</a></li>
+                        <li><a href="#">구매후기</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Smmart Service</a></li>
+                <li><a href="#"></a>About US</li>
+            </ul>
+        </div>
         <div class="btn-estimate" onclick="location.href='contact.html'"><i class="i-clipboard"></i><span>견적문의</span></div>
     </div>
 </div>
 <div class="content">
     <div class="main-img">
         <div class="main-img-wrap">
+            <div class="main-imgs owl-carousel owl-theme">
+                <picture>
+                    <source class="owl-lazy" media="(max-width: 600px)" data-srcset="resources/img/main-img-1.jpg">
+                    <img class="owl-lazy" data-src="resources/img/main-img-1.jpg" alt="">
+                </picture>
+                <picture>
+                    <source class="owl-lazy" media="(max-width: 600px)" data-srcset="resources/img/main-img-2.jpg">
+                    <img class="owl-lazy" data-src="resources/img/main-img-2.jpg" alt="">
+                </picture>
+            </div>
             <div class="title">
                 <p><strong>같은차 <span>다른가격!</span></strong></p>
                 <p>스마트 다이렉트카에서 쉽고 빠르게 최저가를 확인하세요.</p>
@@ -420,12 +449,12 @@
     </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="resources/js/jquery-2.2.4.min.js"></script>
 <script src="resources/js/jquery.themepunch.tools.min.js"></script>
 <script src="resources/js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="resources/js/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="resources/js/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="resources/js/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="resources/js/revolution.extension.carousel.js"></script>
+<script type="text/javascript" src="resources/js/revolution.extension.navigation.js"></script>
+<script type="text/javascript" src="resources/js/owl.carousel.min.js"></script>
 <script src="resources/js/slick.js"></script>
 <script>
 $(window).scroll(function(){
@@ -442,34 +471,19 @@ $(window).scroll(function(){
     sticky.removeClass('fixed');
   }
 });
+$(document).ready(function() {
 
-// $(document).ready(
-// function() {
-// // $('#rev_slider_1').show().revolution({
-// //     sliderLayout : 'auto',
-// //     responsiveLevels : [ 768 ],
-// //     gridwidth : [ 768 ],
-// //     gridheight : [ 570 ],
-// //     visibilityLevels : [ 768 ],
-
-// //     navigation : {
-// //         arrows : {
-// //             enable : true,
-// //             style : 'uranus',
-// //             hide_onleave : true
-// //         },
-// //         bullets : {
-// //             enable : true,
-// //             style : 'hermes',
-// //             hide_onleave : true,
-// //             h_align : 'center',
-// //             v_align : 'bottom',
-// //             h_offset : 0,
-// //             v_offset : 20,
-// //             space : 4
-// //         }
-// //     }});
-// });
+    var owl = $('.owl-carousel.main-imgs');
+    owl.owlCarousel({
+        items: 1,
+        loop: true,
+        lazyLoad:true,
+        dots:false,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true
+    });
+});
 $('#rev_slider').show().revolution({
     sliderType : 'carousel',
     visibilityLevels : [

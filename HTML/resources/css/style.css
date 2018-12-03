@@ -4,7 +4,9 @@
 @import url('nanumsquare.css');
 
 html {font-size:15px;}
-html, body, h1, h2, h3, h4, h5, h6, p, div, img {margin:0; padding:0; border:0; font-family:'NanumSquare', sans-serif;font-weight:700;}
+html, body, h1, h2, h3, h4, h5, h6, p, div, img {margin:0; padding:0; border:0;font-family:'Malgun Gothic', Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif}
+h1, h2, h3, h4, h5, h6 {font-family:'NanumSquare', sans-serif;font-weight:700;}
+body {-webkit-overflow-scrolling:tocuh;}
 h1,h2{font-weight:bold;}
 table,tr,td,thead,tbody,tfoot{border-style:solid; border-color:#333; 	border-spacing:0; border-collapse:collapse;}
 ul, ol, li{list-style: none;}
@@ -61,6 +63,7 @@ input {outline:none;}
 .header-wrap {position:relative;max-width:1280px;margin:0 auto;}
 .header-wrap:after {content:"";display:block;clear:both;}
 .header .nav-ctr {display:none;}
+.header .nav-m {display:none;}
 .header .logo {float:left;margin:1.5rem 0 0 2rem;}
 
 .header .nav {float:right;margin:0 10rem 0 0;line-height:2rem;font-size:1.2rem;}
@@ -139,15 +142,15 @@ input {outline:none;}
 .header.fixed .nav > ul > li > a {height:70px;line-height:70px;}
 .header.fixed .btn-estimate {top:0;border-radius:0;}
 
-.content {padding-top:55px;}
-.header.fixed .content {padding-top:40px;}
+.content {padding-top:55px;min-width:1200px;overflow:auto;}
+.header.fixed .content {padding-top:40px;min-width:1200px;overflow:auto;}
 
-.main-img {position:relative;height:750px;background:url(../img/main-img-1.jpg) 0 0 no-repeat;background-size:100% 100%;}
+.main-img {position:relative;height:100%;}
 .main-img .img-shadow {position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.4);z-index:1;}
-.main-img .main-img-wrap {position:relative;max-width:1280px;margin:0 auto;}
-.main-img .title {position:absolute;top:9em;left:2em;font-weight:800;font-size:2em;margin:0 auto;color:#fff;font-style:italic;z-index:2;text-shadow:0 0 5px #333;}
-.main-img .title p {padding-top:.8em;text-shadow:0 0 5px #000;}
-.main-img .title strong {font-size:2.5em;}
+.main-img .main-img-wrap {position:relative;max-height:100%;margin:0 auto;}
+.main-img .title {position:absolute;top:50%;left:0;right:0;max-width:1000px;text-align:left;font-weight:800;margin:0 auto;color:#fff;font-style:italic;z-index:2;text-shadow:0 0 5px #333;transform:translateY(-50%);}
+.main-img .title p {padding-top:.8em;text-shadow:0 0 5px #000;font-size:1.8rem;}
+.main-img .title strong {font-size:5.5rem;}
 .main-img .title strong span {color:#fff100;}
 
 .sub-wrap {padding:4rem 0 3rem 0;}
@@ -223,7 +226,7 @@ input {outline:none;}
 .simple-estimate-form .form-input input::placeholder {color:#000;opacity:1;}
 .simple-estimate-form .form-input input:-ms-input-placeholder {color:#000;opacity:1;}
 .simple-estimate-form .form-input input::-ms-input-placeholder {color:#000;opacity:1;}
-.simple-estimate-form .form-input.name input {width:150px;text-align:center;}
+.simple-estimate-form .form-input.name input {width:150px;}
 .simple-estimate-form .form-input.tel input {width:200px;}
 .simple-estimate-form .form-input.car-type input {width:350px;}
 .simple-estimate-form .form-input.checkbox {padding-top:0.2rem;padding-left:3rem;}
@@ -250,7 +253,7 @@ input {outline:none;}
 .hot-tt strong {display:inline-block;font-size:36px;padding:5px 13px 3px 7px;font-weight:800;color:#878787;font-style:italic;line-height:36px;}
 .hot-price {padding-top:60px;font-style:italic;}
 .hot-price span {display:inline-block;font-size:20px;color:#878787;font-weight:700;}
-.hot-price strong {display:inline-block;font-size:24px;color:#878787;font-weight:700;padding:0 5px;}
+.hot-price strong {display:inline-block;font-size:2rem;color:#878787;font-weight:800;padding:0 5px;}
 .hot-btn {opacity:0;padding-top:282px;z-index:0;}
 .hot-btn .hot-detail {display:inline-block;width:370px;height:89px;background:transparent url("../img/hotdeal-btn.png") 0 0 no-repeat;cursor:default;}
 .hot-btn .hot-detail span {padding-top:40px;line-height:115px;font-size:20px;}
@@ -273,7 +276,7 @@ input {outline:none;}
 
 .hotcar-item {position:relative;}
 .hotcar-item .car-img {height:200px;line-height:180px;text-align:center;}
-.hotcar-item .car-img img {min-width:80%;vertical-align:bottom;}
+.hotcar-item .car-img img {max-width:80%;vertical-align:bottom;}
 .hotcar-item .car-info .car-name {display:block;text-align:center;font-size:24px;font-weight:800;}
 .hotcar-item .car-info ul:after {content:"";display:block;clear:both;}
 .hotcar-item .car-info li {float:left;width:50%;padding:15px 0 5px 0;font-size:15px;}
@@ -294,7 +297,7 @@ input {outline:none;}
 
 .main-magazine-list {max-width:1200px;margin:0 auto;}
 .main-magazine-list ul:after {content:"";display:block;clear:both;}
-.main-magazine-list li {float:left;height:240px;box-sizing:border-box;padding:10px;position:relative;}
+.main-magazine-list li {float:left;width:20%;height:240px;box-sizing:border-box;padding:10px;position:relative;}
 .main-magazine-list li .main-magazine-info {display:block;opacity:0;position:absolute;top:10px;right:10px;bottom:10px;left:10px;z-index:1;text-align:center;background-color:rgba(0,0,0,0.4);color:#fff;}
 .main-magazine-list li .main-magazine-info span {margin-top:60px;display:inline-block;font-size:16px;background-color:#fff;color:#555;padding:5px 10px 3px 10px;}
 .main-magazine-list li .main-magazine-info strong {margin-top:10px;padding:0 20px;display:block;font-size:20px;font-weight:700;}
@@ -308,10 +311,6 @@ input {outline:none;}
 .main-magazine-list li:nth-child(2) .main-magazine-info span {margin-top:70px;}
 .main-magazine-list li:nth-child(1) .main-magazine-info strong {font-size:24px;}
 .main-magazine-list li:nth-child(2) .main-magazine-info strong {font-size:24px;}
-.main-magazine-list li:nth-child(3) {width:20%;}
-.main-magazine-list li:nth-child(4) {width:20%;}
-.main-magazine-list li:nth-child(5) {width:20%;}
-.main-magazine-list li:nth-child(6) {width:20%;}
 /* Image Hover Style */
 .main-magazine-list li:hover .main-magazine-img img {transform:scale(1.03) translate(-17.5%,0);transition:all 1s;}
 .main-magazine-list li:nth-child(2):hover .main-magazine-img img {transform:scale(1.03) translate(0,-10%);}
@@ -555,7 +554,7 @@ input {outline:none;}
 
 .clear-fixed:after {content:"";display:block;clear:both;}
 
-.search-car {position:fixed;top:50%;left:50%;z-index:11;background-color:#aa9797;border:1px solid #eaeaea;display:none;width:1000px;transform:translate(-50%,-50%);box-shadow:0 0 50px #777;}
+.search-car {position:fixed;top:50%;left:50%;z-index:11;background-color:#fff;border:1px solid #eaeaea;display:none;width:1000px;transform:translate(-50%,-50%);box-shadow:0 0 50px #777;}
 .search-car.on {display:block;}
 .search-car-shadow {display:none;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.4);z-index:10;}
 .search-car.on + .search-car-shadow {display:block;}
@@ -578,6 +577,63 @@ input {outline:none;}
 .select-car ul {padding:1rem;margin:0;max-height:500px;overflow:auto;}
 .select-car ul:after {content:"";display:block;clear:both;}
 .select-car ul li {float:left;width:25%;height:auto;margin:0;padding:0.8rem 0 0.5rem 0;box-sizing:border-box;border:1px solid #fafafa;text-align:center;}
-.select-car ul li:hover {background-color:#fff;border-radius:0.8rem;border:1px solid #ddd;cursor:pointer;}
 .select-car ul li img {max-width:100%;}
-.select-car ul li span {display:block;text-align:center;padding:0.5rem 0;}
+.select-car ul li span {display:block;text-align:center;padding:0.5rem 0;line-height:1.5rem;}
+.select-car ul li:hover {background-color:#028ed8;border:1px solid #028ed8;cursor:pointer;transition:all 0.5s;}
+.select-car ul li:hover span {font-size:1.2rem;color:#fff;transition:all 0.5s;font-weight:800;}
+
+
+@media only screen and (max-width: 750px) {
+
+html, body, h1, h2, h3, h4, h5, h6, p, div, img {font-family:'NanumSquare', sans-serif;font-weight:700;}
+
+/* Header */
+.header-top {display:none;}
+.header {top:0;height:60px;background-color:rgba(35,38,40,1);}
+.header.fixed {top:0;height:60px;}
+.header-wrap {text-align:center;}
+.header .nav {margin:0;display:none;}
+.header .logo {float:none;margin:0 auto;}
+.header.fixed .logo {margin-top:0;}
+.header .logo a {display:inline-block;}
+.header .logo a img {height:40px;vertical-align:middle;margin-top:.8rem;}
+.header .btn-estimate {border-radius:0;top:0;right:0;width:60px;height:60px;}
+.header .nav-ctr {display:block;position:absolute;top:0;left:0;width:60px;height:60px;line-height:55px;font-size:2.2rem;color:#fff;}
+.content {padding-top:60px;min-width:auto;}
+
+/* Main Page */
+.main-img .title {text-align:center;padding:0 50px;}
+.main-img .title p {font-size:1.2rem;}
+.main-img .title strong {font-size:3rem;}
+
+.simple-estimate {height:auto;position:relative;top:auto;left:auto;right:auto;}
+.simple-estimate-form {padding:0 10% 2rem 10%;}
+.simple-estimate-form h3 {float:none;text-align:center;padding:1.5rem 0 0 0;}
+.simple-estimate-form .form-input {width:100%;padding-top:.5rem;}
+.simple-estimate-form .form-input:nth-of-type(1) {margin-left:0;}
+.simple-estimate-form .form-input label {display:block;}
+.simple-estimate-form .form-input input {width:100% !important;text-align:left;}
+.simple-estimate-form .form-input button {width:100%;margin-top:1rem;line-height:3rem;height:3rem;}
+.simple-estimate-form .form-input.checkbox input {width:20px !important;}
+
+.hotcar-btn {position:relative;top:auto;left:auto;margin-left:0;opacity:1;}
+
+.hotcar-list > ul {padding:0;}
+.hotcar-list > ul > li {width:50%;}
+.hot-price {padding-top:20px;}
+
+.main-magazine-list ul {padding:0;}
+.main-magazine-list li {width:50%;padding:5px;height:200px;}
+.main-magazine-list li:nth-child(1) {width:100%;height:240px;}
+.main-magazine-list li:nth-child(1) img {width:100%;height:auto;transform:translate(0,0)}
+.main-magazine-list li:nth-child(2) {width:100%;}
+.main-magazine-list li:nth-child(1) .main-magazine-info span {margin-top:70px;transform:translate(-17.5%,0);}
+.main-magazine-list li:nth-child(2) .main-magazine-info span {margin-top:70px;transform:translate(0,-10%);}
+.main-magazine-list li .main-magazine-info {opacity:1;top:5px;left:5px;right:5px;bottom:5px;}
+.main-magazine-list li:nth-child(1):hover .main-magazine-img img,
+.main-magazine-list li:nth-child(2):hover .main-magazine-img img {transform:scale(1.03) translate(0,-10%);}}
+
+.erinyen.tparrows {opacity:0;}
+
+
+}
