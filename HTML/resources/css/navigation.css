@@ -61,7 +61,7 @@ website:    http://www.themepunch.com
  .ares.tp-rightarrow .tp-title-wrap { 
    right:0px;
    margin-right:30px;margin-left:0px;
-   -webkit-transform-origin:100% 50%;
+   transform-origin:100% 50%;
 border-radius:30px 0px 0px 30px;
  }
 .ares.tparrows:hover .tp-title-wrap {
@@ -97,8 +97,6 @@ border-radius:30px 0px 0px 30px;
 }
 
 /* BULLETS */
-.ares.tp-bullets {
-}
 .ares.tp-bullets:before {
 	content:" ";
 	position:absolute;
@@ -186,7 +184,6 @@ border-radius:30px 0px 0px 30px;
   height:60px; max-height:100%; max-width:100%;
   position:relative;
   display:inline-block;
-  float:left;
 
 }
 .ares .tp-tab-content 
@@ -224,9 +221,6 @@ border-radius:30px 0px 0px 30px;
 .ares .tp-tab:hover,
 .ares .tp-tab.selected {
 	background:#eee; 
-}
-
-.ares .tp-tab-mask {
 }
 
 /* MEDIA QUERIES */
@@ -279,8 +273,6 @@ website:    http://www.themepunch.com
 
 
 /* BULLETS */
-.custom.tp-bullets {
-}
 .custom.tp-bullets:before {
 	content:" ";
 	position:absolute;
@@ -303,10 +295,6 @@ website:    http://www.themepunch.com
 .custom .tp-bullet:hover,
 .custom .tp-bullet.selected {
 	background:rgb(125,125,125);
-}
-.custom .tp-bullet-image {
-}
-.custom .tp-bullet-title {
 }
 
 
@@ -564,9 +552,9 @@ website:    http://www.themepunch.com
 }
         
  .erinyen.tp-rightarrow .tp-title-wrap { 
-   right:0px;
-   margin-right:0px;margin-left:0px;
-   -webkit-transform-origin:100% 50%;
+  right:0px;
+  margin-right:0px;margin-left:0px;
+  transform-origin:100% 50%;
   border-radius:35px;
   padding-right:20px;
   padding-left:10px;
@@ -626,8 +614,6 @@ website:    http://www.themepunch.com
 }
 
 /* BULLETS */
-.erinyen.tp-bullets {
-}
 .erinyen.tp-bullets:before {
 	content:" ";
 	position:absolute;
@@ -669,11 +655,6 @@ filter: progid:dximagetransform.microsoft.gradient( startcolorstr="#e5e5e5", end
   border:1px solid #555;
   width:12px;height:12px;
 }
-.erinyen .tp-bullet-image {
-}
-.erinyen .tp-bullet-title {
-}
-
 
 /* THUMBS */
 .erinyen .tp-thumb {
@@ -783,8 +764,6 @@ website:    http://www.themepunch.com
 
 
 /* BULLETS */
-.gyges.tp-bullets {
-}
 .gyges.tp-bullets:before {
 	content:" ";
 	position:absolute;
@@ -829,11 +808,6 @@ website:    http://www.themepunch.com
     endColorstr="#e1e1e1",GradientType=0 ); /* IE6-9 */
 
 }
-.gyges .tp-bullet-image {
-}
-.gyges .tp-bullet-title {
-}
-	
 
 /* THUMBS */
 .gyges .tp-thumb { 
@@ -927,7 +901,6 @@ website:    http://www.themepunch.com
   height:60px; max-height:100%; max-width:100%;
   position:relative;
   display:inline-block;
-  float:left;
 
 }
 .gyges .tp-tab-content 
@@ -965,9 +938,6 @@ website:    http://www.themepunch.com
 .gyges .tp-tab:hover,
 .gyges .tp-tab.selected {
   background:rgba(0,0,0,0.5); 
-}
-
-.gyges .tp-tab-mask {
 }
 
 /* MEDIA QUERIES */
@@ -1058,24 +1028,16 @@ website:    http://www.themepunch.com
   transform: rotatey(0deg);
 
  }
-    
-.hades .tp-arr-iwrapper {
-}
+
 .hades .tp-arr-imgholder {
   background-size:cover;
   position:absolute;
   top:0px;left:0px;
   width:100%;height:100%;
 }
-.hades .tp-arr-titleholder {
-}
-.hades .tp-arr-subtitleholder {
-}
 
 
 /* BULLETS */
-.hades.tp-bullets {
-}
 .hades.tp-bullets:before {
 	content:" ";
 	position:absolute;
@@ -1132,9 +1094,6 @@ website:    http://www.themepunch.com
   -webkit-transform: rotatex(0deg);
   visibility:visible;
     }
-.hades .tp-bullet-title {
-}
-
 
 /* THUMBS */
 .hades .tp-thumb { 
@@ -1254,8 +1213,6 @@ website:    http://www.themepunch.com
   display:block;
   z-index:1000;
 }
-.hebe.tparrows:hover {
-}
 .hebe.tparrows:before {
   font-family: "revicons";
   font-size:30px;
@@ -1296,11 +1253,11 @@ website:    http://www.themepunch.com
   transform:scaleX(0);  
   -webkit-transform:scaleX(0);  
   transform-origin:0% 50%; 
-   -webkit-transform-origin:0% 50%;
+   transform-origin:0% 50%;
 }
  .hebe.tp-rightarrow .tp-title-wrap { 
    right:0px;
-   -webkit-transform-origin:100% 50%;
+   transform-origin:100% 50%;
  }
 .hebe.tparrows:hover .tp-title-wrap {
   transform:scaleX(1);
@@ -1344,8 +1301,6 @@ website:    http://www.themepunch.com
       }
 
 /* BULLETS */
-.hebe.tp-bullets {
-}
 .hebe.tp-bullets:before {
   content:" ";
   position:absolute;
@@ -1407,9 +1362,6 @@ border-radius:6px;
   -webkit-transform: scale(1);
   visibility:visible;
     }
-.hebe .tp-bullet-title {
-}
-
 
 /* TABS */
 .hebe .tp-tab-title {
@@ -1476,8 +1428,6 @@ website:    http://www.themepunch.com
 
 
 /* BULLETS */
-.hephaistos.tp-bullets {
-}
 .hephaistos.tp-bullets:before {
 	content:" ";
 	position:absolute;
@@ -1505,11 +1455,6 @@ website:    http://www.themepunch.com
 	background:#fff;
     border-color:#000;
 }
-.hephaistos .tp-bullet-image {
-}
-.hephaistos .tp-bullet-title {
-}
-
 
 /*-----------------------------------------------------------------------------
 
@@ -1628,9 +1573,6 @@ website:    http://www.themepunch.com
 
 
 /* BULLETS */
-.hermes.tp-bullets {
-}
-
 .hermes .tp-bullet {
     overflow:hidden;
     border-radius:50%;
@@ -1777,8 +1719,6 @@ website:    http://www.themepunch.com
 }
 
 /* BULLETS */
-.hesperiden.tp-bullets {
-}
 .hesperiden.tp-bullets:before {
 	content:" ";
 	position:absolute;
@@ -1814,11 +1754,6 @@ website:    http://www.themepunch.com
 .hesperiden .tp-bullet.selected {
 	background:#666;
 }
-.hesperiden .tp-bullet-image {
-}
-.hesperiden .tp-bullet-title {
-}
-
 
 /* THUMBS */
 .hesperiden .tp-thumb {
@@ -1870,7 +1805,6 @@ website:    http://www.themepunch.com
   height:60px; max-height:100%; max-width:100%;
   position:relative;
   display:inline-block;
-  float:left;
 
 }
 .hesperiden .tp-tab-content 
@@ -1909,10 +1843,6 @@ website:    http://www.themepunch.com
 .hesperiden .tp-tab.selected {
 	background:#eee; 
 }
-
-.hesperiden .tp-tab-mask {
-}
-
 /* MEDIA QUERIES */
 @media only screen and (max-width: 960px) {
 
@@ -2050,7 +1980,6 @@ website:    http://www.themepunch.com
         width: 50px;
         margin-right: 17px;
         display: inline-block;
-        float: left;
     }
     .metis .tp-tab-mask {
         padding-left: 20px;
@@ -2069,7 +1998,6 @@ website:    http://www.themepunch.com
         width: 1px;
         margin-top: 5px;
         display: inline-block;
-        float: left;
     }
     .metis .tp-tab-title {
         color: #fff;
@@ -2170,8 +2098,6 @@ website:    http://www.themepunch.com
 
 
 /* BULLETS */
-.persephone.tp-bullets {
-}
 .persephone.tp-bullets:before {
 	content:" ";
 	position:absolute;
@@ -2194,10 +2120,6 @@ website:    http://www.themepunch.com
 .persephone .tp-bullet:hover,
 .persephone .tp-bullet.selected {
 	background:#222;
-}
-.persephone .tp-bullet-image {
-}
-.persephone .tp-bullet-title {
 }
 
 

@@ -142,17 +142,23 @@
         <div class="nav-m" id="nav_m">
             <div class="user-info"></div>
             <ul class="nav-list">
-                <li><a href="#">About US</a></li>
-                <li><a href="#">Hot Deal</a></li>
-                <li><a href="#">Brand</a></li>
-                <li><a href="#">Smmart Magazine</a>
+                <li><a href="aboutus.html">About US</a></li>
+                <li><a href="hotdeal.html">Hot Deal</a></li>
+                <li><a href="brands.html">Brand</a></li>
+                <li><span>Smmart Magazine</span>
                     <ul>
-                        <li><a href="#">신차소식</a></li>
-                        <li><a href="#">시승기</a></li>
-                        <li><a href="#">구매후기</a></li>
+                        <li><a href="magazine.html">신차소식</a></li>
+                        <li><a href="magazine.html">시승기</a></li>
+                        <li><a href="magazine.html">구매후기</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Smmart Service</a></li>
+                <li><span>Smmart Service</span>
+                    <ul>
+                        <li><a href="service.html">Used CAR</a></li>
+                        <li><a href="http://solargards.com">PREMIUM CENTER</a></li>
+                        <li><a href="service-review.html">시공후기</a></li>
+                    </ul>
+                </li>
                 <li><a href="#"></a>About US</li>
             </ul>
         </div>
@@ -563,6 +569,11 @@ $(".nav-menu").on('mouseenter',function(){
 
 $('.sub-menu').on("mouseleave", function() {
    $(this).parent().removeClass('on');
+});
+
+$(".nav-ctr").on('click',function(){
+    $(".nav-m").addClass("on");
+    $('body').css("overflow","hidden");
 });
 </script>
 </body>
