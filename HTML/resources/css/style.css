@@ -284,7 +284,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .hotcar-item .car-img img {max-width:80%;vertical-align:bottom;}
 .hotcar-item .car-info .car-name {display:block;text-align:center;font-size:24px;font-weight:800;}
 .hotcar-item .car-info ul:after {content:"";display:block;clear:both;}
-.hotcar-item .car-info li {float:left;width:50%;padding:15px 0 5px 0;font-size:15px;}
+.hotcar-item .car-info li {float:left;width:50%;padding:15px 0 5px 0;font-size:15px;text-align:center;}
 .hotcar-item .car-info li span {padding-right:5px;}
 .hotcar-item .car-info li strong {font-size:18px;color:#eb3a3a;}
 
@@ -588,6 +588,19 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .select-car ul li:hover {background-color:#028ed8;border:1px solid #028ed8;cursor:pointer;transition:all 0.5s;}
 .select-car ul li:hover span {font-size:1.2rem;color:#fff;transition:all 0.5s;font-weight:800;}
 
+.popup {position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.7);z-index:90;opacity:0;pointer-events:none;}
+.popup.on {opacity:1;transition:all 1s;pointer-events:auto;}
+.popup .popup-wrap {position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#fff;width:400px;border-radius:5px;opacity:0;}
+.popup.on .popup-wrap {opacity:1;}
+.popup .popup-wrap .popup-tt {position:relative;font-size:1rem;}
+.popup .popup-wrap .popup-tt h2 {padding:1rem;}
+.popup .popup-wrap .popup-tt .popup-close {position:absolute;top:0;right:0;width:55px;height:55px;line-height:55px;text-align:center;}
+.popup .popup-wrap .popup-tt .popup-close i {font-size:32px;}
+.popup .popup-wrap .popup-ctn {padding:.5rem 1.2rem;}
+.popup .popup-wrap .popup-ctn p {font-weight:400;font-size:.9rem;}
+.popup .popup-wrap .popup-ctn ol {font-weight:400;}
+.popup .popup-wrap .popup-ctn ol strong {font-weight:400;font-size:.9rem;}
+
 
 @media only screen and (max-width: 750px) {
 
@@ -610,6 +623,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .header .btn-tel i {display:block;font-size:1.5rem;padding:0.7rem 0 0.5rem 0;}
     .header .btn-tel span {display:block;font-size:0.7rem;padding:0.2rem 0 0.3rem 0;letter-spacing:-1px;}
     .header .btn-estimate {border-radius:0;top:0;right:0;width:60px;height:60px;}
+    .header .btn-estimate span {font-size:0.75rem;}
     .header .btn-estimate i {padding:0.7rem 0 0.5rem 0;font-size:1.5rem;}
     .header .nav-close {display:none;}
     .header .nav-ctr,
@@ -672,7 +686,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .main-magazine-list ul {padding:5px;}
     .main-magazine-list li {width:50%;padding:5px;height:200px;}
     .main-magazine-list li:nth-child(1) {width:100%;height:240px;}
-    .main-magazine-list li:nth-child(1) img {width:100%;height:auto;transform:translate(0,0)}
+    .main-magazine-list li:nth-child(1) img {width:100%;height:100%;transform:translate(0,0)}
     .main-magazine-list li:nth-child(2) {width:100%;}
     .main-magazine-list li:nth-child(1) .main-magazine-info span {margin-top:70px;transform:translate(-17.5%,0);}
     .main-magazine-list li:nth-child(2) .main-magazine-info span {margin-top:70px;transform:translate(0,-10%);}
@@ -687,19 +701,22 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .sub-tt.fixed + .sub-wrap {padding:20rem 0 1rem 0;}
     .sub-tt .sub-tt-wrap {height:200px;}
     .sub-tt h2 {padding:2rem;}
-    .sub-tt h2 strong {font-size:2.5rem;}
-    .sub-tt h2 small {font-size:1.1rem;}
+    .sub-tt h2 strong {font-size:2.4rem;}
+    .sub-tt h2 small {font-size:1rem;}
     .sub-tt.aboutus .sub-tt-wrap {height:300px;}
     .sub-tt.aboutus h2 {padding-top:4rem;}
     .sub-tt.hotdeal h2 {padding-top:1.5rem;font-size:2rem;}
     .sub-tt.fixed .sub-tt-wrap {height:80px;}
     .sub-tt.fixed h2 {padding:0.4rem 1rem 0 1rem;}
+    .sub-tt.fixed h2 strong {font-size:2.4rem;}
+    .sub-tt.magazine.fixed .sub-tt-wrap {height:150px;}
 
     .sub-wrap {padding-top:2rem;}
     .about-smart h3 {padding-bottom:0;}
     .about-smart h3 span {font-size:2rem;padding:1rem 2rem 2rem 2rem;line-height:3rem;}
     .about-smart h3 small {font-size:1.2rem;padding:1rem 2rem;}
     .about-smart li {width:100%;padding-bottom:2rem;}
+    .about-img h3 span {padding-bottom:2rem;}
     .sub-wrap.brands {padding-top:0;}
     .sub-wrap.brands h2 {font-size:2rem;text-align:center;padding:1rem 2rem 1rem 2rem;}
     .sub-wrap.brands h2 small {display:block;font-size:0.9rem;padding-top:1rem;}
@@ -710,6 +727,14 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .sub-wrap.brands li a i {font-size:4.5rem;}
     .sub-wrap.brands li a span {display:block;font-size:0.9rem;padding-bottom:0.3rem;}
 
+    
+    .sub-tt.magazine .sub-tt-wrap {height:270px;}
+    .sub-tt .tab-nav {padding:1rem;margin:-1rem 0 0 0;font-size:0;}
+    .sub-tt.fixed .tab-nav {padding:1rem;background-color:transparent;}
+    .sub-tt .tab-nav li {width:25%;border:1px solid #fff;margin:0 0 0 -1px;padding:5px 0;height:3.5rem;line-height:1.6rem;font-size:.9rem;vertical-align:top;border-radius:0;}
+    .sub-tt .tab-nav li small {display:block;padding:0;margin-top:-4px;font-weight:400;font-size:12px;}
+    .sub-tt .tab-nav li:first-child {border-radius:1rem 0 0 1rem;line-height:2.8rem;}
+    .sub-tt .tab-nav li:last-child {border-radius:0 1rem 1rem 0;}
 
     .hotdeals-list > ul > li {width:100%;}
     .hotdeals-list .list-item {transform:scale(0.9);}
@@ -725,6 +750,11 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 
     .magazine-list > ul > li {width:100%;}
     .magazine-list .list-item .item-img img {min-height:140px;}
+
+    .magazine-detail .mag-title h2 strong {padding:1rem;font-size:1.5rem;}
+    .magazine-detail .mag-ctn {padding:1.5rem 1rem;}
+    .magazine-detail .mag-ctn > div img {margin:1.5rem auto;height:auto;}
+    .magazine-detail .mag-foot {padding-bottom:0;}
 
     .form-group {padding:2rem;}
     .form-group h2 {font-size:2rem;}
@@ -764,4 +794,6 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .footer-info li a {line-height:2rem;}
     .footer-social {float:left;width:100%;padding-top:1rem;}
     .footer-social li {width:25%;}
+
+    .popup .popup-wrap {width:80%;}
 }

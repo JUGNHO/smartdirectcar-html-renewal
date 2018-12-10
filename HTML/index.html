@@ -70,6 +70,18 @@
                             <h2>Smart Magazine <small>스마트다이렉트카의 새로운 소식을 만나보세요.</small></h2>
                             <li>
                                 <a href="service.html">
+                                    <h3><i class="i-user-check"></i><span>출고후기</span></h3>
+                                    <div class="mag-new new-car">
+                                        <div class="mag-img">
+                                            <div class="img-bg"></div>
+                                            <img src="http://prdsmartdirectcar.com/upload/3c62c011-ca61-48ac-a475-c6970b1ca470.JPG">
+                                        </div>
+                                        <h4>제네시스 G80 오토리스 출고</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="service.html">
                                     <h3><i class="i-volume-2"></i><span>신차소식</span></h3>
                                     <div class="mag-new new-car">
                                         <div class="mag-img">
@@ -89,18 +101,6 @@
                                             <img src="http://prdsmartdirectcar.com/upload/news/175.jpg">
                                         </div>
                                         <h4>고성능 N이 아니어도 즐거운..현대차 벨로스터 1.6</h4>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="service.html">
-                                    <h3><i class="i-user-check"></i><span>구매후기</span></h3>
-                                    <div class="mag-new new-car">
-                                        <div class="mag-img">
-                                            <div class="img-bg"></div>
-                                            <img src="http://prdsmartdirectcar.com/upload/3c62c011-ca61-48ac-a475-c6970b1ca470.JPG">
-                                        </div>
-                                        <h4>제네시스 G80 오토리스 출고</h4>
                                     </div>
                                 </a>
                             </li>
@@ -148,9 +148,9 @@
                 <li><a href="brands.html">Brand</a></li>
                 <li><span>Smmart Magazine</span>
                     <ul>
+                        <li><a href="magazine.html">출고후기</a></li>
                         <li><a href="magazine.html">신차소식</a></li>
                         <li><a href="magazine.html">시승기</a></li>
-                        <li><a href="magazine.html">구매후기</a></li>
                     </ul>
                 </li>
                 <li><span>Smmart Service</span>
@@ -206,7 +206,7 @@
                 <div class="form-input checkbox">
                     <input type="checkbox" id="check_agree" checked="checked">
                     <label for="check_agree">개인 정보 수집/이용 동의</label>
-                    <a href="javascript:void(0);">[ 상세 보기 ]</a>
+                    <a href="javascript:void(0);" class="show-policy">[ 상세 보기 ]</a>
                 </div>
             </form>
         </div>
@@ -456,9 +456,12 @@
         </div>
     </div>
 </div>
-<div class="popup">
+<div class="popup pop-policy">
    <div class="popup-wrap">
-       <div class="popup-tt"><h2>개인정보 취급 방침</h2></div>
+       <div class="popup-tt">
+           <h2>개인정보 취급 방침</h2>
+           <a href="javascript:void(0)" class="popup-close close-policy"><i class="i-x"></i></a>
+       </div>
        <div class="popup-ctn">
            <div class="text-area">
             <p>귀사가 취득한 개인정보는 『개인정보보호법』 및 『정보통신망이용촉진 및 정보보호에 관한 법률』 에 따라 개인정보의 수집/이용 및 타인에게 제공할 경우에는 본인의 사전 동의를 얻어야 하는 정보입니다. 이에 본인은 귀사가 본인의 개인정보를 아래와 같이 수집/이용하는 것에 대해 동의합니다.</p>
@@ -469,7 +472,7 @@
                 </li>
                 <li>
                     <strong>2. 수집하는 개인 정보의 항목 및 수집 밥법</strong>
-                    <p>- 수집하는 개인정보의 항목: 이 름, 핸드폰</p>
+                    <p>- 수집하는 개인정보의 항목: 이 름, 연락처</p>
                 </li>
             </ol>            
            </div>
@@ -592,20 +595,26 @@ $('.sub-menu').on("mouseleave", function() {
 });
 
 $(".nav-ctr").on('click',function(){
-    console.log("aa");
     $(this).addClass("off");
     $(".nav-close").addClass("on");
     $(".nav-m").addClass("on");
-    $('body').css("-webkit-overflow-scrolling","auto");
     $('body').css("overflow","hidden");
 });
+
 $(".nav-close").on('click',function(){
-    console.log("bb");
     $(this).removeClass("on");
     $(".nav-ctr").removeClass("off");
     $(".nav-m").removeClass("on");
     $('body').css("overflow","auto");
-    $('body').css("-webkit-overflow-scrolling","touch");
+});
+$(".show-policy").on('click',function(){
+    $(".pop-policy").addClass("on");
+    $('body').css("overflow","hidden");
+});
+
+$(".close-policy").on('click',function(){
+    $(".pop-policy").removeClass("on");
+    $('body').css("overflow","auto");
 });
 </script>
 </body>
