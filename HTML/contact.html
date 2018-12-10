@@ -289,21 +289,10 @@
                 <label>상담내용</label>
                 <textarea class="insert-textarea" name="content" placeholder="상담 희망 내용을 상세히 작성해 주시면 더욱 정확한 상담을 받으실 수 있습니다."></textarea>
             </div>
-            <div class="input-item">
-                <label>개인정보 취급방침</label>
-                <textarea class="view-textarea" readonly="readonly">
-귀사가 취득한 개인정보는 『개인정보보호법』 및 『정보통신망이용촉진 및 정보보호에 관한 법률』 에 따라 개인정보의 수집/이용 및 타인에게 제공할 경우에는 본인의 사전 동의를 얻어야 하는 정보입니다. 이에 본인은 귀사가 본인의 개인정보를 아래와 같이 수집/이용하는 것에 대해 동의합니다.
-
-1. 개인 정보의 수집 이용 목적
-  - 제품 및 서비스 안내 : 렌터카 계약전 상담
-
-2. 수집하는 개인 정보의 항목 및 수집 밥법
-  - 수집하는 개인정보의 항목: 이 름, 핸드폰
-                </textarea>
-            </div>
             <div class="input-item input-btn">
-                <input type="checkbox" id="agree" hidden>
-                <label for="agree">동의 합니다.</label>
+                <input type="checkbox" id="agree" checked="checked" hidden>
+                <label for="agree">개인 정보 수집/이용 동의합니다.</label>
+                <a href="javascript:void(0);" class="show-policy">상세보기</a>
             </div>
             <div class="btn-area">
                 <button type="submit" class="btn primary"><i class="i-edit-3"></i> 견적 요청</button>
@@ -336,6 +325,29 @@
         </div>
     </div>
 </div>
+<div class="popup pop-policy">
+    <div class="popup-wrap">
+        <div class="popup-tt">
+            <h2>개인정보 취급 방침</h2>
+            <a href="javascript:void(0)" class="popup-close close-policy"><i class="i-x"></i></a>
+        </div>
+        <div class="popup-ctn">
+            <div class="text-area">
+             <p>귀사가 취득한 개인정보는 『개인정보보호법』 및 『정보통신망이용촉진 및 정보보호에 관한 법률』 에 따라 개인정보의 수집/이용 및 타인에게 제공할 경우에는 본인의 사전 동의를 얻어야 하는 정보입니다. 이에 본인은 귀사가 본인의 개인정보를 아래와 같이 수집/이용하는 것에 대해 동의합니다.</p>
+             <ol>
+                 <li>
+                     <strong>1. 개인 정보의 수집 이용 목적</strong>
+                     <p>- 제품 및 서비스 안내 : 렌터카 계약전 상담</p>
+                 </li>
+                 <li>
+                     <strong>2. 수집하는 개인 정보의 항목 및 수집 밥법</strong>
+                     <p>- 수집하는 개인정보의 항목: 이 름, 연락처</p>
+                 </li>
+             </ol>            
+            </div>
+        </div>
+    </div> 
+ </div>
 <script src="resources/js/jquery-2.2.4.min.js"></script>
 <script src="resources/js/jquery.themepunch.tools.min.js"></script>
 <script src="resources/js/jquery.themepunch.revolution.min.js"></script>
@@ -425,6 +437,15 @@ $(".back-search").on("click",function(){
     $(".select-brand").addClass("on");
 });
 
+$(".show-policy").on('click',function(){
+    $(".pop-policy").addClass("on");
+    $('body').css("overflow","hidden");
+});
+
+$(".close-policy").on('click',function(){
+    $(".pop-policy").removeClass("on");
+    $('body').css("overflow","auto");
+});
 
 </script>
 </body>

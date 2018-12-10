@@ -135,7 +135,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .header .btn-estimate:hover {background-color:#ffff00;}
 .header .btn-estimate i {display:block;font-size:1.6em;padding:1rem 0 0.3rem 0;}
 .header .btn-estimate:hover i.i-clipboard:before {content:"\e95a";}
-.header .btn-estimate span {display:block;font-size:0.8rem;padding-top:.1rem;}
+.header .btn-estimate span {display:block;font-size:0.8rem;padding-top:.1rem;font-weight:bold;}
 
 .header-top.fixed {height:40px;}
 .header-top.fixed .header-top-wrap {font-size:0.9rem;line-height:40px;}
@@ -531,6 +531,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .form-group .input-item.input-btn label {border:0 none;display:inline-block;width:auto;padding:0.5rem 1.5rem;color:#333;border-radius:1.2rem;background-color:#ddd;cursor:pointer;}
 .form-group .input-item.input-btn label:before {content:"\e92b";display:inline-block;font-size:1rem;font-family:'smart';vertical-align:middle;padding-right:0.5rem;}
 .form-group .input-item.input-btn input:checked + label {color:#fff;background-color:#0c87c9;}
+.form-group .input-item.input-btn a {display:inline-block;width:auto;font-size:1rem;margin-left:10px;background-color:#eee;padding:5px 15px;border-radius:1rem;}
+.form-group .input-item.input-btn a:hover {background-color:#666;color:#fff;}
 .form-group .btn-area {clear:both;text-align:center;padding:2rem 0;}
 .form-group .btn {border:1px solid #ddd;display:inline-block;width:auto;padding:0.7rem 3rem;color:#333;font-size:1.2rem;border-radius:2rem;background-color:#fff;cursor:pointer;}
 .form-group .btn:hover {border-color:#0c87c9;color:#0c87c9;}
@@ -590,13 +592,13 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 
 .popup {position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.7);z-index:90;opacity:0;pointer-events:none;}
 .popup.on {opacity:1;transition:all 1s;pointer-events:auto;}
-.popup .popup-wrap {position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#fff;width:400px;border-radius:5px;opacity:0;}
+.popup .popup-wrap {position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#fff;width:550px;border-radius:10px;opacity:0;}
 .popup.on .popup-wrap {opacity:1;}
 .popup .popup-wrap .popup-tt {position:relative;font-size:1rem;}
 .popup .popup-wrap .popup-tt h2 {padding:1rem;}
 .popup .popup-wrap .popup-tt .popup-close {position:absolute;top:0;right:0;width:55px;height:55px;line-height:55px;text-align:center;}
 .popup .popup-wrap .popup-tt .popup-close i {font-size:32px;}
-.popup .popup-wrap .popup-ctn {padding:.5rem 1.2rem;}
+.popup .popup-wrap .popup-ctn {padding:1rem 1.5rem;}
 .popup .popup-wrap .popup-ctn p {font-weight:400;font-size:.9rem;}
 .popup .popup-wrap .popup-ctn ol {font-weight:400;}
 .popup .popup-wrap .popup-ctn ol strong {font-weight:400;font-size:.9rem;}
