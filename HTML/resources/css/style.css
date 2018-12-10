@@ -757,8 +757,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .magazine-detail .mag-foot {padding-bottom:0;}
 
     .form-group {padding:2rem;}
-    .form-group h2 {font-size:2rem;}
-    .form-group .input-item {width:100% !important;}
+    .form-group h2 {font-size:2rem;margin-bottom:1rem;}
+    .form-group .input-item {width:100% !important;padding-bottom:1rem;}
+    .form-group .input-item:first-of-type {border-top:0 none;}
     .form-group .input-item .input-group input[type="checkbox"] + label {width:49%;margin:.5rem 0 0 1%;border:1px solid #ddd !important;}
     .form-group .input-item .input-group input[type="checkbox"]:nth-of-type(1) + label,
     .form-group .input-item .input-group input[type="checkbox"]:nth-of-type(3) + label {width:49%;margin:.5rem 1% 0 0;}
