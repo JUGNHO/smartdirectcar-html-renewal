@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="resources/css/settings.css">
 <link rel="stylesheet" type="text/css" href="resources/css/layers.css">
 <link rel="stylesheet" type="text/css" href="resources/css/navigation.css">
+<!-- <link rel="stylesheet" type="text/css" href="resources/css/ion.rangeSlider.css"> -->
 <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
 </head>
 <body>
@@ -218,9 +219,9 @@
                     <input type="checkbox" name="typech" id="lenta_type01" hidden />
                     <label for="lenta_type01"><i class="i-check"></i> 리스</label>
                     <input type="checkbox" name="typech" id="lenta_type02" hidden />
-                    <label for="lenta_type02"><i class="i-check"></i> 장기할부</label>
+                    <label for="lenta_type02"><i class="i-check"></i> 장기렌트</label>
                     <input type="checkbox" name="typech" id="lenta_type03" hidden />
-                    <label for="lenta_type03"><i class="i-check"></i> 렌트</label>
+                    <label for="lenta_type03"><i class="i-check"></i> 신차 할부</label>
                     <input type="checkbox" name="typech" id="lenta_type04" hidden />
                     <label for="lenta_type04"><i class="i-check"></i> 할부형 렌트</label>
                 </div>
@@ -250,6 +251,15 @@
                     <label for="term_value60">60<span>개월</span></label>
                 </div>
             </div>
+            <!-- <div class="input-item ess w100">
+                <h5>보증금</h5>
+                <div class="input-group g6">
+                    <div class="demo__item">
+                        <div class="demo__body">
+                            <input id="demo_0" type="text" name="" value="" />
+                        </div>
+                </div>
+            </div> -->
             <div class="input-item ess w20">
                 <label for="used_name">이름</label>
                 <input type="text" name="userName" id="used_name" />
@@ -354,6 +364,7 @@
 <script type="text/javascript" src="resources/js/revolution.extension.carousel.min.js"></script>
 <script type="text/javascript" src="resources/js/revolution.extension.layeranimation.min.js"></script>
 <script type="text/javascript" src="resources/js/revolution.extension.navigation.min.js"></script>
+<!-- <script type="text/javascript" src="resources/js/ion.rangeSlider.min.js"></script> -->
 <script src="resources/js/slick.js"></script>
 <script src="resources/js/waypoints.min.js"></script>
 <script src="resources/js/jquery.counterup.min.js"></script>
@@ -447,6 +458,12 @@ $(".close-policy").on('click',function(){
     $('body').css("overflow","auto");
 });
 
+// $("#demo_0").ionRangeSlider({
+//     grid:true,
+//     values: [
+//             "무보증", "10%", "20%", "30%", "40%"
+//         ]
+// });
 </script>
 </body>
 </html>

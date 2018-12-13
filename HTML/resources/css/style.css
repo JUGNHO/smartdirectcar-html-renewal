@@ -151,9 +151,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .header.fixed .content {padding-top:40px;min-width:1200px;overflow:auto;}
 
 .main-img {position:relative;height:100%;}
-.main-img .img-shadow {position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.4);z-index:1;}
+.main-img .img-shadow {position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.4);z-index:1;pointer-events:none;}
 .main-img .main-img-wrap {position:relative;max-height:100%;margin:0 auto;}
-.main-img .title {position:absolute;top:50%;left:0;right:0;max-width:1000px;text-align:left;font-weight:800;margin:0 auto;color:#fff;font-style:italic;z-index:2;text-shadow:0 0 5px #333;transform:translateY(-50%);}
+.main-img .title {position:absolute;top:50%;left:0;right:0;max-width:1000px;text-align:left;font-weight:800;margin:0 auto;color:#fff;font-style:italic;z-index:2;text-shadow:0 0 5px #333;transform:translateY(-50%);pointer-events:none;}
 .main-img .title p {padding-top:.8em;text-shadow:0 0 5px #000;font-size:1.8rem;}
 .main-img .title strong {font-size:5.5rem;}
 .main-img .title strong span {color:#fff100;}
@@ -186,24 +186,24 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .sub-tt.brands h2 {padding-top:8rem;}
 .sub-tt.brands h2 strong {display:inline-block;font-size:8rem;line-height:5rem;background-color:rgba(255,255,255,0.6);color:#000;border-radius:50%;}
 .sub-tt.brands h2 span {font-size:3.5rem;line-height:5.5rem;display:block;font-weight:800}
-.sub-tt.brands.hyundai {background-image:url(../img/title/brand-hyundai.jpg)}
-.sub-tt.brands.kia {background-image:url(../img/title/brand-kia.jpg)}
-.sub-tt.brands.samsung {background-image:url(../img/title/brand-samsung.jpg)}
-.sub-tt.brands.chevrolet {background-image:url(../img/title/brand-chevrolet.jpg)}
-.sub-tt.brands.ssangyong {background-image:url(../img/title/brand-ssangyong.jpg)}
-.sub-tt.brands.genesis {background-image:url(../img/title/brand-genesis.jpg)}
-.sub-tt.brands.benz {background-image:url(../img/title/brand-benz.jpg)}
-.sub-tt.brands.bmw {background-image:url(../img/title/brand-bmw.jpg)}
-.sub-tt.brands.audi {background-image:url(../img/title/brand-audi.jpg)}
-.sub-tt.brands.volkswagen {background-image:url(../img/title/brand-volkswagen.jpg)}
-.sub-tt.brands.landrover {background-image:url(../img/title/brand-landrover.jpg)}
-.sub-tt.brands.volvo {background-image:url(../img/title/brand-volvo.jpg)}
-.sub-tt.brands.lexus {background-image:url(../img/title/brand-lexus.jpg)}
-.sub-tt.brands.porsche {background-image:url(../img/title/brand-porsche.jpg)}
-.sub-tt.brands.lincoln {background-image:url(../img/title/brand-lincoln.jpg)}
-.sub-tt.brands.jaguar {background-image:url(../img/title/brand-jaguar.jpg)}
-.sub-tt.brands.maserati {background-image:url(../img/title/brand-maserati.jpg)}
-.sub-tt.brands.mini {background-image:url(../img/title/brand-mini.jpg)}
+.sub-tt.brands.brand-b01 {background-image:url(../img/title/brand-hyundai.jpg)}
+.sub-tt.brands.brand-b02 {background-image:url(../img/title/brand-kia.jpg)}
+.sub-tt.brands.brand-b03 {background-image:url(../img/title/brand-samsung.jpg)}
+.sub-tt.brands.brand-b04 {background-image:url(../img/title/brand-chevrolet.jpg)}
+.sub-tt.brands.brand-b05 {background-image:url(../img/title/brand-ssangyong.jpg)}
+.sub-tt.brands.brand-b06 {background-image:url(../img/title/brand-genesis.jpg)}
+.sub-tt.brands.brand-b07 {background-image:url(../img/title/brand-benz.jpg)}
+.sub-tt.brands.brand-b08 {background-image:url(../img/title/brand-bmw.jpg)}
+.sub-tt.brands.brand-b09 {background-image:url(../img/title/brand-audi.jpg)}
+.sub-tt.brands.brand-b10 {background-image:url(../img/title/brand-volkswagen.jpg)}
+.sub-tt.brands.brand-b11 {background-image:url(../img/title/brand-landrover.jpg)}
+.sub-tt.brands.brand-b12 {background-image:url(../img/title/brand-volvo.jpg)}
+.sub-tt.brands.brand-b13 {background-image:url(../img/title/brand-lexus.jpg)}
+.sub-tt.brands.brand-b14 {background-image:url(../img/title/brand-porsche.jpg)}
+.sub-tt.brands.brand-b15 {background-image:url(../img/title/brand-lincoln.jpg)}
+.sub-tt.brands.brand-b16 {background-image:url(../img/title/brand-jaguar.jpg)}
+.sub-tt.brands.brand-b17 {background-image:url(../img/title/brand-maserati.jpg)}
+.sub-tt.brands.brand-b18 {background-image:url(../img/title/brand-mini.jpg)}
 
 .sub-tt.fixed {position:fixed;top:40px;left:0;right:0;transition:all 0.3s;background-position:50% 50%;z-index:9;}
 .sub-tt.fixed .sub-tt-wrap {height:170px;}
@@ -371,7 +371,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .brands-list .list-item .car-info {padding-bottom:2rem;}
 .brands-list .list-item .car-info .car-name {display:block;text-align:center;font-size:24px;font-weight:800;}
 .brands-list .list-item .car-info ul:after {content:"";display:block;clear:both;}
-.brands-list .list-item .car-info li {float:left;width:50%;padding:15px 0 5px 0;font-size:15px;}
+.brands-list .list-item .car-info li {float:left;width:50%;padding:15px 0 5px 0;font-size:15px;text-align:center;}
 .brands-list .list-item .car-info li span {padding-right:5px;}
 .brands-list .list-item .car-info li strong {font-size:18px;color:#eb3a3a;}
 
@@ -778,6 +778,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .form-group .car-detail {width:100%;text-align:center;padding-top:0;padding-bottom:1.5rem;}
     .form-group .car-detail .car-detail-info {background-color:#e4e4e4;line-height:2rem;}
     .form-group .car-detail .counter {font-size:1.9rem;}
+    .form-group .input-item.input-btn a {margin-top:10px;}
     
     .search-car {top:0;left:0;right:0;bottom:0;width:auto;transform:translate(0,0)}
 
