@@ -259,7 +259,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .hot-price {padding-top:60px;font-style:italic;}
 .hot-price span {display:inline-block;font-size:20px;color:#878787;font-weight:700;}
 .hot-price strong {display:inline-block;font-size:2rem;color:#878787;font-weight:800;padding:0 5px;}
-.hot-btn {opacity:0;padding-top:267px;z-index:0;}
+.hot-btn {padding-top:267px;}
 .hot-btn .hot-detail {display:inline-block;width:370px;height:89px;background:transparent url("../img/hotdeal-btn.png") 0 0 no-repeat;cursor:default;}
 .hot-btn .hot-detail span {display:inline-block;line-height:115px;font-size:20px;}
 
