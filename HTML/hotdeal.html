@@ -78,7 +78,7 @@
         <div class="hotdeals-list" id="hotdeal">
             <ul>
                 <li>
-                    <div class="list-item">
+                    <div class="list-item show-hotdeal">
                         <div class="car-img"><img src="http://prdsmartdirectcar.com/upload/hot/k5List.jpg"></div>
                         <div class="car-info">
                             <span>[장기렌트] K5 100대 한정 핫딜!</span>
@@ -196,6 +196,16 @@
         </div>
     </div>
 </div>
+<div class="popup pop-hotdeal">
+    <div class="popup-wrap">
+        <div class="popup-tt">
+            <a href="javascript:void(0)" class="popup-close close-hotdeal"><i class="i-x"></i></a>
+        </div>
+        <div class="popup-ctn">
+            <div class=""><img src="http://prdsmartdirectcar.com/upload/hot/k5List.jpg"></div>
+        </div>
+    </div> 
+</div>
 <script src="resources/js/jquery-2.2.4.min.js"></script>
 <script src="resources/js/jquery.themepunch.tools.min.js"></script>
 <script src="resources/js/jquery.themepunch.revolution.min.js"></script>
@@ -256,6 +266,15 @@ $('.sub-menu').on("mouseleave", function() {
    $(this).parent().removeClass('on');
 });
 
+$(".show-hotdeal").on('click',function(){
+    $(".pop-hotdeal").addClass("on");
+    $('body').css("overflow","hidden");
+});
+
+$(".close-hotdeal").on('click',function(){
+    $(".pop-hotdeal").removeClass("on");
+    $('body').css("overflow","auto");
+});
 
 </script>
 </body>
