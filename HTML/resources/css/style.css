@@ -151,7 +151,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .header.fixed .content {padding-top:40px;min-width:1200px;overflow:auto;}
 
 .main-img {position:relative;height:100%;}
-.main-img .img-shadow {position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.4);z-index:1;pointer-events:none;}
+.main-img .img-shadow {position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.2);z-index:1;pointer-events:none;}
 .main-img .main-img-wrap {position:relative;max-height:100%;margin:0 auto;}
 .main-img .title {position:absolute;top:50%;left:0;width:100%;text-align:center;font-weight:800;margin:-100px auto 0 auto;color:#fff;font-style:italic;z-index:2;text-shadow:0 0 5px #333;pointer-events:none;}
 .main-img .title p {padding-top:.8em;text-shadow:0 0 5px #000;font-size:1.8rem;line-height:2.1rem;}
@@ -604,6 +604,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .popup .popup-wrap .popup-ctn p {font-weight:400;font-size:.9rem;}
 .popup .popup-wrap .popup-ctn ol {font-weight:400;}
 .popup .popup-wrap .popup-ctn ol strong {font-weight:400;font-size:.9rem;}
+.popup.pop-hotdeal .popup-close {position:absolute;top:10px;left:50%;right:auto;margin-left:300px;width:55px;height:55px;line-height:55px;text-align:center;}
+.popup.pop-hotdeal .popup-wrap {overflow:hidden;top:0;bottom:0;overflow:auto;width:1000px;border-radius:0;transform:translate(-50%,0);}
+.popup.pop-hotdeal .popup-wrap .popup-ctn {padding:0;font-size:0;}
 
 
 @media only screen and (max-width: 750px) {
@@ -810,7 +813,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 
     .popup.pop-hotdeal .popup-wrap {position:fixed;top:0;left:0;right:0;bottom:0;transform:translate(0,0);width:100%;border-radius:0;}
     .popup.pop-hotdeal .popup-wrap .popup-tt {position:fixed;top:0;left:0;right:0;width:100%;z-index:1;}
-    .popup.pop-hotdeal .popup-wrap .popup-tt .popup-close {border-radius:50%;top:10px;right:10px;background-color:rgba(255,255,255,0.3)}
+    .popup.pop-hotdeal .popup-wrap .popup-tt .popup-close {border-radius:50%;top:10px;right:10px;background-color:rgba(0,0,0,0.3)}
     .popup.pop-hotdeal .popup-wrap .popup-tt i {color:#fff;}
     .popup.pop-hotdeal .popup-wrap .popup-ctn {position:fixed;top:0px;left:0;right:0;bottom:0;overflow:auto;padding:0;}
     .popup.pop-hotdeal .popup-wrap .popup-ctn img {width:100%;}
