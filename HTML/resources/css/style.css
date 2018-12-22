@@ -844,3 +844,91 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .popup.pop-hotdeal .popup-wrap .popup-ctn img {width:100%;}
 
 }
+
+/* added by JhOh 2018.12.23 */
+.smart-form-validator .checkbox span,.smart-form .radio span {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: block;
+    width: 17px;
+    height: 17px;
+    outline: 0;
+    border-width: 1px;
+    border-style: solid;
+    background: #FFF;
+}
+
+.smart-form-validator .radio i {
+    border-radius: 50%;
+}
+
+.smart-form-validator .checkbox input+span:after,.smart-form .radio input+span:after {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .1s;
+    -o-transition: opacity .1s;
+    -ms-transition: opacity .1s;
+    -moz-transition: opacity .1s;
+    -webkit-transition: opacity .1s
+}
+
+.smart-form-validator .radio input+span:after {
+    content: '';
+    top: 4px;
+    left: 4px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%
+}
+
+.smart-form-validator .checkbox.state-error span,.smart-form-validator .radio.state-error span,.smart-form-validator .state-error input,.smart-form-validator .state-error select,.smart-form-validator .state-error textarea,.smart-form-validator .toggle.state-error span {
+    background: #fff0f0;
+    border-color: #A90329
+}
+
+.smart-form-validator .toggle.state-error input:checked+span {
+    background: #fff0f0
+}
+
+.smart-form-validator em.invalid {
+    display: block;
+    margin-top: 6px;
+    padding: 0 1px;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: #D56161;
+}
+
+.smart-form-validator .rating.state-error+em {
+    margin-top: -4px;
+    margin-bottom: 4px
+}
+
+.smart-form-validator .state-error select+i {
+    background: #FFF0F0;
+    box-shadow: 0 0 0 9px #FFF0F0
+}
+
+.state-error .icon-append,.state-error .icon-prepend {
+    color: #ed1c24
+}
+
+.smart-form-validator .checkbox.state-success span,.smart-form-validator .radio.state-success span,.smart-form-validator .state-success input,.smart-form-validator .state-success select,.smart-form-validator .state-success textarea,.smart-form-validator .toggle.state-success span {
+    background: #f0fff0;
+    border-color: #7DC27D
+}
+
+.smart-form-validator .toggle.state-success input:checked+span {
+    background: #f0fff0
+}
+
+.smart-form-validator .note-success {
+    color: #6fb679
+}
+
+.smart-form-validator .state-success select+i {
+    background: #f0fff0;
+    box-shadow: 0 0 0 9px #f0fff0
+}
