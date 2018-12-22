@@ -63,6 +63,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .header-top-wrap .member a {color:#fff100;padding:0 3px;}
 
 .header {position:absolute;top:55px;left:0;right:0;bottom:0;height:105px;background-color:rgba(35,38,40,0.7);z-index:10;}
+.header.porampe {top:0;height:55px;text-align:center;background-color:#000;}
+.header.porampe .logo {float:none;margin:0;}
+.header.porampe .logo img {height:40px;margin-top:7px;}
 .header-wrap {position:relative;max-width:1280px;margin:0 auto;}
 .header-wrap:after {content:"";display:block;clear:both;}
 .header .nav-ctr {display:none;}
@@ -157,6 +160,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .main-img .title p {padding-top:.8em;text-shadow:0 0 5px #000;font-size:1.8rem;line-height:2.1rem;}
 .main-img .title strong {font-size:4.5rem;}
 .main-img .title strong span {color:#fff100;}
+.main-img .title.polamfe {margin-top:-70px;font-style:normal;}
+.main-img .title.polamfe strong {font-size:3rem;}
+.main-img .title.polamfe .point {background-color:#ffff00;text-shadow:none;color:#000;padding:0.2rem 1rem;display:inline-block;margin-top:1rem;font-style:normal;}
 
 .sub-wrap {padding:4rem 0 3rem 0;}
 .sub-wrap h3 {text-align:center;}
@@ -525,6 +531,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .form-group .input-item .input-group input[type="checkbox"] + label {border-radius:2rem;margin:0 1% 0 0;width:24%;}
 .form-group .input-item .input-group.g3 label {width:33.3333333333%;}
 .form-group .input-item .input-group.g4 label {width:25%;}
+.form-group .input-item .input-group.g5 label {width:20%;}
 .form-group .input-item .input-group label i {padding-right:5px;}
 .form-group .input-item .input-group input:checked + label {background-color:#0c87c9;border-color:#0c87c9;color:#fff;font-size:1.1rem;transition:all 0.3s;}
 .form-group .input-item .input-group input:checked + label i {font-size:1.25rem;transition:all 0.3s;}
@@ -541,6 +548,13 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .form-group .btn.primary {border:1px solid #232628;background-color:#fff100;color:#232628;padding:.7rem 6rem;font-size:1.3rem;font-weight:800;}
 .form-group .btn.primary i {font-size:1.5rem;padding-right:.5rem;}
 .form-group .btn.primary:hover {background-color:#ffff00;}
+.form-group.polamfe h3 {padding:1rem 1rem;text-align:left;}
+.form-group.polamfe h3:nth-of-type(1) {color:#f03131;}
+.form-group.polamfe h3:nth-of-type(2) {color:#0f79b3;}
+.form-group.polamfe .input-item .input-group input:checked + label {background-color:#343434;border-color:#343434;color:#fff;font-size:1.1rem;transition:all 0.3s;}
+.form-group.polamfe .input-item .input-group.g3 input[type="checkbox"] + label {border-radius:2rem;margin:0 1% 0 0;width:32%;border:1px solid #ddd;}
+.form-group.polamfe .input-item .input-group label i {padding-right:0px;vertical-align:middle;font-size:25px;display:inline-block;margin-top:-3px;margin-right:-3px;}
+.form-group.polamfe .input-item .input-group input:checked + label i {font-size:32px;margin-top:-4px;}
 
 .form-group .input-item input:focus,
 .form-group .input-item input:hover,
@@ -636,7 +650,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .header .nav-ctr,
     .header .nav-close.on {display:block;position:absolute;top:0;left:0;width:60px;height:60px;line-height:60px;font-size:2.2rem;color:#fff;text-align:center;transition:all .5s;}
     .header .nav-ctr.off {display:none;transition:all .5s;}
+    .header.porampe .header-wrap {text-align:center;}
     .content {padding-top:60px;min-width:auto;}
+    .content.polamfe {padding-top:55px;}
     .header .nav-m.on {position:fixed;width:100%;height:100%;top:60px;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.9);overflow:auto;transition:all .5s;}
     .header .nav-m > ul {padding:1rem 0 1rem 0;}
     .header .nav-m > ul > li > ul {padding:0;}
@@ -650,6 +666,10 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .main-img .title {text-align:center;padding:0 50px;margin-top:-70px;}
     .main-img .title p {font-size:1.2rem;line-height:1.7rem;}
     .main-img .title strong {font-size:2.5rem;}
+    .main-img .title.polamfe {margin-top:-100px;}
+    .main-img .title.polamfe strong {font-size:2.3rem;line-height:2.5rem;}
+    .main-img .title.polamfe strong > span {display:block;}
+    .main-img .title.polamfe p > span {display:block;}
 
     .simple-estimate {height:auto;position:relative;top:auto;left:auto;right:auto;}
     .simple-estimate-form {padding:0 10% 2rem 10%;}
@@ -719,6 +739,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .sub-tt.magazine.fixed .sub-tt-wrap {height:150px;}
 
     .sub-wrap {padding-top:2rem;}
+    .sub-wrap.polamfe {padding:0;}
+    .sub-wrap.polamfe .form-group {border:0 none;}
     .about-smart h3 {padding-bottom:0;}
     .about-smart h3 span {font-size:2rem;padding:1rem 2rem 2rem 2rem;line-height:3rem;}
     .about-smart h3 small {font-size:1.2rem;padding:1rem 2rem;}
@@ -764,7 +786,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .magazine-detail .mag-foot {padding-bottom:0;}
 
     .form-group {padding:2rem;}
+    .form-group.polamfe {padding:2rem 1rem;}
     .form-group h2 {font-size:2rem;}
+    
     .form-group.contact h2 {margin-bottom:1rem;}
     .form-group .input-item {width:100% !important;padding-bottom:1rem;}
     .form-group .input-item:first-of-type {border-top:0 none;}
@@ -777,7 +801,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 
     .form-group .input-item {padding-bottom:1rem;}
     .form-group .input-item label, .form-group .input-item h5 {padding:1rem 0.5rem 0.5rem 0.7rem;}
-
+    .form-group.polamfe .input-item .input-group label i {display: block;margin-top:5px;font-size:40px;margin-bottom:-10px;padding-right:3px;}
+    .form-group.polamfe .input-item .input-group input:checked + label i {display: block;margin-top:5px;font-size:40px;margin-bottom:-10px;}
     .form-group .car-info {width:100%;height:300px;background:transparent;}
     .form-group .car-info .car-title {padding-right:0;padding-top:1rem;}
     .form-group .car-info .car-img {padding-right:2rem;padding-top:2rem;}
