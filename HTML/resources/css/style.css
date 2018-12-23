@@ -521,7 +521,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .form-group .input-item textarea.view-textarea:hover {border-color:#ddd;}
 .form-group .input-item.ess > label:before,
 .form-group .input-item.ess > h5:before {content:"*";font-size:1rem;padding-right:3px;color:#f03131;}
-.form-group .input-item h5 small {font-size:0.85rem;color:#f03131;}
+.form-group .input-item h5 small,
+.form-group .input-item label small {font-size:0.85rem;color:#f03131;}
 .form-group .input-item .input-group:after {content:"";display:none;clear:both;}
 .form-group .input-item .input-group label {float:left;cursor:pointer;border:1px solid #ddd;border-left:0;background-color:#fff;padding:0;text-align:center;color:#333;line-height:2.5rem;font-size:0.9rem;box-sizing:border-box;}
 .form-group .input-item .input-group label:first-of-type {border-left:1px solid #ddd;}
