@@ -68,7 +68,7 @@
                 <input type="text" name="phone2" class="w35 radius-none" maxlength="4" />
                 <input type="text" name="phone3" class="w35 radius-right border-l-0" maxlength="4" />
             </div>
-            <div class="input-item ess w50">
+            <div class="input-item ess w100">
                 <h5>구매 유형 <small>중복선택 가능</small></h5>
                 <div class="input-group g3">
                     <input type="checkbox" name="typech" id="lenta_type01" hidden />
@@ -79,21 +79,27 @@
                     <label for="lenta_type03">신차 할부</label>
                 </div>
             </div>
+            <div class="clear-fixed"></div>
             <div class="input-item ess w50">
                 <h5>브랜드</h5>
-                <div class="input-group g3">
+                <div class="input-group g4">
                     <input type="radio" name="brands" id="brand_1" hidden />
                     <label for="brand_1"><i class="brand-b14"></i> 포르쉐</label>
                     <input type="radio" name="brands" id="brand_2" hidden />
                     <label for="brand_2"><i class="brand-b07"></i> 벤츠</label>
                     <input type="radio" name="brands" id="brand_3" hidden />
                     <label for="brand_3"><i class="brand-b08"></i> BMW</label>
+                    <input type="radio" name="brands" id="brand_4" hidden />
+                    <label for="brand_4"><i class="i-more-horizontal"></i> 기타</label>
                 </div>
             </div>
-            <div class="clear-fixed"></div>
-            <h3>* 스탁차량 희망 시 필수옵션 기제</h3>
             <div class="input-item w50">
-                <h5>브랜드</h5>
+                <label for="car_name">스탁차량 희망 시 차종 기제</label>
+                <input type="text" name="userName" class="tl p-l-20" id="car_name" />
+            </div>
+            <div class="clear-fixed"></div>
+            <div class="input-item w50">
+                <h5>초기비용</h5>
                 <div class="input-group g5">
                     <input type="radio" name="first_value" id="first_value0" hidden />
                     <label for="first_value0">무보증</label>
@@ -109,13 +115,15 @@
             </div>
             <div class="input-item w50">
                 <h5>대여기간</h5>
-                <div class="input-group g3">
+                <div class="input-group g4">
                     <input type="radio" name="typech" id="term_value24" hidden />
                     <label for="term_value24">24<span>개월</span></label>
                     <input type="radio" name="typech" id="term_value36" hidden />
                     <label for="term_value36">36<span>개월</span></label>
                     <input type="radio" name="typech" id="term_value48" hidden />
                     <label for="term_value48">48<span>개월</span></label>
+                    <input type="radio" name="typech" id="term_value60" hidden />
+                    <label for="term_value60">60<span>개월</span></label>
                 </div>
             </div>
             <div class="input-item input-btn">

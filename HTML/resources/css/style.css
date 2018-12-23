@@ -555,6 +555,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .form-group.polamfe .input-item .input-group.g3 input[type="checkbox"] + label {border-radius:2rem;margin:0 1% 0 0;width:32%;border:1px solid #ddd;}
 .form-group.polamfe .input-item .input-group label i {padding-right:0px;vertical-align:middle;font-size:25px;display:inline-block;margin-top:-3px;margin-right:-3px;}
 .form-group.polamfe .input-item .input-group input:checked + label i {font-size:32px;margin-top:-4px;}
+.form-group.polamfe .input-item .input-group label .i-more-horizontal {font-size:1rem;}
+.form-group.polamfe .input-item .input-group input:checked + label i.i-more-horizontal {font-size:1.25rem;}
+.form-group.polamfe .input-item input[type="text"].p-l-20 {padding-left:20px;}
 
 .form-group .input-item input:focus,
 .form-group .input-item input:hover,
@@ -803,6 +806,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .form-group .input-item label, .form-group .input-item h5 {padding:1rem 0.5rem 0.5rem 0.7rem;}
     .form-group.polamfe .input-item .input-group label i {display: block;margin-top:5px;font-size:40px;margin-bottom:-10px;padding-right:3px;}
     .form-group.polamfe .input-item .input-group input:checked + label i {display: block;margin-top:5px;font-size:40px;margin-bottom:-10px;}
+    .form-group.polamfe .input-item .input-group label .i-more-horizontal {font-size:24px;padding:8px 0;}
+    .form-group.polamfe .input-item .input-group input:checked + label i.i-more-horizontal {font-size:30px;padding:5px 0;}
     .form-group .car-info {width:100%;height:300px;background:transparent;}
     .form-group .car-info .car-title {padding-right:0;padding-top:1rem;}
     .form-group .car-info .car-img {padding-right:2rem;padding-top:2rem;}
