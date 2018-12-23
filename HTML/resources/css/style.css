@@ -900,11 +900,12 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .smart-form-validator em.invalid {
     display: block;
     margin-top: 6px;
-    padding: 0 1px;
+    padding: 0 0 0 10px;
     font-style: normal;
     font-size: 11px;
     line-height: 15px;
-    color: #D56161;
+    color:#ed1c24;
+    position:absolute;
 }
 
 .smart-form-validator .rating.state-error+em {
