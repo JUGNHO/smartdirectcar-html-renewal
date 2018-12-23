@@ -804,6 +804,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .form-group .input-item input[type="number"] {padding:0;}
 
     .form-group .input-item {padding-bottom:1rem;}
+    .form-group .input-item.state-error,
+    .form-group .input-item.state-success, {padding-bottom:2rem;}
     .form-group .input-item label, .form-group .input-item h5 {padding:1rem 0.5rem 0.5rem 0.7rem;}
     .form-group.polamfe .input-item .input-group label i {display: block;margin-top:5px;font-size:40px;margin-bottom:-10px;padding-right:3px;}
     .form-group.polamfe .input-item .input-group input:checked + label i {display: block;margin-top:5px;font-size:40px;margin-bottom:-10px;}
