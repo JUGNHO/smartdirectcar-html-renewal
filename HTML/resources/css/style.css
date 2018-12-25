@@ -302,9 +302,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .hotcar-item:hover .hotcar-btn {opacity:0.9;transition:all 0.6s;cursor:pointer;}
 .hotcar-item:hover .car-img img {transform:scale(1.1);transition:all .5s;}
 
-.main-magazine {padding:60px 0 50px 0;}
-.main-magazine h2 {text-align:center;font-size:40px;}
-.main-magazine h2 small {display:block;font-size:15px;color:#555555;padding-top:15px;}
+.main-magazine {padding:60px 0 50px 0;background-color:#232323;}
+.main-magazine h2 {text-align:center;font-size:40px;color:#fff;}
+.main-magazine h2 small {display:block;font-size:15px;color:#eee;padding-top:15px;}
 
 .main-magazine h3 {padding:1rem 0 0 0;text-align:center;}
 .main-magazine h3 span {display:inline-block;background-color:#131313;color:#fff;padding:7px 10px 5px;}
