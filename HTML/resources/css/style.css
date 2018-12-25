@@ -306,6 +306,12 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .main-magazine h2 {text-align:center;font-size:40px;}
 .main-magazine h2 small {display:block;font-size:15px;color:#555555;padding-top:15px;}
 
+.main-magazine h3 {padding:1rem 0 0 0;text-align:center;}
+.main-magazine h3 span {display:inline-block;background-color:#131313;color:#fff;padding:7px 10px 5px;}
+/* .main-magazine h3 span.review {background-color:#0c87c9}
+.main-magazine h3 span.new {background-color:#07a569}
+.main-magazine h3 span.test {background-color:#777} */
+
 .main-magazine-list {max-width:1200px;margin:0 auto;}
 .main-magazine-list ul:after {content:"";display:block;clear:both;}
 .main-magazine-list li {float:left;width:20%;height:240px;box-sizing:border-box;padding:10px;position:relative;}
