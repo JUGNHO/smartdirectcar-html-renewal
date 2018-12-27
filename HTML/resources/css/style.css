@@ -192,24 +192,25 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .sub-tt.brands h2 {padding-top:8rem;}
 .sub-tt.brands h2 strong {display:inline-block;font-size:8rem;line-height:5rem;background-color:rgba(255,255,255,0.6);color:#000;border-radius:50%;}
 .sub-tt.brands h2 span {font-size:3.5rem;line-height:5.5rem;display:block;font-weight:800}
-.sub-tt.brands.brand-b01 {background-image:url(../img/title/brand-hyundai.jpg)}
-.sub-tt.brands.brand-b02 {background-image:url(../img/title/brand-kia.jpg)}
-.sub-tt.brands.brand-b03 {background-image:url(../img/title/brand-samsung.jpg)}
-.sub-tt.brands.brand-b04 {background-image:url(../img/title/brand-chevrolet.jpg)}
-.sub-tt.brands.brand-b05 {background-image:url(../img/title/brand-ssangyong.jpg)}
-.sub-tt.brands.brand-b06 {background-image:url(../img/title/brand-genesis.jpg)}
-.sub-tt.brands.brand-b07 {background-image:url(../img/title/brand-benz.jpg)}
-.sub-tt.brands.brand-b08 {background-image:url(../img/title/brand-bmw.jpg)}
-.sub-tt.brands.brand-b09 {background-image:url(../img/title/brand-audi.jpg)}
-.sub-tt.brands.brand-b10 {background-image:url(../img/title/brand-volkswagen.jpg)}
-.sub-tt.brands.brand-b11 {background-image:url(../img/title/brand-landrover.jpg)}
-.sub-tt.brands.brand-b12 {background-image:url(../img/title/brand-volvo.jpg)}
-.sub-tt.brands.brand-b13 {background-image:url(../img/title/brand-lexus.jpg)}
-.sub-tt.brands.brand-b14 {background-image:url(../img/title/brand-porsche.jpg)}
-.sub-tt.brands.brand-b15 {background-image:url(../img/title/brand-lincoln.jpg)}
-.sub-tt.brands.brand-b16 {background-image:url(../img/title/brand-jaguar.jpg)}
-.sub-tt.brands.brand-b17 {background-image:url(../img/title/brand-maserati.jpg)}
-.sub-tt.brands.brand-b18 {background-image:url(../img/title/brand-mini.jpg)}
+
+.sub-tt.brands.brand-HYUNDAI 	{background-image:url(../img/title/brand-hyundai.jpg)}
+.sub-tt.brands.brand-KIA 		{background-image:url(../img/title/brand-kia.jpg)}
+.sub-tt.brands.brand-SAMSUNG	{background-image:url(../img/title/brand-samsung.jpg)}
+.sub-tt.brands.brand-CHEVROLET  {background-image:url(../img/title/brand-chevrolet.jpg)}
+.sub-tt.brands.brand-SSANGYONG 	{background-image:url(../img/title/brand-ssangyong.jpg)}
+.sub-tt.brands.brand-GENESIS 	{background-image:url(../img/title/brand-genesis.jpg)}
+.sub-tt.brands.brand-BENZ 		{background-image:url(../img/title/brand-benz.jpg)}
+.sub-tt.brands.brand-BMW 		{background-image:url(../img/title/brand-bmw.jpg)}
+.sub-tt.brands.brand-AUDI 		{background-image:url(../img/title/brand-audi.jpg)}
+.sub-tt.brands.brand-VOLKSWAGEN {background-image:url(../img/title/brand-volkswagen.jpg)}
+.sub-tt.brands.brand-LANDROVER 	{background-image:url(../img/title/brand-landrover.jpg)}
+.sub-tt.brands.brand-VOLVO 		{background-image:url(../img/title/brand-volvo.jpg)}
+.sub-tt.brands.brand-LEXUS 		{background-image:url(../img/title/brand-lexus.jpg)}
+.sub-tt.brands.brand-PORSCHE 	{background-image:url(../img/title/brand-porsche.jpg)}
+.sub-tt.brands.brand-LINCOLN 	{background-image:url(../img/title/brand-lincoln.jpg)}
+.sub-tt.brands.brand-JAGUAR	 	{background-image:url(../img/title/brand-jaguar.jpg)}
+.sub-tt.brands.brand-MASERATI 	{background-image:url(../img/title/brand-maserati.jpg)}
+.sub-tt.brands.brand-MINI 		{background-image:url(../img/title/brand-mini.jpg)}
 
 .sub-tt.fixed {position:fixed;top:40px;left:0;right:0;transition:all 0.3s;background-position:50% 50%;z-index:9;}
 .sub-tt.fixed .sub-tt-wrap {height:170px;}
