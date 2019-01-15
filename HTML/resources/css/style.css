@@ -9,9 +9,9 @@ h1, h2, h3, h4, h5, h6 {font-family:'NanumSquare', sans-serif;font-weight:700;}
 body {-webkit-overflow-scrolling:touch;}
 h1,h2{font-weight:bold;}
 table,tr,td,thead,tbody,tfoot{border-style:solid; border-color:#333; 	border-spacing:0; border-collapse:collapse;}
-ul, ol, li{list-style: none;padding:0;}
-a{text-decoration: none !important; color: #000;}
-a hover{color: #c2c2c2;}
+ul, ol, li{list-style:none;padding:0;}
+a{text-decoration:none !important; color:#000;}
+a hover{color:#c2c2c2;}
 button:focus{outline:none;}
 input {outline:none;}
 input[type=text],
@@ -177,12 +177,12 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .sub-tt.aboutus {background-image:url(../img/title/aboutus.jpg);}
 .sub-tt.aboutus .sub-tt-wrap {background-color:rgba(0,0,0,0.55);height:550px;}
 .sub-tt.aboutus h2 {padding-top:16rem;}
-.sub-tt.hotdeal {background-image:url(../img/title/hotdeal.jpg);background-position: 0 0;}
+.sub-tt.hotdeal {background-image:url(../img/title/hotdeal.jpg);background-position:0 0;}
 .sub-tt.hotdeal h2 {padding-top:11rem;}
 .sub-tt.magazine {background-image:url(../img/title/magazine.jpg);background-color:rgba(0,0,0,0.85);}
-.sub-tt.service-review {background-image:url(../img/solar-gard-bg.jpg);background-position: 0 0;}
-.sub-tt.service {background-image:url(../img/main-img-1.jpg);background-position: 0 100%;}
-.sub-tt.contact {background-image:url(../img/title/contact.jpg);background-position: 0 100%;}
+.sub-tt.service-review {background-image:url(../img/solar-gard-bg.jpg);background-position:0 0;}
+.sub-tt.service {background-image:url(../img/main-img-1.jpg);background-position:0 100%;}
+.sub-tt.contact {background-image:url(../img/title/contact.jpg);background-position:0 100%;}
 .sub-tt .tab-nav {text-align:center;margin:50px 0 0 0;padding:0;list-style:none;}
 .sub-tt .tab-nav li {display:inline-block;padding:5px 20px;text-align:center;box-sizing:border-box;font-size:17px;font-weight:700;border-radius:17px;color:#fff;background-color:rgba(255,255,255,0.15);border:2px solid #fff;margin:0 10px;cursor:pointer;width:150px;}
 .sub-tt .tab-nav li:hover {border-color:#ffff00;background-color:rgba(255,255,255,0.0);}
@@ -308,11 +308,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .main-magazine h2 {text-align:center;font-size:40px;color:#fff;}
 .main-magazine h2 small {display:block;font-size:15px;color:#eee;padding-top:15px;}
 
-.main-magazine h3 {padding:1rem 0 0 0;text-align:center;}
-.main-magazine h3 span {display:inline-block;background-color:#131313;color:#fff;padding:7px 10px 5px;}
-/* .main-magazine h3 span.review {background-color:#0c87c9}
-.main-magazine h3 span.new {background-color:#07a569}
-.main-magazine h3 span.test {background-color:#777} */
+.main-magazine h3 {padding:1rem 0 0 0;text-align:center;font-size:0;}
+.main-magazine h3 span {display:inline-block;background-color:#131313;color:#fff;padding:0 1rem;font-size:1.3rem;line-height:2.5rem;vertical-align:middle;}
+.main-magazine h3 button {display:inline-block;padding:0 1rem;border:0 none;background-color:#fff;font-size:1rem;margin:0;line-height:2.3rem;vertical-align:middle;}
 
 .main-magazine-list {max-width:1200px;margin:0 auto;}
 .main-magazine-list ul:after {content:"";display:block;clear:both;}
@@ -333,6 +331,19 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 /* Image Hover Style */
 .main-magazine-list li:hover .main-magazine-img img {transform:scale(1.03) translate(-17.5%,0);transition:all 1s;}
 .main-magazine-list li:nth-child(2):hover .main-magazine-img img {transform:scale(1.03) translate(0,-10%);}
+
+/* 출고후기용 추가 */
+.main-magazine-list.review li:nth-child(1),
+.main-magazine-list.review li:nth-child(2) {width:20%;height:240px;}
+.main-magazine-list.review li .main-magazine-img img {transform:translate(-10%,0)}
+.main-magazine-list.review li:nth-child(1) .main-magazine-img img,
+.main-magazine-list.review li:nth-child(2) .main-magazine-img img {width:auto;height:100%;transform:translate(-10%,0)}
+.main-magazine-list.review li:nth-child(1) .main-magazine-info span,
+.main-magazine-list.review li:nth-child(2) .main-magazine-info span {margin-top:55px;}
+.main-magazine-list.review li:nth-child(1) .main-magazine-info strong,
+.main-magazine-list.review li:nth-child(2) .main-magazine-info strong {font-size:1.2rem;}
+
+
 
 
 .footer {background-color:#646464;}
@@ -427,7 +438,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .magazine-list > ul > li {float:left;width:33.333333%;padding:15px;box-sizing:border-box;}
 .magazine-list .list-item {background-color:#fff;border:1px solid #eee;padding:15px;}
 .magazine-list .list-item .item-img {overflow:hidden;max-height:200px;}
-.magazine-list .list-item .item-img img {max-width:100%;min-height:200px;}
+.magazine-list .list-item .item-img img {width:100%;max-width:100%;min-height:200px;}
 .magazine-list .list-item .item-info {padding:10px 0 5px 0;}
 .magazine-list .list-item .item-info:after {content:"";display:block;clear:both;}
 .magazine-list .list-item .item-info .cat {float:right;font-size:0.9rem;padding:4px 5px 3px 5px;background-color:#777;color:#fff;}
@@ -660,7 +671,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .pop-hotdeal .simple-estimate-form .form-input {padding-top:1.6rem;}
 .pop-hotdeal .simple-estimate-form .form-input.checkbox {padding-top:0.3rem;}
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width:750px) {
 
     html, body, h1, h2, h3, h4, h5, h6, p, div, img {font-family:'NanumSquare', sans-serif;font-weight:700;}
 
@@ -746,7 +757,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .hotcar-list > ul > li {width:50%;}
     .hot-price {padding-top:20px;}
 
-    .main-magazine {padding-top:0;}
+    .main-magazine {padding-top:30px;}
     .main-magazine h2 {font-size:2rem;}
     .main-magazine h2 small {padding-top:10px;font-size:0.8rem;}
     .main-magazine-list ul {padding:5px;}
@@ -759,6 +770,15 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .main-magazine-list li .main-magazine-info {opacity:1;top:5px;left:5px;right:5px;bottom:5px;}
     .main-magazine-list li:nth-child(1):hover .main-magazine-img img {transform:scale(1.03) translate(0,0);}
     .main-magazine-list li:nth-child(2):hover .main-magazine-img img {transform:scale(1.03) translate(0,-10%);}
+    
+    .main-magazine-list.review li:nth-child(1),
+    .main-magazine-list.review li:nth-child(2) {width:50%;height:200px;padding:5px;}
+    .main-magazine-list.review li:nth-child(1) img {width:100%;height:100%;transform:translate(-15%,0)}
+    .main-magazine-list.review li:nth-child(1) .main-magazine-info span,
+    .main-magazine-list.review li:nth-child(2) .main-magazine-info span {margin-top:55px;transform:translate(0,-15%);}
+    .main-magazine-list.review li:nth-child(1):hover .main-magazine-img img,
+    .main-magazine-list.review li:nth-child(2):hover .main-magazine-img img {transform:scale(1.03) translate(0,-15%);}
+    
 
     .erinyen.tparrows {opacity:0;}
 
@@ -843,8 +863,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .form-group .input-item.state-error,
     .form-group .input-item.state-success, {padding-bottom:2rem;}
     .form-group .input-item label, .form-group .input-item h5 {padding:1rem 0.5rem 0.5rem 0.7rem;}
-    .form-group.polamfe .input-item .input-group label i {display: block;margin-top:5px;font-size:40px;margin-bottom:-10px;padding-right:3px;}
-    .form-group.polamfe .input-item .input-group input:checked + label i {display: block;margin-top:5px;font-size:40px;margin-bottom:-10px;}
+    .form-group.polamfe .input-item .input-group label i {display:block;margin-top:5px;font-size:40px;margin-bottom:-10px;padding-right:3px;}
+    .form-group.polamfe .input-item .input-group input:checked + label i {display:block;margin-top:5px;font-size:40px;margin-bottom:-10px;}
     .form-group.polamfe .input-item .input-group label .i-more-horizontal {font-size:24px;padding:8px 0;}
     .form-group.polamfe .input-item .input-group input:checked + label i.i-more-horizontal {font-size:30px;padding:5px 0;}
     .form-group .car-info {width:100%;height:300px;background:transparent;}
@@ -892,8 +912,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 
     .pop-hotdeal .btn-m {position:fixed;top:0;right:0;width:60px;line-height:60px;z-index:1;}
     .pop-hotdeal .btn-m .btn-close {width:60px;height:60px;font-size:2.5rem;text-align:center;color:#fff;background-color:#333;}
-    .pop-hotdeal .btn-m .go-form {display:block;width:60px;height:60px;line-height: 45px;font-size: 1.7rem;text-align:center;color:#000;background-color:#ffff00;}
-    .pop-hotdeal .btn-m .go-form span {display:block;text-align:center;font-size: 0.8rem;line-height: 20px;margin-top: -7px;}
+    .pop-hotdeal .btn-m .go-form {display:block;width:60px;height:60px;line-height:45px;font-size:1.7rem;text-align:center;color:#000;background-color:#ffff00;}
+    .pop-hotdeal .btn-m .go-form span {display:block;text-align:center;font-size:0.8rem;line-height:20px;margin-top:-7px;}
     .pop-hotdeal .popup-wrap .hotdeal-tt {display:none;}
     .pop-hotdeal .popup-wrap .popup-ctn {position:relative;top:auto;bottom:auto;}
     .pop-hotdeal .popup-wrap .popup-ctn .hotdeal-img {width:100%;}
@@ -906,89 +926,89 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 
 /* added by JhOh 2018.12.23 */
 .smart-form-validator .checkbox span,.smart-form .radio span {
-    position: absolute;
-    top: 3px;
-    left: 0;
-    display: block;
-    width: 17px;
-    height: 17px;
-    outline: 0;
-    border-width: 1px;
-    border-style: solid;
-    background: #FFF;
+    position:absolute;
+    top:3px;
+    left:0;
+    display:block;
+    width:17px;
+    height:17px;
+    outline:0;
+    border-width:1px;
+    border-style:solid;
+    background:#FFF;
 }
 
 .smart-form-validator .radio i {
-    border-radius: 50%;
+    border-radius:50%;
 }
 
 .smart-form-validator .checkbox input+span:after,.smart-form .radio input+span:after {
-    position: absolute;
-    opacity: 0;
-    transition: opacity .1s;
-    -o-transition: opacity .1s;
-    -ms-transition: opacity .1s;
-    -moz-transition: opacity .1s;
-    -webkit-transition: opacity .1s
+    position:absolute;
+    opacity:0;
+    transition:opacity .1s;
+    -o-transition:opacity .1s;
+    -ms-transition:opacity .1s;
+    -moz-transition:opacity .1s;
+    -webkit-transition:opacity .1s
 }
 
 .smart-form-validator .radio input+span:after {
-    content: '';
-    top: 4px;
-    left: 4px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%
+    content:'';
+    top:4px;
+    left:4px;
+    width:9px;
+    height:9px;
+    border-radius:50%
 }
 
 .smart-form-validator .checkbox.state-error span,.smart-form-validator .radio.state-error span,.smart-form-validator .state-error input,.smart-form-validator .state-error select,.smart-form-validator .state-error textarea,.smart-form-validator .toggle.state-error span {
-    background: #fff0f0;
-    border-color: #A90329
+    background:#fff0f0;
+    border-color:#A90329
 }
 
 .smart-form-validator .toggle.state-error input:checked+span {
-    background: #fff0f0
+    background:#fff0f0
 }
 
 .smart-form-validator em.invalid {
-    display: block;
-    margin-top: 6px;
-    padding: 0 0 0 10px;
-    font-style: normal;
-    font-size: 11px;
-    line-height: 15px;
+    display:block;
+    margin-top:6px;
+    padding:0 0 0 10px;
+    font-style:normal;
+    font-size:11px;
+    line-height:15px;
     color:#ed1c24;
     position:absolute;
 }
 
 .smart-form-validator .rating.state-error+em {
-    margin-top: -4px;
-    margin-bottom: 4px
+    margin-top:-4px;
+    margin-bottom:4px
 }
 
 .smart-form-validator .state-error select+i {
-    background: #FFF0F0;
-    box-shadow: 0 0 0 9px #FFF0F0
+    background:#FFF0F0;
+    box-shadow:0 0 0 9px #FFF0F0
 }
 
 .state-error .icon-append,.state-error .icon-prepend {
-    color: #ed1c24
+    color:#ed1c24
 }
 
 .smart-form-validator .checkbox.state-success span,.smart-form-validator .radio.state-success span,.smart-form-validator .state-success input,.smart-form-validator .state-success select,.smart-form-validator .state-success textarea,.smart-form-validator .toggle.state-success span {
-    background: #f0fff0;
-    border-color: #7DC27D
+    background:#f0fff0;
+    border-color:#7DC27D
 }
 
 .smart-form-validator .toggle.state-success input:checked+span {
-    background: #f0fff0
+    background:#f0fff0
 }
 
 .smart-form-validator .note-success {
-    color: #6fb679
+    color:#6fb679
 }
 
 .smart-form-validator .state-success select+i {
-    background: #f0fff0;
-    box-shadow: 0 0 0 9px #f0fff0
+    background:#f0fff0;
+    box-shadow:0 0 0 9px #f0fff0
 }
