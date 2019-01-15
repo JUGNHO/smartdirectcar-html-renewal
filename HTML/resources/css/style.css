@@ -837,6 +837,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .hot-btn .hot-detail {background:#ffff00;width:auto;height:auto;padding:1rem 5rem;border-radius:2rem;}
     .hot-btn .hot-detail span {line-height:normal;}
 
+    .brands-list > ul > li {width:100%;}
+    .brands-list .list-item .car-img img {min-width:70%;}
+
 
     .magazine-list > ul > li {width:100%;}
     .magazine-list .list-item .item-img img {min-height:140px;}
