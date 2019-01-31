@@ -26,7 +26,8 @@
     <div class="header-top-wrap">
         <div class="address"><i class="i-map-pin"></i><span>경기도 성남시 수정구 위례서일로 22</span></div>
         <div class="phone"><a href="tel:1544-1928"></a><i class="i-phone"></i><span>1544-1928</span></a></div>
-        <div class="member"><a href="javascript:void(0);"><i class="i-log-in"></i><span>로그인</span></a></div>
+        <div class="member show-logon"><a href="javascript:void(0);"><i class="i-log-in"></i><span>로그인</span></a></div>
+        <div class="member show-logon"><a href="javascript:void(0);"><span class="user-img"><img src="https://phinf.pstatic.net/contact/76/2015/4/4/lju1217_1428124561467.jpg?type=s160"></span><span>로그아웃</span></a></div>
     </div>
 </div>
 <div class="header">
@@ -538,6 +539,30 @@
        </div>
    </div> 
 </div>
+<!-- 간편 로그인 -->
+<div class="popup pop-logon">
+    <div class="popup-wrap" style="width:300px;">
+        <div class="popup-tt">
+            <h2>SNS 간편로그인</h2>
+            <a href="javascript:void(0)" class="popup-close close-logon"><i class="i-x"></i></a>
+        </div>
+        <div class="popup-ctn">
+            <div class="text-area">
+                 <p class="login-icons">
+                     <a id="naver_id_login" href="javascript:void(0);">
+                         <img src="resources/img/naver.png">
+                         <span>네이버로 로그인</span>
+                     </a>
+                     <a id="kakao_id_login" href="javascript:void(0);">
+                         <img src="resources/img/kakao.png" />
+                         <span>카카오톡으로 로그인</span>
+                     </a>
+                 </p>        
+            </div>
+        </div>
+    </div> 
+ </div>
+
 <script src="resources/js/jquery-2.2.4.min.js"></script>
 <script src="resources/js/jquery.themepunch.tools.min.js"></script>
 <script src="resources/js/jquery.themepunch.revolution.min.js"></script>
@@ -675,6 +700,19 @@ $(".close-policy").on('click',function(){
     $(".pop-policy").removeClass("on");
     $('body').css("overflow","auto");
 });
+
+$(".show-logon").on('click',function(){
+    $(".pop-logon").addClass("on");
+    $('body').css("overflow","hidden");
+});
+
+$(".close-logon").on('click',function(){
+    $(".pop-logon").removeClass("on");
+    $('body').css("overflow","auto");
+});
+
+$("#kakao_id_login").on("click", loginWithKakao);
+
 </script>
 </body>
 </html>

@@ -61,6 +61,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .header-top-wrap .phone {float:left;margin-left:2rem;}
 .header-top-wrap .member {float:right;margin-right:2rem;}
 .header-top-wrap .member a {color:#fff100;padding:0 3px;}
+.header-top-wrap .member .user-img {display:inline-block;width:36px;font-size:0;margin-right:10px;height:36px;overflow:hidden;border-radius:50%;vertical-align:middle;margin-top:-3px;}
+.header-top-wrap .member .user-img img {max-width:100%;max-height:100%;vertical-align:top;}
 
 .header {position:absolute;top:55px;left:0;right:0;bottom:0;height:105px;background-color:rgba(35,38,40,0.7);z-index:10;}
 .header.porampe {top:0;height:55px;text-align:center;background-color:#000;}
@@ -142,6 +144,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 
 .header-top.fixed {height:40px;}
 .header-top.fixed .header-top-wrap {font-size:0.9rem;line-height:40px;}
+.header-top.fixed .header-top-wrap .member .user-img {width:24px;height:24px;}
 
 .header.fixed {position:fixed;top:40px;height:70px;background-color:rgba(35,38,40,0.85);}
 .header.fixed .logo {margin-top:0.7rem;}
@@ -269,7 +272,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .hot-price span {display:inline-block;font-size:20px;color:#878787;font-weight:700;}
 .hot-price strong {display:inline-block;font-size:2rem;color:#878787;font-weight:800;padding:0 5px;}
 .hot-btn {padding-top:267px;}
-.hot-btn .hot-detail {display:inline-block;width:370px;height:89px;background:transparent url("../img/hotdeal-btn.png") 0 0 no-repeat;cursor:default;}
+.hotdeal-item.active-revslide .hot-btn .hot-detail  {display:inline-block;}
+.hot-btn .hot-detail {display:none;width:370px;height:89px;background:transparent url("../img/hotdeal-btn.png") 0 0 no-repeat;cursor:default;}
 .hot-btn .hot-detail span {display:inline-block;line-height:115px;font-size:20px;}
 
 .active-revslide .hot-type span {background-color:#fff;color:#028ed8;}
@@ -294,8 +298,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .hotcar-item .car-info .car-name {display:block;text-align:center;font-size:24px;font-weight:800;}
 .hotcar-item .car-info ul:after {content:"";display:block;clear:both;}
 .hotcar-item .car-info li {float:left;width:50%;padding:15px 0 5px 0;font-size:15px;text-align:center;}
-.hotcar-item .car-info li span {padding-right:5px;}
-.hotcar-item .car-info li strong {font-size:18px;color:#eb3a3a;}
+.hotcar-item .car-info li span {padding-right:5px;font-size:13px;font-weight:bold;}
+.hotcar-item .car-info li strong {font-size:15px;color:#eb3a3a;}
 
 
 .hotcar-btn {opacity:0;position:absolute;top:70px;left:50%;margin-left:-50px;cursor:default;}
@@ -395,11 +399,11 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .brands-list .list-item .car-img {height:240px;line-height:180px;text-align:center;}
 .brands-list .list-item .car-img img {min-width:80%;vertical-align:bottom;}
 .brands-list .list-item .car-info {padding-bottom:2rem;}
-.brands-list .list-item .car-info .car-name {display:block;text-align:center;font-size:24px;font-weight:800;}
+.brands-list .list-item .car-info .car-name {display:block;text-align:center;font-size:20px;font-weight:800;}
 .brands-list .list-item .car-info ul:after {content:"";display:block;clear:both;}
 .brands-list .list-item .car-info li {float:left;width:50%;padding:15px 0 5px 0;font-size:15px;text-align:center;}
-.brands-list .list-item .car-info li span {padding-right:5px;}
-.brands-list .list-item .car-info li strong {font-size:18px;color:#eb3a3a;}
+.brands-list .list-item .car-info li span {padding-right:5px;font-size:13px;font-weight:bold;}
+.brands-list .list-item .car-info li strong {font-size:15px;color:#eb3a3a;}
 
 .brands-btn {opacity:0;position:absolute;top:80px;left:0;right:0;cursor:default;text-align:center;}
 .brands-btn a {display:inline-block;width:100px;height:100px;background-color:rgba(255,222,0,0.9);color:#000;border-radius:50%;text-align:center;}
@@ -671,6 +675,16 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .pop-hotdeal .simple-estimate-form h3 {padding-top:1.8rem;padding-left:3.5rem;}
 .pop-hotdeal .simple-estimate-form .form-input {padding-top:1.6rem;}
 .pop-hotdeal .simple-estimate-form .form-input.checkbox {padding-top:0.3rem;}
+
+.pop-logon .login-icons {text-align:center;}
+.pop-logon .login-icons a {display:block;margin:10px;border-radius:10px;padding:5px;}
+.pop-logon .login-icons a:after {content:"";display:block;clear:both;}
+.pop-logon .login-icons a#naver_id_login {background-color:#57b04b;border:1px solid #45983a}
+.pop-logon .login-icons a#kakao_id_login {background-color:#ffe812;border:1px solid #dcc80f}
+.pop-logon .login-icons a img {width:64px;height:64px;float:left;display:block;}
+.pop-logon .login-icons a span {display:block;float:left;text-align:center;line-height:64px;padding-left:15px;font-weight:bold;}
+.pop-logon .login-icons a#naver_id_login span {color:#fff;border-left:1px solid #45983a;}
+.pop-logon .login-icons a#kakao_id_login span {color:#000;border-left:1px solid #dcc80f;}
 
 @media only screen and (max-width:750px) {
 
