@@ -8,7 +8,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, div, img {margin:0; padding:0; border:0;f
 h1, h2, h3, h4, h5, h6 {font-family:'NanumSquare', sans-serif;font-weight:700;}
 body {-webkit-overflow-scrolling:touch;}
 h1,h2{font-weight:bold;}
-table,tr,td,thead,tbody,tfoot{border-style:solid; border-color:#333; 	border-spacing:0; border-collapse:collapse;}
+table,tr,td,thead,tbody,tfoot{border-style:solid; border-color:#333;border-spacing:0; border-collapse:collapse;}
 ul, ol, li{list-style:none;padding:0;}
 a{text-decoration:none !important; color:#000;}
 a hover{color:#c2c2c2;}
@@ -308,6 +308,26 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .hotcar-btn a span {display:block;}
 .hotcar-item:hover .hotcar-btn {opacity:0.9;transition:all 0.6s;cursor:pointer;}
 .hotcar-item:hover .car-img img {transform:scale(1.1);transition:all .5s;}
+
+
+.main-salesman {padding:60px 0 50px 0;background-color:#f2f2f2;}
+.main-salesman h2 {text-align:center;font-size:40px;color:#333;}
+.main-salesman h2 small {display:block;font-size:15px;color:#555;padding-top:15px;}
+
+.salesman-list {max-width:1200px;margin:0 auto;padding:40px 0 20px 0;}
+.salesman-list ul:after {content:"";display:block;clear:both;}
+.salesman-list li {float:left;width:25%;text-align:center;}
+.salesmain-info .photo {width:200px;height:200px;text-align:center;border-radius:50%;overflow:hidden;margin:0 auto;box-shadow:3px 3px 15px #ccc;}
+.salesmain-info .photo img {max-width:100%;}
+.salesmain-info .name {padding:15px 0 10px 0;}
+.salesmain-info .name strong {font-size:20px;display:block;padding:5px 0;}
+.salesmain-info .name span {font-size:16px;color:#555;display:block;}
+.salesmain-info .introduce {padding:10px 20px;font-size:14px;color:#333;}
+.salesmain-info .inquery-btn {padding:15px 0 5px;}
+.salesmain-info .inquery-btn a {background-color:#ffde00;border:1px solid #ffde00;color:#000;padding:8px 35px;font-size:18px;display:inline-block;border-radius:10px;}
+.salesmain-info .inquery-btn a:hover {background-color:#fff100;border:1px solid #555;}
+.salesmain-info .inquery-btn a span {display:block;text-align:center;font-size:13px;padding:3px 0;}
+
 
 .main-magazine {padding:60px 0 50px 0;background-color:#232323;}
 .main-magazine h2 {text-align:center;font-size:40px;color:#fff;}
@@ -686,6 +706,24 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .pop-logon .login-icons a#naver_id_login span {color:#fff;border-left:1px solid #45983a;}
 .pop-logon .login-icons a#kakao_id_login span {color:#000;border-left:1px solid #dcc80f;}
 
+
+.pop-sales {position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.7);z-index:90;opacity:0;pointer-events:none;}
+.pop-sales.on {opacity:1;transition:all 1s;pointer-events:auto;}
+.pop-sales .btn-close {position:absolute;right:0;top:0;width:60px;height:60px;cursor:pointer;line-height:50px;text-align:center;color:#fff;font-size:2.5rem;}
+.pop-sales .simple-estimate {max-width:350px;height:auto;position:relative;top:50%;left:auto;right:auto;margin:0 auto;transform:translateY(-50%)}
+.pop-sales .simple-estimate-form h3 {padding-top:1.8rem;padding-left:3.5rem;}
+.pop-sales .simple-estimate-form .form-input {padding-top:1.6rem;}
+.pop-sales .simple-estimate-form .form-input.checkbox {padding-top:0.3rem;}
+.pop-sales .simple-estimate-form h3 {padding-left:0;}
+.pop-sales .simple-estimate-form {padding:0 6% 2rem 6%;}
+.pop-sales .simple-estimate-form h3 {float:none;text-align:center;padding:1.5rem 0 0.7rem 0;}
+.pop-sales .simple-estimate-form .form-input {width:100%;padding-top:.5rem;padding-left:0;}
+.pop-sales .simple-estimate-form .form-input:nth-of-type(1) {margin-left:0;}
+.pop-sales .simple-estimate-form .form-input input {width:100% !important;text-align:left;}
+.pop-sales .simple-estimate-form .form-input textarea {width:100%;height:100px;border-radius:15px;padding:15px;border:0 none;overflow:auto;font-size:13.3333px;}
+.pop-sales .simple-estimate-form .form-input button {width:100%;margin-top:0;line-height:3rem;height:3rem;}
+.pop-sales .simple-estimate-form .form-input.checkbox input {width:20px !important;}
+
 @media only screen and (max-width:750px) {
 
     html, body, h1, h2, h3, h4, h5, h6, p, div, img {font-family:'NanumSquare', sans-serif;font-weight:700;}
@@ -749,8 +787,10 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 
     .rev_slider_wrapper {background-repeat:repeat-x;}
 
+    .hotcar {padding-bottom:0;}
     .hotcar h2 {font-size:2rem;}
     .hotcar h2 small {padding-top:10px;font-size:0.8rem;}
+    .hotcar-list > ul {margin-bottom:0;}
     .hotcar-list > ul > li {border-bottom:1px solid #eee;border-right:1px solid #eee;box-sizing:border-box;padding-bottom:1.5rem;}
     .hotcar-list > ul > li:nth-child(1),
     .hotcar-list > ul > li:nth-child(2) {border-top:1px solid #eee;}
@@ -771,6 +811,17 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .hotcar-list > ul {padding:0;}
     .hotcar-list > ul > li {width:50%;}
     .hot-price {padding-top:20px;}
+
+    .main-salesman {padding:60px 0 0 0;}
+    .main-salesman h2 {font-size:2rem;}
+    .main-salesman h2 small {padding-top:10px;font-size:0.8rem;}
+    .salesman-list {padding:15px 0 0 0;}
+    .salesman-list ul {margin-bottom:0;border-top:1px solid #ddd;}
+    .salesman-list li {width:50%;padding:25px 0;box-sizing:border-box;border-bottom:1px solid #ddd;}
+    .salesman-list li:nth-child(odd) {border-right:1px solid #ddd;}
+
+    .salesmain-info .photo {width:150px;height:150px;}
+    .salesmain-info .introduce {padding:10px 20px;}
 
     .main-magazine {padding-top:30px;}
     .main-magazine h2 {font-size:2rem;}
@@ -853,7 +904,6 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 
     .brands-list > ul > li {width:100%;}
     .brands-list .list-item .car-img img {min-width:70%;}
-
 
     .magazine-list > ul > li {width:100%;}
     .magazine-list .list-item .item-img img {min-height:140px;}
