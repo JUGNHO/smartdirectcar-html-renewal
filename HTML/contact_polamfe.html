@@ -126,10 +126,98 @@
                     <label for="term_value60">60<span>개월</span></label>
                 </div>
             </div>
-            <div class="input-item input-btn">
-                <input type="checkbox" id="agree" checked="checked" hidden>
-                <label for="agree">개인 정보 수집/이용 동의</label>
-                <a href="javascript:void(0);" class="show-policy">상세보기</a>
+            
+            <div class="policy-box">
+                <h3><input type="checkbox" id="policyAll"><label for="policyAll"><strong>전체동의</strong></label></h3>
+                <ul>
+                    <li><h3><input type="checkbox" id="policy1"><label for="policy1"><strong>개인정보 수집 및 이용 동의(필수)</strong></label></h3>
+                        <a href="javascript:void(0);" onclick="$(this).toggleClass('on');" class="view-policy">전문보기</a>
+                        <div class="policy-ctn">
+                            <div class="policy-wrap">
+                                <table>
+                                    <colgroup>
+                                        <col width="150px">
+                                        <col width="200px">
+                                        <col width="120px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>목적</th>
+                                            <th>항목</th>
+                                            <th>보유기간</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1. 서비스 제공에 관한 계약 이행<br>2. 회원의 관리</td>
+                                            <td>성명, 생년월일, 아이디, 비밀번호, 전화번호(휴대폰), 성별, 이메일주소</td>
+                                            <td>- 재화 및 서비스 공급완료시<br>- 회원 탈퇴시</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="red">※ 회사가 ㈜스마트카다이렉트카(http://smartdirectcar.com)을 통하여 제공하는 서비스를 고객님이 이용하도록 하기 위해서 그 수집 및 이용이 필요한 최소한의 개인정보이므로 해당 항목에 동의를 해 주셔야 서비스 이용이 가능합니다. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li><h3><input type="checkbox" id="policy2"><label for="policy2"><strong>마케팅 활용에 동의(선택)</strong></label></h3>
+                        <a href="javascript:void(0);" onclick="$(this).toggleClass('on');" class="view-policy">전문보기</a>
+                        <div class="policy-ctn">
+                            <div class="policy-wrap">
+                                <table>
+                                    <colgroup>
+                                        <col width="130px">
+                                        <col width="200px">
+                                        <col width="150px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>목적</th>
+                                            <th>항목</th>
+                                            <th>보유기간</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>3. 광고, 이벤트 및 프로모션<br>4. 고충처리</td>
+                                            <td>주소, 전화번호(자택, 휴대폰), 이메일주소</td>
+                                            <td>- 회원 탈퇴시<br>- 민원 처리 종료시</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="red">※ 회사가 ㈜스마트카다이렉트카(http://smartdirectcar.com)을 통하여 제공하는 서비스를 고객님이 보다 원활하게 이용하도록 하기 위해서 그 수집 및 이용이 필요한 개인정보이므로 해당 항목에 동의를 거부하시는 경우에도 위 개인정보를 수집 및 이용하는 서비스를 제외하고 나머지 서비스에 대해서는 이용이 가능합니다.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li><h3><input type="checkbox" id="policy3"><label for="policy3"><strong><em></em>개인정보 위탁 동의(선택)</strong></label></h3>
+                        <a href="javascript:void(0);" onclick="$(this).toggleClass('on');" class="view-policy">전문보기</a>
+                        <div class="policy-ctn">
+                            <div class="policy-wrap">
+                                <table>
+                                    <colgroup>
+                                        <col width="400px">
+                                        <col width="220px">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>수탁업체</th>
+                                            <th>위탁업무 내용</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>레드캡, 농협캐피탈(렌트), 농협캐피탈(리스), 나우카, 지모터스, 롯데렌터카, 롯데캐피탈, 롯데오토리스, 메리츠캐피탈, 미래에셋캐피탈, 삼성카드, 신한카드, 아마존카, 아주캐피탈, 알페라, 오릭스, 우리카드, 조이렌트카, 하나캐피탈, 하모니렌트카, 한진렌터카, 현대캐피탈, 효성캐피탈, AJ렌터카, BNK캐피탈, CNH프리미어렌탈, DGB캐피탈, JB우리캐피탈, KB캐피탈(인천지점), KB캐피탈(수원지점), "KDB캐피탈, (산은캐피탈)", SK렌터카</td>
+                                            <td>
+                                                렌터카 중개 및 알선 <br>
+                                                (장기 렌터카/리스 서비스 제공)
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="red">※ 위의 개인정보 처리 위탁에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 원활한 서비스 제공에 일부 제한을 받을 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="btn-area">
                 <button type="submit" class="btn primary"><i class="i-edit-3"></i> 견적 요청</button>
