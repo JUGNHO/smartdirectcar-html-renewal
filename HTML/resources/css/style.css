@@ -1065,6 +1065,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .sub-wrap.brands li a span {display:block;font-size:0.9rem;padding-bottom:0.3rem;}
     .sub-wrap.price {padding-top:0;}
 
+
+
     
     .sub-tt.magazine .sub-tt-wrap {height:270px;}
     .sub-tt .tab-nav {padding:1rem;margin:-1rem 0 0 0;font-size:0;}
@@ -1156,7 +1158,14 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 
     .policy-wrap table {max-width:100%;}
 
-    .popup .popup-wrap {width:80%;}
+    .popup .popup-wrap {width:80%;max-height:90%;overflow:auto;}
+    .popup.pop-policys .popup-wrap {width:90%;}
+    .popup .popup-wrap .popup-tt h2 {font-size:1.2rem;}
+    .policy-box h3 {font-size:16px;padding-bottom:5px;}
+    .policy-box > h3 {font-size:18px;padding-bottom:10px;}
+    .policy-box a.view-policy {position:relative;top:auto;right:auto;margin:0 10px 10px 37px;}
+    .policy-wrap table th, .policy-wrap table td {font-size:12px;}
+    .popup .popup-wrap .popup-ctn p.red {font-size:12px;}
 
     .popup.pop-hotdeal .popup-wrap {position:fixed;top:0;left:0;right:0;bottom:0;transform:translate(0,0);width:100%;border-radius:0;}
     .popup.pop-hotdeal .popup-wrap .popup-tt {position:fixed;top:0;left:0;right:0;width:100%;z-index:1;}
