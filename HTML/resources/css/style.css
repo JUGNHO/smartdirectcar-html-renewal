@@ -1156,6 +1156,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
     .footer-social {float:left;width:100%;padding-top:1rem;}
     .footer-social li {width:25%;}
 
+    .policy-wrap {padding:20px 10px;}
     .policy-wrap table {max-width:100%;}
 
     .popup .popup-wrap {width:80%;max-height:90%;overflow:auto;}
