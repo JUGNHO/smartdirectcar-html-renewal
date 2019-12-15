@@ -1406,12 +1406,13 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .car-box .box-tt h4 {font-size:16px;font-weight:500;}
 .car-box .box-tt span {font-size:13px;color:#565656;display:none;}
 .car-box.view {background-color:transparent;}
-.car-box.view .box-tt {padding:10px 15px;}
+.car-box.view .box-tt {padding:10px 15px;cursor:default;}
 .car-box.view .box-tt:before,
 .car-box.view .box-tt.on:before {content:"";}
 .car-box.view .box-tt.on + ul {display:none;}
 .car-box.view .box-tt h4 {font-size:14px;color:#565656;padding-bottom:7px;}
 .car-box.view .box-tt span {display:inline-block;font-size:17px;font-weight:500;color:#333;padding:3px 0 3px 10px;font-size:13px;}
+.car-box.view ul li label {cursor:default !important;}
 
 .car-box.title {padding:15px 20px 10px 20px;background-color:#fff;color:#000;}
 .car-box.title > h3 {font-size:18px;text-align:center;font-weight:600;color:#fff;background-color:#333;padding:15px 0;margin:-15px -20px 0 -20px;}
@@ -1431,6 +1432,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .car-box.title .car-info .etc span {font-size:13px;display:inline-block;line-height:16px;}
 .car-box.title .car-info .etc span:before{content:'';position:relative;top:1px;display:inline-block;margin:0 5px 0 3px;width:1px;height:9.5px;background:#ccc;font-size:12px;}
 .car-box.title .car-info .etc span:first-child:before{margin:0;width:0;height:0}
+.car-box.title .car-info .tip {color:#0081d0;font-size:13px;padding-top:5px;}
 
 .car-box.model {padding:0;border-top:0 none;background-color:#fff;color:#000;}
 .car-box.model h3 {padding:10px 15px;font-size:16px;font-weight:500;}
@@ -1511,6 +1513,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .car-box.km li input:checked + label .km-tt {color:#0081d0;transition:all 0.5s;}
 
 .car-box.btn-area {padding:15px 0;border-top:0 none;background-color:transparent;}
+.car-box.btn-area .tip {font-size:13px;color:#0081d0;padding:5px 0 15px 0;}
 .car-box.btn-area .btn {font-weight:500;letter-spacing:10px;display:block;background-color:#0081d0;color:#fff;font-size:1.2rem;font-weight:600;line-height:50px;border-radius:30px;text-align:center;}
 
 .quotation-form {background-color:#F1F9FF;border-top:1px solid #ccc;border-bottom:1px solid #ccc;padding-bottom:30px;}
