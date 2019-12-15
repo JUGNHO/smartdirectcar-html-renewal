@@ -295,18 +295,18 @@
 $(window).scroll(function(){
   var stickytop = $('.header-top'),
       sticky = $('.header'),
-      subtt = $('.sub-tt'),
+    //   subtt = $('.sub-tt'),
       scroll = $(window).scrollTop();
 
   if (scroll >= 100) { 
     stickytop.addClass('fixed');
     sticky.addClass('fixed');
-    subtt.addClass('fixed');
+    // subtt.addClass('fixed');
   }
   else {
     stickytop.removeClass('fixed');
     sticky.removeClass('fixed');
-    subtt.removeClass('fixed');
+    // subtt.removeClass('fixed');
   }
 });
 

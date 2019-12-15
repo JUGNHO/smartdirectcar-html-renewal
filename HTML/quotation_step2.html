@@ -95,18 +95,6 @@
 </div>
 <div class="sub-wrap brand">
     <section class="model-option">
-        <!-- 상단 고정 차량 정보 -->
-        <article class="fixed-head">
-            <div class="car-img"><img src="http://autoimg.danawa.com/photo/3699/model_200.png"></div>
-            <div class="car-info">
-                <div class="name">그랜저 IG 가솔린 2.4 Modern (A/T)</div>
-                <div class="month-price">
-                    <div><strong>렌탈</strong><span class="price">376,400</span>원</div>
-                    <div><strong>리스</strong><span class="price">376,400</span>원</div>
-                </div>
-            </div>
-            <div class="txt">(선수금30%, 이용기간 48개월, 연간2.5만km 기준)</div>
-        </article>
         <div class="model-align left">
             <!-- 상단 차량 정보 -->
             <article class="car-box title">
@@ -127,6 +115,43 @@
                         <div class="month-price">리스<span class="price">323,000</span>원</div>
                         <div class="car-price">차량가격 <span class="price">39,203,000</span>원</div>
                     </div>
+                </div>
+            </article>
+            <!-- 옵션 선택 -->
+            <article class="car-box view option">
+                <div class="box-tt">
+                    <h4>추가 옵션</h4>
+                    <span>파노라마 선루프 (+1,180,000)</span>
+                    <span>파노라마 선루프 (+1,180,000)</span>
+                    <span>파노라마 선루프 (+1,180,000)</span>
+                    <span>파노라마 선루프 (+580,000)</span>
+                </div>
+            </article>
+            <!-- 색상 선택 -->
+            <article class="car-box view color">
+                <div class="box-tt">
+                    <h4>선택 색상</h4>
+                    <span>스노우 화이트 펄 (+ 1,180,000)</span>
+                </div>
+            </article>
+            <!-- 선수율/선납금 선택 -->
+            <article class="car-box view beprice">
+                <div class="box-tt">
+                    <h4>선수율/선납금</h4>
+                    <span>선납금 30%</span>
+                </div>
+            </article>
+            <!-- 이용기간 -->
+            <article class="car-box view period">
+                    <div class="box-tt">
+                        <h4>이용기간</h4>
+                        <span>48개월</span>
+                    </div>
+                </article>
+            <article class="car-box view km">
+                <div class="box-tt">
+                    <h4>주행거리</h4>
+                    <span>20,000km</span>
                 </div>
             </article>
         </div>
@@ -224,7 +249,7 @@
         </article>
         <!-- 옵션 선택 -->
         <article class="car-box option">
-            <div class="box-tt">
+            <div class="box-tt on">
                 <h4>옵션 추가하기</h4>
                 <span>선택안함</span>
             </div>
@@ -249,7 +274,7 @@
         </article>
         <!-- 색상 선택 -->
         <article class="car-box color">
-            <div class="box-tt">
+            <div class="box-tt on">
                 <h4>색상 선택</h4>
                 <span>스노우 화이트 펄</span>
             </div>
@@ -298,7 +323,7 @@
         </article>
         <!-- 선수율/선납금 선택 -->
         <article class="car-box beprice">
-            <div class="box-tt">
+            <div class="box-tt on">
                 <h4>선수율/선납금</h4>
                 <span>선납금 30%</span>
             </div>
@@ -328,36 +353,36 @@
         </article>
         <!-- 이용기간 -->
         <article class="car-box period">
-                <div class="box-tt">
-                    <h4>이용기간</h4>
-                    <span>48개월</span>
-                </div>
-                <ul>
-                    <li>
-                        <input type="radio" id="period1" name="period-group" hidden>
-                        <label for="period1">
-                            <i class="i-check"></i>
-                            <div class="period-tt">36 개월</div>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="period2" name="period-group" checked hidden>
-                        <label for="period2">
-                            <i class="i-check"></i>
-                            <div class="period-tt">48 개월</div>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="period3" name="period-group" hidden>
-                        <label for="period3">
-                            <i class="i-check"></i>
-                            <div class="period-tt">60 개월</div>
-                        </label>
-                    </li>
-                </ul>
-            </article>
+            <div class="box-tt on">
+                <h4>이용기간</h4>
+                <span>48개월</span>
+            </div>
+            <ul>
+                <li>
+                    <input type="radio" id="period1" name="period-group" hidden>
+                    <label for="period1">
+                        <i class="i-check"></i>
+                        <div class="period-tt">36 개월</div>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" id="period2" name="period-group" checked hidden>
+                    <label for="period2">
+                        <i class="i-check"></i>
+                        <div class="period-tt">48 개월</div>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" id="period3" name="period-group" hidden>
+                    <label for="period3">
+                        <i class="i-check"></i>
+                        <div class="period-tt">60 개월</div>
+                    </label>
+                </li>
+            </ul>
+        </article>
         <article class="car-box km">
-            <div class="box-tt">
+            <div class="box-tt on">
                 <h4>주행거리</h4>
                 <span>20,000km</span>
             </div>
@@ -419,21 +444,21 @@
 $(window).scroll(function(){
   var stickytop = $('.header-top'),
       sticky = $('.header'),
-      subtt = $('.sub-tt'),
-      carinfo = $('.model-align.left'),
+    //   subtt = $('.sub-tt'),
+    //   carinfo = $('.model-align.left'),
       scroll = $(window).scrollTop();
 
   if (scroll >= 100) { 
     stickytop.addClass('fixed');
     sticky.addClass('fixed');
-    subtt.addClass('fixed');
-    carinfo.addClass('fixed');
+    // subtt.addClass('fixed');
+    // carinfo.addClass('fixed');
   }
   else {
     stickytop.removeClass('fixed');
     sticky.removeClass('fixed');
-    subtt.removeClass('fixed');
-    carinfo.removeClass('fixed');
+    // subtt.removeClass('fixed');
+    // carinfo.removeClass('fixed');
   }
 });
 
