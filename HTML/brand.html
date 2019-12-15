@@ -343,6 +343,24 @@ $('.sub-menu').on("mouseleave", function() {
    $(this).parent().removeClass('on');
 });
 
+$(".hbtn.menu").on('click',function(){
+    $('#sidemenu').addClass('on');
+    $(body).style('overflow','hidden');
+});
+
+$(".model-list dt").on('click',function(){
+    $(this).toggleClass('on');
+});
+
+$(".box-tt").on('click',function(){
+    $(this).toggleClass('on');
+});
+
+$(".more-info").on('click',function(){
+    $(this).toggleClass('on');
+    $(this).children('.i-info').toggleClass('i-x')
+})
+
 
 </script>
 </body>
