@@ -16,7 +16,7 @@ button:focus{outline:none;}
 input {outline:none;}
 input[type=text],
 input[type=number],
-textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:none;font-family:'Malgun Gothic', Dotum;}
 
 /* Width */
 .w0 {display:none !important;}
@@ -1374,14 +1374,14 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .brand-list li img {width:90px;}
 
 .model-option {position:relative;}
+.model-option:after {content:"";display:block;clear:both;}
 .model-option ul,
 .model-option dl {margin:0;}
-.model-option .model-align.right {font-size:15px;text-align:right;}
+.model-option .model-align.right {font-size:15px;float:right;width:50%;}
 
-.model-option .model-align.left {font-size:15px;position:absolute;top:0;left:0;width:50%;padding:0 20px;box-sizing:border-box;}
+.model-option .model-align.left {font-size:15px;float:left;width:50%;padding:0 20px;box-sizing:border-box;}
 .model-option .model-align.left .car-box {width:100%;}
-/* .model-option .model-align.left.fixed {position:fixed;top:auto;bottom:194px;left:50%;width:600px;margin-left:-600px;} */
-.model-option .car-box {width:50%;display:inline-block;text-align:left;}
+.model-option .car-box {width:100%;display:inline-block;text-align:left;}
 
 .fixed-head {display:none;position:fixed;top:-150px;left:0;width:100%;padding:13px 15px;box-shadow:0 0 20px rgba(0, 0, 0, 0.4);z-index:100;background-color:#fff;transition:all .5s;}
 .fixed-head.on {display:block;top:0;}
@@ -1516,21 +1516,53 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .car-box.btn-area .tip {font-size:13px;color:#0081d0;padding:5px 0 15px 0;}
 .car-box.btn-area .btn {font-weight:500;letter-spacing:10px;display:block;background-color:#0081d0;color:#fff;font-size:1.2rem;font-weight:600;line-height:50px;border-radius:30px;text-align:center;}
 
-.quotation-form {background-color:#F1F9FF;border-top:1px solid #ccc;border-bottom:1px solid #ccc;padding-bottom:30px;}
+.quotation-form {background-color:#F1F9FF;border-bottom:1px solid #ccc;padding-bottom:30px;}
 .quotation-form h3 {font-size:18px;text-align:center;font-weight:600;padding:20px 0 10px 0;}
 .quotation-form .form-list {padding:0 20px;}
 
+.form-list {padding:20px 25px 0 25px;}
+.form-list h3 {border-bottom:1px solid #ddd;padding-bottom:15px;margin-bottom:15px;}
+.form-list h3 p {font-size:17px;font-weight:500;}
+.form-list li h4,
+.form-list li label {display:block;padding:12px 0 5px 0;font-size:15px;font-weight:500;}
+.form-list li input {height:38px;line-height:38px;border:1px solid #ccc;width:100%;padding:0 10px;box-sizing:border-box;border-radius:3px;}
+.form-list li textarea {width:100%;padding:10px;box-sizing:border-box;border-radius:3px;border:1px solid #ccc;overflow:auto;}
+.form-list li input::placeholder {font-size:13px;}
+.form-list li.search {position:relative;}
+.form-list li.search:after {content:"";display:block;clear:both;}
+.form-list li.search input {width:calc(100% - 110px);float:left;border-radius:3px;}
+.form-list li.search input + .btn + input {width:100%;margin-top:5px;}
+.form-list li.search .btn {width:105px;float:right;height:38px;line-height:38px;line-height:38px;font-size:14px;padding:0;border-radius:3px;}
+.form-list li.search .timeer {position:absolute;top:45px;right:120px;color:#ce2b2b;font-size:12px;}
+.form-list li.required > h4:before,
+.form-list li.required > label:before {content:"*";font-size:15px;color:#ce2b2b;display:inline-block;padding-right:3px;}
+.form-list.join + .btn-box {margin-top:20px;}
+.form-list .radio-group {display:flex;}
+.form-list .radio-group input + label {flex:1;display:inline-block;border:1px solid #ddd;line-height:38px;height:38px;text-align:center;padding:0;margin-left:-1px;color:#777;background-color:#eee;cursor:pointer;}
+.form-list .radio-group input:first-of-type + label {margin-left:0;border-radius:3px 0 0 3px;}
+.form-list .radio-group input:last-of-type + label {margin-right:-1px;border-radius:0 3px 3px 0;}
+.form-list .radio-group input:checked + label {background-color:#0081d0;color:#fff;}
+.form-list li.checkbox {padding-top:10px;}
+.form-list li.checkbox input + label {display:block;font-size:15px;padding:5px 0 5px 0;}
+.form-list li.checkbox input + label i {display:inline-block;vertical-align:middle;}
+.form-list li.checkbox input + label strong {display:inline-block;vertical-align:middle;font-weight:500;}
+.form-list li.checkbox input + label span {display:inline-block;vertical-align:middle;font-size:15px;color:#ce2b2b;}
+.form-list li.checkbox input + label .no-ess {color:#555;}
+.form-list li.checkbox input:checked + label {color:#0081d0;}
+.form-list li.checkbox input:checked + label i:before {content:"\e92d";}
+.form-list li.checkbox a {padding:3px 0 3px 20px;font-size:15px;text-decoration:underline;}
 
 @media only screen and (max-width: 750px) {
 
     
-    .model-option .model-align.right {font-size:15px;text-align:right;}
+    .model-option .model-align.right {font-size:15px;float:none;width:100%;}
     .model-option .model-align.left,
-    .model-option .model-align.left.fixed {font-size:15px;position:relative;top:auto;left:auto;width:100%;bottom:auto;margin-left:0;padding:0;}
+    .model-option .model-align.left.fixed {font-size:15px;float:none;width:100%;}
     .model-option .model-align.left .car-box {width:100%;}
     .model-option .model-align.right .car-box .box-tt span {display:inline-block;}
     .model-option .car-box {width:100%;display:block;}
     .model-option .model-align.left .car-box.view {display:none;}
+    .model-option .model-align.left.view-mobile .car-box.view {display:block;}
     
     .car-box.title .car-info .price-info .month-price {width:100%;}
     
