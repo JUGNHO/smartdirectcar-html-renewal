@@ -284,24 +284,24 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .awards-list li p span {display:block;font-size:1rem;line-height:1.5rem;}
 .awards-list li img {width:100%;border-radius:0 0 1rem 1rem;}
 
-.awards {position:relative;background:url(../img/award1_m.jpeg) 0 100% no-repeat;background-size:100% auto;height: 100%;}
-.awards > .awards-wrap {padding-top:70px;/* margin-bottom:100px; *//* height:100px; */max-height: 100%;}
+.awards {position:relative;background:url(../img/award1_m.jpeg) 0 100% no-repeat;background-size:100% auto;height:100%;}
+.awards > .awards-wrap {padding-top:70px;/* margin-bottom:100px; *//* height:100px; */max-height:100%;}
 .awards > .awards-wrap>.bx-wrapper {
-	/* height: 185px !important; */
-	background-color: rgba( 255, 255, 255, 0 );
+	/* height:185px !important; */
+	background-color:rgba( 255, 255, 255, 0 );
 	/* padding-left:20px; */
 	/* padding-right:10px; */
 	border:0;
-	/* padding: 40px 10px 0; */
+	/* padding:40px 10px 0; */
 	}
-.awards > .awards-wrap>.bx-viewport{height: 185px !important; background-color: rgba( 255, 255, 255, 0 );padding-top:10px;}
-.awards > .awards-wrap>.bx-wrapper img {/* height: 15px !important;  */background-color: rgba( 255, 255, 255, 0 );padding-top:20px;}
+.awards > .awards-wrap>.bx-viewport{height:185px !important; background-color:rgba( 255, 255, 255, 0 );padding-top:10px;}
+.awards > .awards-wrap>.bx-wrapper img {/* height:15px !important;  */background-color:rgba( 255, 255, 255, 0 );padding-top:20px;}
 
 .price-wrap{position:relative;background:url(../img/title/awards_title_m.png) 0 100% no-repeat;background-size:100% auto;height:370px;}
 .price-wrap> .bx-wrapper{
 	padding-top:150px;
 	padding-left:20px;
-	background-color: rgba( 255, 255, 255, 0 )
+	background-color:rgba( 255, 255, 255, 0 )
 }
 
 
@@ -496,9 +496,13 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .brands-list .list-item .car-img {height:190px;line-height:160px;text-align:center;}
 .brands-list .list-item .car-img img {min-width:80%;vertical-align:bottom;}
 .brands-list .list-item .car-info {padding:0 1rem 2rem 1rem;}
-.brands-list .list-item .car-info .name {font-weight:600;font-size:1.3rem;height:3rem;}
-.brands-list .list-item .car-info .price {font-weight:600;font-size:1rem;color:red;padding-bottom:0.3rem;}
-.brands-list .list-item .etc{margin:5px 0;line-height:110%;white-space:normal;font-size:12px;color:#666}
+.brands-list .list-item .car-info .name {font-weight:600;font-size:1.3rem;height:3rem;text-align:center;}
+.brands-list .list-item .car-info .price {font-weight:600;font-size:1rem;color:#ff1717;padding-bottom:0.3rem;text-align:center;}
+.brands-list .list-item .car-info .month-price {padding:3px 0;}
+.brands-list .list-item .car-info .month-price:after {content:"";display:block;clear:both;}
+.brands-list .list-item .car-info .month-price > div {float:left;width:50%;text-align:center;font-size:13px;font-weight:400;}
+.brands-list .list-item .car-info .month-price > div .price {color:#0081d0;font-size:15px;font-weight:600;padding:0 3px 0 5px;}
+.brands-list .list-item .etc{margin:5px 0;line-height:110%;white-space:normal;font-size:12px;color:#666;text-align:center;}
 .brands-list .list-item .etc span{font-size:12px;color:#666;line-height:140%}
 .brands-list .list-item .etc span:before{content:'';position:relative;top:1px;display:inline-block;margin:0 5px 0 3px;width:1px;height:9.5px;background:#ccc;font-size:12px;}
 .brands-list .list-item .etc span:first-child:before{margin:0;width:0;height:0}
@@ -814,7 +818,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .policy-box li {border-top:1px dashed #ddd;position:relative;}
 .policy-box h3 {position:relative;padding:10px;text-align:left;color:#333 !important;}
 .policy-box h3 input[type="checkbox"] {width:18px;height:18px;display:inline-block;vertical-align:middle;margin-right:5px;}
-/* .policy-box h3 input[type="checkbox"] + label:before {content:"\e9d4";font-family:"smart";font-size:18px;vertical-align: middle;padding-right: 5px;margin-top: -2px;display: inline-block;color: #555;}
+/* .policy-box h3 input[type="checkbox"] + label:before {content:"\e9d4";font-family:"smart";font-size:18px;vertical-align:middle;padding-right:5px;margin-top:-2px;display:inline-block;color:#555;}
 .policy-box h3 input[type="checkbox"]:checked + label:before {content:"\e92d";} */
 .policy-box a.view-policy {position:absolute;top:9px;right:5px;display:inline-block;font-size:12px;color:#555;border:1px solid #ddd;padding:4px 15px 3px 15px;}
 .policy-box a.view-policy:hover {color:#333;border-color:#333;}
@@ -824,11 +828,11 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .policy-box .policy-wrap table {max-width:100%;font-size:13px;}
 .policy-box .policy-wrap .red {font-size:12px;color:#d41b1b;}
 .policy-box .policy-btnarea {text-align:center;padding-top:10px;}
-.policy-box .policy-btn {display:inline-block;border:0 none;height: 2.6rem;line-height:2.5rem;padding:0 3rem;cursor:pointer;border-radius:1.3rem;font-size:1.2rem;font-weight:800;background-color:#fff100;border: 1px solid #333;vertical-align:middle;}
+.policy-box .policy-btn {display:inline-block;border:0 none;height:2.6rem;line-height:2.5rem;padding:0 3rem;cursor:pointer;border-radius:1.3rem;font-size:1.2rem;font-weight:800;background-color:#fff100;border:1px solid #333;vertical-align:middle;}
 
 
 .popup {position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.7);z-index:90;opacity:0;pointer-events:none;}
-.popup.on {opacity:1;transition:all 1s;pointer-events:auto;z-index: 99;}
+.popup.on {opacity:1;transition:all 1s;pointer-events:auto;z-index:99;}
 .popup .popup-wrap {position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#fff;width:550px;border-radius:10px;opacity:0;}
 .popup.on .popup-wrap {opacity:1;}
 .popup .popup-wrap .popup-tt {position:relative;font-size:1rem;}
@@ -1321,10 +1325,10 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 95%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:95%;
 }
 
 .pointer{
@@ -1354,7 +1358,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 
 .sub-wrap.brand {padding-top:0;}
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width:750px) {
     .sub-tt.brand .sub-tt-wrap {height:140px;}
     .sub-tt.brand h2 {padding:0;text-align:center;}
     .sub-tt.brand h2 em {padding-top:15px;}
@@ -1383,7 +1387,6 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .model-option .car-box {width:100%;display:inline-block;text-align:left;}
 
 .fixed-head {display:none;position:fixed;top:-150px;left:0;width:100%;padding:13px 15px;box-shadow:0 0 20px rgba(0, 0, 0, 0.4);z-index:100;background-color:#fff;transition:all .5s;}
-.fixed-head.on {display:block;top:0;}
 .fixed-head:after {content:"";display:block;clear:both;}
 .fixed-head .car-img {float:left;width:34%;vertical-align:middle;}
 .fixed-head .car-img img {max-width:100%;padding-left:5px;}
@@ -1432,6 +1435,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .car-box.title .car-info .etc span:before{content:'';position:relative;top:1px;display:inline-block;margin:0 5px 0 3px;width:1px;height:9.5px;background:#ccc;font-size:12px;}
 .car-box.title .car-info .etc span:first-child:before{margin:0;width:0;height:0}
 .car-box.title .car-info .tip {color:#0081d0;font-size:13px;padding-top:5px;}
+
+.car-box.title.fixed-item.on {position:fixed;top:110px;left:50%;width:560px;height:502px;margin-left:-580px;background-color:#fff;z-index:5;}
+.car-box.title.fixed-item.on + .car-box.view.option {margin-top:502px;}
 
 .car-box.model {padding:0;border-top:0 none;background-color:#fff;color:#000;}
 .car-box.model h3 {padding:10px 15px;font-size:16px;font-weight:500;}
@@ -1551,7 +1557,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .form-list li.checkbox input:checked + label i:before {content:"\e92d";}
 .form-list li.checkbox a {padding:3px 0 3px 20px;font-size:15px;text-decoration:underline;}
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width:750px) {
 
     
     .model-option .model-align.right {font-size:15px;float:none;width:100%;}
@@ -1570,4 +1576,12 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 
     .car-box.color ul {white-space:nowrap;}
 
+}
+
+
+@media only screen and (max-width:600px) {
+    .car-box.title.fixed-item.on {position:relative;top:auto;left:auto;width:100%;height:auto;margin-left:0;}
+    .car-box.title.fixed-item.on + .car-box.view.option {margin-top:0;}
+
+    .fixed-head.on {display:block;top:0;}
 }

@@ -96,9 +96,21 @@
 </div>
 <div class="sub-wrap brand">
     <section class="model-option">
+        <!-- 상단 고정 차량 정보 -->
+        <article class="fixed-head">
+            <div class="car-img"><img src="http://autoimg.danawa.com/photo/3699/model_200.png"></div>
+            <div class="car-info">
+                <div class="name">그랜저 IG 가솔린 2.4 Modern (A/T)</div>
+                <div class="month-price">
+                    <div><strong>렌탈</strong><span class="price">376,400</span>원</div>
+                    <div><strong>리스</strong><span class="price">376,400</span>원</div>
+                </div>
+            </div>
+            <div class="txt">(선수금30%, 이용기간 48개월, 연간2.5만km 기준)</div>
+        </article>
         <div class="model-align left">
             <!-- 상단 차량 정보 -->
-            <article class="car-box title">
+            <article class="car-box title fixed-item">
                 <div class="car-img"><img src="http://autoimg.danawa.com/photo/3375/43649/lineup_360.png"></div>
                 <div class="car-info">
                     <h3>G80 <span>2019년</span></h3>
@@ -447,23 +459,34 @@
 $(window).scroll(function(){
   var stickytop = $('.header-top'),
       sticky = $('.header'),
-    //   subtt = $('.sub-tt'),
-    //   carinfo = $('.model-align.left'),
+      fixhead = $('.fixed-head'),
+      fixpc = $('.fixed-item'),
       scroll = $(window).scrollTop();
-
   if (scroll >= 100) { 
     stickytop.addClass('fixed');
     sticky.addClass('fixed');
-    // subtt.addClass('fixed');
-    // carinfo.addClass('fixed');
+  } if (scroll >= 350) {
+    fixhead.addClass('on');
+  } if (scroll >=400) {
+    fixpc.addClass('on');
   }
-  else {
+    else {
     stickytop.removeClass('fixed');
     sticky.removeClass('fixed');
-    // subtt.removeClass('fixed');
-    // carinfo.removeClass('fixed');
+    fixhead.removeClass('on');
+    fixpc.removeClass('on');
   }
 });
+
+
+$(window).scroll(function(){
+        scroll = $(window).scrollTop();
+  
+    if (scroll >= 350) { 
+    }
+    else {
+    }
+  });
 
 $("#car_010").on('click',function(){
     $('#brands_detail').addClass('on');
