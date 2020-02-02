@@ -1405,6 +1405,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .car-box .box-tt.on:before {content:"\e996";color:#000;}
 .car-box .box-tt + ul {height:0;overflow:hidden;opacity:0;transition:all 0.5s;}
 .car-box .box-tt.on + ul {height:auto;overflow:auto;opacity:1;background-color:#fafafa;}
+.car-box.color .box-tt.on + ul {overflow:hidden;}
 .car-box .box-tt h4 {font-size:16px;font-weight:500;}
 .car-box .box-tt span {font-size:13px;color:#565656;display:none;}
 .car-box.view {background-color:transparent;}
@@ -1485,9 +1486,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .car-box.option li input:checked + label {color:#0081d0;transition:all 0.5s;}
 
 .car-box.color ul {overflow:auto;padding:0 20px;-webkit-overflow-scrolling:touch;}
-.car-box.color li {display:table-cell;display:inline-block;padding:10px 5px;}
-.car-box.color li label {display:block;padding:5px 10px 5px 10px;text-align:center;color:#888;border-radius:5px;cursor:pointer;}
-.car-box.color li label .color-box {padding:5px 0 10px 0;}
+.car-box.color li {display:table-cell;display:block;padding:5px 10px;}
+.car-box.color li label {display:block;padding:5px 10px 5px 10px;text-align:left;color:#888;border-radius:5px;cursor:pointer;padding-left:70px;position:relative;}
+.car-box.color li label .color-box {padding:5px 0 10px 0;display:inline-block;position:absolute;top:0;left:10px;}
 .car-box.color li label .color-box span {position:relative;display:inline-block;width:40px;height:40px;border-radius:3px;border-radius:3px;box-shadow:0 0 5px #ddd;}
 .car-box.color li label .color-tt {font-size:14px;}
 .car-box.color li label .color-price {font-size:12px;margin-top:3px;opacity:0.75;}
@@ -1574,7 +1575,11 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
     .car-box.model h3 {border-top:1px solid #aaa;}
     .car-box.btn-area {padding:30px 20px 20px 20px;border-top:0 none;}
 
+    .car-box.color .box-tt.on + ul {overflow:auto;}
     .car-box.color ul {white-space:nowrap;}
+    .car-box.color li {display:table-cell;}
+    .car-box.color li label {text-align:center;padding-left:10px;}
+    .car-box.color li label .color-box {text-align:center;position:relative;top:auto;left:auto;}
 
 }
 
@@ -1582,6 +1587,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 @media only screen and (max-width:600px) {
     .car-box.title.fixed-item.on {position:relative;top:auto;left:auto;width:100%;height:auto;margin-left:0;}
     .car-box.title.fixed-item.on + .car-box.view.option {margin-top:0;}
+
+
 
     .fixed-head.on {display:block;top:0;}
 }
