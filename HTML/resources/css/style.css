@@ -4,7 +4,7 @@
 @import url('nanumsquare.css');
 
 html {font-size:15px;}
-html, body, h1, h2, h3, h4, h5, h6, p, div, img {margin:0; padding:0; border:0;font-family:'Malgun Gothic', Dotum,'占쎌쥙�θ굢占쎈쐻�좑옙',Helvetica,"Apple SD Gothic Neo",sans-serif}
+html, body, h1, h2, h3, h4, h5, h6, p, div, img {margin:0; padding:0; border:0;font-family:'Malgun Gothic', Dotum,'�좎럩伊숋옙罐援℡뜝�덉맶占쎌쥜��',Helvetica,"Apple SD Gothic Neo",sans-serif}
 h1, h2, h3, h4, h5, h6 {font-family:'NanumSquare', sans-serif;font-weight:700;}
 body {-webkit-overflow-scrolling:touch;}
 h1,h2{font-weight:bold;}
@@ -432,7 +432,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .main-magazine-list li:hover .main-magazine-img img {transform:scale(1.03) translate(-17.5%,0);transition:all 1s;}
 .main-magazine-list li:nth-child(2):hover .main-magazine-img img {transform:scale(1.03) translate(0,-10%);}
 
-/* �좎럥�꿨뜝�덉툏�좎떬�우굲�ш낄猷쀯옙�얜쐻占쎌늿�� �좎럥�뀐옙釉먮짗占쏙옙 */
+/* 占쎌쥙�ο옙轅⑤쐻占쎈뜆�륅옙醫롫뼩占쎌슦援뀐옙��꾤뙴��삕占쎌뼔�삣뜝�뚮듌占쏙옙 占쎌쥙�ο옙�먯삕�됰Ŧ吏쀥뜝�숈삕 */
 .main-magazine-list.review li:nth-child(1),
 .main-magazine-list.review li:nth-child(2) {width:20%;height:240px;}
 .main-magazine-list.review li .main-magazine-img img {transform:translate(-10%,0)}
@@ -528,8 +528,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .hotdeals-list .list-item .car-info .car-name {display:block;text-align:center;font-size:2rem;font-weight:800;padding:1rem 0 0 0;}
 .hotdeals-list .list-item .counter {opacity:0;position:absolute;bottom:3rem;left:0;right:0;text-align:center;font-size:0;font-weight:800;padding:3rem 0 0 0;color:#ffff00;}
 .hotdeals-list .list-item:hover .counter {opacity:1;font-size:3.5rem;transition:all 0.5s;}
-.hotdeals-list .list-item .counter:before {content:"월";font-size:2rem;padding-right:0.5rem;color:#fff;}
-.hotdeals-list .list-item .counter:after {content:"만원";font-size:2rem;padding-left:0.5rem;color:#fff;}
+.hotdeals-list .list-item .counter:before {content:"��";font-size:2rem;padding-right:0.5rem;color:#fff;}
+.hotdeals-list .list-item .counter:after {content:"留뚯썝";font-size:2rem;padding-left:0.5rem;color:#fff;}
 
 .hotdeals-detail {position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fff;z-index:999;overflow:auto;display:none;}
 .hotdeals-detail.on {display:block;}
@@ -1431,6 +1431,10 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .car-box.title .car-info .price-info .car-price {clear:both;font-size:13px;padding-top:5px;color:#777;text-align:left;}
 .car-box.title .car-info .price-info .car-price:before {content:"(";padding-right:1px;}
 .car-box.title .car-info .price-info .car-price:after {content:")";padding-left:1px;}
+.car-box.title .car-info .price-info .car-price:last-child:before,
+.car-box.title .car-info .price-info .car-price:last-child:after {content:"";}
+.car-box.title .car-info .price-info .car-price:last-child span.price {font-weight:600;font-size:15px;color:#555;}
+
 .car-box.title .car-info .etc {padding-top:5px;color:#555;}
 .car-box.title .car-info .etc span {font-size:13px;display:inline-block;line-height:16px;}
 .car-box.title .car-info .etc span:before{content:'';position:relative;top:1px;display:inline-block;margin:0 5px 0 3px;width:1px;height:9.5px;background:#ccc;font-size:12px;}
@@ -1456,8 +1460,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .car-box.model .trim-list li .trim-price {font-size:14px;text-align:right;padding-top:5px;}
 .car-box.model .trim-list li .trim-price .price {display:inline-block;padding:0 3px;font-size:15px;font-weight:500;}
 .car-box.model .trim-list li .trim-price:before {content:"";font-size:10px;line-height:10px;border-radius:10px;padding:1px 8px 1px 7px;vertical-align:middle;font-weight:500;margin-right:5px;}
-.car-box.model .trim-list li .trim-price.low:before {content:"최저가";background-color:#f34e4e;color:#fff;}
-.car-box.model .trim-list li .trim-price.best:before {content:"인기";background-color:#297de4;color:#fff;}
+.car-box.model .trim-list li .trim-price.low:before {content:"理쒖�媛�";background-color:#f34e4e;color:#fff;}
+.car-box.model .trim-list li .trim-price.best:before {content:"�멸린";background-color:#297de4;color:#fff;}
 .car-box.model .trim-list li .trim-price.car-price {font-size:13px;}
 .car-box.model .trim-list li .trim-price.car-price:before {content:"(";padding:0 2px 0 0;font-weight:400;margin:0;font-size:13px;}
 .car-box.model .trim-list li .trim-price.car-price:after {content:")";padding:0 0 0 2px;}
