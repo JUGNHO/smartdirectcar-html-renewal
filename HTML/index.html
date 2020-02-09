@@ -404,7 +404,36 @@
             </ul>
         </div>
     </div>
-    <div class="main-salesman">
+    <div class="smart-mainbanner">
+        <div class="mainbanner-wrap">
+            <div class="banner-item youtube">
+                <h2><span>스마트다이렉트카</span><br><span>유튜브 채널</span><strong>OPEN</strong></h2>
+                <div class="youtube-list owl-carousel">
+                    <div class="youtube-media"><iframe src="https://www.youtube.com/embed/vZrOUH-llvs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="youtube-media"><iframe src="https://www.youtube.com/embed/vZrOUH-llvs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="youtube-media"><iframe src="https://www.youtube.com/embed/vZrOUH-llvs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+                <div class="youtube-btn">
+                    <a href="https://www.youtube.com/channel/UCRDUAmDcCblcvn4tIY23xtg" target="_blank"><img src="resources/img/btn_youtube.png"></a>
+                </div>
+            </div>
+            <div class="banner-item app">
+                <h2><span>견적부터 출고까지 다이렉트</span><br><strong>장기렌트 전용앱</strong><span>출시!</span></h2>
+                <div class="app-ctn-box">
+                    <div class="app-ctns owl-carousel">
+                        <div class="app-ctn"><img src="resources/img/app_image_1.png"></div>
+                        <div class="app-ctn"><img src="resources/img/app_image_2.png"></div>
+                        <div class="app-ctn"><img src="resources/img/app_image_3.png"></div>
+                    </div>
+                </div>
+                <div class="app-download">
+                    <a href="javascript:void(0);"><img src="resources/img/btn_playstore.png"></a>
+                    <a href="javascript:void(0);"><img src="resources/img/btn_appstore.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="main-salesman">
         <h2>Amazing Salespeople <small>스마트다이렉트카의 멋진 영업사원을 만나보세요.</small></h2>
         <div class="salesman-list">
             <ul>
@@ -442,7 +471,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <div class="main-magazine">
         <h2>Smart Magazine <small>스마트다이렉트카의 다양한 소식을 만나보세요.</small></h2>
         <h3><span class="review">출고후기</span></h3>
@@ -794,7 +823,36 @@ $(document).ready(function() {
         autoplayTimeout: 4000,
         autoplayHoverPause: true
     });
+
+    var owl = $('.owl-carousel.youtube-list');
+    owl.owlCarousel({
+        margin:0,
+        items: 1,
+        loop: true,
+        nav:false,
+        dots: true,
+        touchDrag: true,
+        mouseDrag: true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true
+    });
+
+    var owl = $('.owl-carousel.app-ctns');
+    owl.owlCarousel({
+        margin:0,
+        items: 1,
+        loop: true,
+        nav:false,
+        dots: true,
+        touchDrag: true,
+        mouseDrag: true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true
+    });
 });
+
 $('#rev_slider').show().revolution({
     sliderType : 'carousel',
     visibilityLevels : [

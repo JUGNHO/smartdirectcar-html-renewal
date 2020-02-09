@@ -384,7 +384,36 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .hotcar-item:hover .hotcar-btn {opacity:0.9;transition:all 0.6s;cursor:pointer;}
 .hotcar-item:hover .car-img img {transform:scale(1.1);transition:all .5s;}
 
+/* Banner */
+.smart-mainbanner {position:relative;padding:80px 0;}
+.smart-mainbanner:before {content:"";position:absolute;top:0;left:0;bottom:0;width:50%;z-index:1;background:#fcdc49 url(../img/bg_youtube.png) 0 0 no-repeat;background-size:cover;}
+.smart-mainbanner:after {content:"";position:absolute;top:0;right:0;bottom:0;width:50%;z-index:1;background:#108aef url(../img/bg_app.png) 0 0 no-repeat;background-size:cover;}
+.mainbanner-wrap {z-index:2;position:relative;width:1200px;margin:0 auto;}
+.mainbanner-wrap:after {content:"";display:block;clear:both;}
+.mainbanner-wrap .youtube-list {margin-top:30px;}
+.mainbanner-wrap .youtube-list.owl-carousel .owl-dots {text-align:center;padding:5px 0;}
+.mainbanner-wrap .youtube-list.owl-carousel .owl-dots button.owl-dot {display:inline-block;width:10px;height:10px;border-radius:50%;background-color:#fff;opacity:0.5;margin:0 4px;}
+.mainbanner-wrap .youtube-list.owl-carousel .owl-dots button.owl-dot.active {opacity:1;}
+.mainbanner-wrap .youtube-btn {margin-top:50px;}
+.mainbanner-wrap .banner-item {float:left;width:50%;text-align:center;}
+.mainbanner-wrap .banner-item h2 {font-size:46px;font-weight:800;line-height:48px;}
+.mainbanner-wrap .banner-item h2 span {display:inline-block;padding:10px;vertical-align:middle;}
+.mainbanner-wrap .banner-item h2 strong {display:inline-block;padding:10px 10px 5px 10px;background-color:#fff;font-weight:800;vertical-align:middle;}
+.mainbanner-wrap .banner-item.youtube h2 {color:#121212;}
+.mainbanner-wrap .banner-item.youtube h2 strong {background-color:#121212;color:#fcdc49;font-size:55px;}
+.mainbanner-wrap .youtube-media {display:inline-block;margin-top:30px;width:500px;height:281px;}
+.mainbanner-wrap .youtube-media iframe {width:500px;height:281px;}
+.mainbanner-wrap .banner-item.app h2 {color:#fff;}
+.mainbanner-wrap .banner-item.app h2 strong {color:#108aef;}
+.mainbanner-wrap .app-ctn-box {width:237px;height:360px;display:inline-block;margin:20px auto 0 auto;padding:5px 5px 5px 5px;border-radius:15px;font-size:0;background-color:#333;margin-top:20px;box-sizing:border-box;}
+.mainbanner-wrap .app-ctn {width:227px;height:350px;}
+.mainbanner-wrap .app-ctn img {border-radius:10px;}
+.mainbanner-wrap .app-download {margin-top:40px;}
+.mainbanner-wrap .app-download a {display:inline-block;margin:0 5px;}
 
+
+
+/* Sales Main */
 .main-salesman {padding:60px 0 50px 0;background-color:#f2f2f2;}
 .main-salesman h2 {text-align:center;font-size:40px;color:#333;}
 .main-salesman h2 small {display:block;font-size:15px;color:#555;padding-top:15px;}
@@ -1233,6 +1262,26 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
     .main-awards .pc-view {display:none;}
     .main-awards .mobile-view {display:block;}
     .main-awards .mobile-view h2 {padding:10px 0 15px 0;}
+
+
+    .smart-mainbanner {padding:0;}
+    .smart-mainbanner:before,
+    .smart-mainbanner:after {display:none;}
+    .mainbanner-wrap {width:100%;}
+    .mainbanner-wrap .banner-item {float:none;width:100%;padding:40px 0;}
+    .mainbanner-wrap .banner-item.youtube {background:url(../img/bg_youtube.png) 50% 50% no-repeat;background-size:cover;}
+    .mainbanner-wrap .banner-item.app {background:url(../img/bg_app.png) 50% 50% no-repeat;background-size:cover;}
+    .mainbanner-wrap .banner-item h2 {font-size:32px;line-height:34px;letter-spacing:-1px;}
+    .mainbanner-wrap .banner-item h2 span {padding:5px;}
+    .mainbanner-wrap .banner-item h2 strong {padding:7px 7px 5px 7px;}
+    .mainbanner-wrap .banner-item.youtube h2 strong {font-size:34px;padding:5px;line-height:36px;}
+    .mainbanner-wrap .youtube-list {margin-top:0;}
+    .mainbanner-wrap .youtube-media {margin-top:20px;width:320px;height:180px;}
+    .mainbanner-wrap .youtube-media iframe {width:320px;height:180px;}
+    .mainbanner-wrap .youtube-btn {margin-top:30px;}
+    .mainbanner-wrap .app-ctn-box {margin-top:35px;}
+    .mainbanner-wrap .app-download a {margin:7px 15px;}
+
 }
 
 /* added by JhOh 2018.12.23 */
