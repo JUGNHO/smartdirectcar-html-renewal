@@ -1645,3 +1645,10 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 
     .fixed-head.on {display:block;top:0;}
 }
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
