@@ -214,8 +214,82 @@
         <div class="img-shadow"></div>
     </div>
     <div class="main-awards">
-        <img src="resources/img/award.jpg" class="pc-view">
-        <img src="resources/img/award_m.jpg" class="mobile-view">
+        <div class="main-award-pc">
+            <div class="award-tt">
+                <strong>업계 1위! 최다 판매 실적에 빛나는 수상 내역</strong>
+                <small>업계 판매대수 1위, 재계약율 1위에 빛나는 수상내역을 확인하세요.</small>
+                <a href="javascript:void(0)">수상내역 더보기</a>
+            </div>
+            <div class="award-list">
+                <ul>
+                    <li>
+                        <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                        <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                    </li>
+                    <li>
+                        <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                        <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                    </li>
+                    <li>
+                        <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                        <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                    </li>
+                    <li>
+                        <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                        <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                    </li>
+                    <li>
+                        <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                        <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                    </li>
+                    <li>
+                        <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                        <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                    </li>
+                    <li>
+                        <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                        <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                    </li>
+                    <li>
+                        <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                        <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-award-mobile">
+            <div class="award-tt-m">
+                <strong>업계 1위</strong>
+                <small>최다판매 실적에 빛나는<br>수상내역</small>
+                <a href="javascript:void(0);">수상내역 더보기</a>
+            </div>
+            <div class="award-list-m owl-carousel">
+                <div class="award-mitem">
+                    <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                    <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                </div>
+                <div class="award-mitem">
+                    <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                    <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                </div>
+                <div class="award-mitem">
+                    <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                    <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                </div>
+                <div class="award-mitem">
+                    <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                    <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                </div>
+                <div class="award-mitem">
+                    <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                    <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                </div>
+                <div class="award-mitem">
+                    <div><img src="http://smartdirectcar.com/files/awards/70c26b36245d46978d1a70d7da96193f_2018_KB.jpg"></div>
+                    <p><strong>롯데렌터카</strong><span>최우수 Sales Partner</span></p>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="hotdeal-brand">
         <div class="rev_slider_wrapper" data-alias="showcase-carousel" data-source="gallery">
@@ -851,6 +925,21 @@ $(document).ready(function() {
         autoplayTimeout:3000,
         autoplayHoverPause:true
     });
+
+    var owl = $('.owl-carousel.award-list-m');
+    owl.owlCarousel({
+        margin:10,
+        items: 2,
+        loop: true,
+        nav:false,
+        dots: true,
+        touchDrag: true,
+        mouseDrag: true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true
+    });
+
 });
 
 $('#rev_slider').show().revolution({

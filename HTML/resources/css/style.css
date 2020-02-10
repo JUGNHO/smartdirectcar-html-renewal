@@ -168,8 +168,19 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .main-img .title.polamfe strong {font-size:3rem;}
 .main-img .title.polamfe .point {background-color:#ffff00;text-shadow:none;color:#000;padding:0.2rem 1rem;display:inline-block;margin-top:1rem;font-style:normal;}
 
-.main-awards .pc-view {display:block;font-size:0;width:100%;cursor:pointer;}
-.main-awards .mobile-view {display:none;width:100%;}
+.main-awards {display:block;position:relative;background:url(../img/award.jpg) 50% 50% no-repeat;background-size:cover;height:946px;}
+.main-awards .main-award-pc {position:absolute;top:130px;left:50%;margin-left:-720px;text-align:center;width:1100px;display:block;}
+.main-awards .award-tt strong {display:block;font-size:26px;font-weight:800;color:#030512;line-height:40px;}
+.main-awards .award-tt small {display:block;font-size:14px;font-weight:400;columns:#525152;line-height:25px;}
+.main-awards .award-tt a {display:inline-block;padding:7px 20px;margin-top:10px;background-color:#c02300;color:#fff;font-size:16px;font-weight:600;border-radius:25px;}
+.main-awards .award-list {padding:0 50px;}
+.main-awards .award-list ul:after {content:"";display:block;clear:both;}
+.main-awards .award-list li {float:left;width:25%;padding:10px 25px;box-sizing:border-box;}
+.main-awards .award-list li p {font-size:14px;line-height:20px;padding:3px 0;}
+.main-awards .award-list li p strong {display:block;font-size:16px;}
+.main-awards .award-list li p span {display:block;color:#565656;}
+.main-awards .award-list li div img {max-width:100%;}
+.main-awards .main-award-mobile {display:none;}
 
 .sub-wrap {padding:4rem 0 3rem 0;}
 .sub-wrap h3 {text-align:center;}
@@ -1259,9 +1270,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 
     .prd-title .simple-estimate .simple-estimate-form h3 {padding-left:0;}
 
-    .main-awards .pc-view {display:none;}
-    .main-awards .mobile-view {display:block;}
-    .main-awards .mobile-view h2 {padding:10px 0 15px 0;}
+
 
 
     .smart-mainbanner {padding:0;}
@@ -1281,6 +1290,19 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
     .mainbanner-wrap .youtube-btn {margin-top:30px;}
     .mainbanner-wrap .app-ctn-box {margin-top:35px;}
     .mainbanner-wrap .app-download a {margin:7px 15px;}
+
+    .main-awards .main-award-pc {display:none;}
+    .main-awards {background:url(../img/award_m.jpg) 50% 0 no-repeat;background-size:100%;height:auto;}
+    .main-awards .main-award-mobile {display:block;}
+    .main-awards .award-tt-m {padding:15px 0 0 20px;color:#a41100;}
+    .main-awards .award-tt-m strong {display:block;font-weight:800;font-size:35px;line-height:52px;}
+    .main-awards .award-tt-m small {font-size:18px;}
+    .main-awards .award-tt-m a {position:absolute;top:90px;left:50%;margin-left:-75px;display:block;padding:7px 20px;margin-top:10px;background-color:#c02300;color:#fff;font-size:16px;font-weight:600;border-radius:25px;}
+    .main-awards .award-list-m {width:320px;margin:40px auto 0 auto;padding-bottom:20px;}
+    .main-awards .award-list-m .award-mitem p {padding:5px 0;text-align:center;}
+    .main-awards .award-list-m .award-mitem p strong {display:block;font-size:16px;}
+    .main-awards .award-list-m .award-mitem p span {display:block;font-size:13px;color:#565656;}
+
 
 }
 
