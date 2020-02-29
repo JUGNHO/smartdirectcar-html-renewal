@@ -372,7 +372,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 /* Hot Cars - old */
 .hotcar {padding:60px 0 50px 0;}
 .hotcar h2 {text-align:center;font-size:40px;}
-.hotcar h2 small {display:block;font-size:15px;color:#555555;padding-top:15px;}
+.hotcar h2 small {display:block;font-size:15px;color:#555555;padding:15px 0;}
 
 .hotcar-list {margin:0 auto;max-width:1200px;}
 .hotcar-list > ul:after {content:"";display:block;clear:both;}
@@ -396,37 +396,35 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .hotcar-item:hover .car-img img {transform:scale(1.1);transition:all .5s;}
 
 /* Hot Cars - new */
-.hotcar.new {padding:60px 0 50px 0;background-color:#232628;}
-.hotcar.new h2 {text-align:center;font-size:40px;color:#fff;}
-.hotcar.new h2 small {display:block;font-size:15px;padding-top:15px;opacity:0.7;}
 
 .hotcar.new .hotcar-list {margin:0 auto;max-width:1200px;}
 .hotcar.new .hotcar-list > ul:after {content:"";display:block;clear:both;}
-.hotcar.new .hotcar-list > ul > li {float:left;width:25%;padding:10px;box-sizing:border-box;}
+.hotcar.new .hotcar-list > ul > li {float:left;width:33.3333333333%;box-sizing:border-box;margin-top:-1px;}
 
-.hotcar.new .hotcar-list .list-item {position:relative;background-color:#fafafa;border-radius:10px;transition:all 0.5s;cursor:pointer;}
-.hotcar.new .hotcar-list .list-item:hover {background-color:#fff;box-shadow:0 0 2rem #000;transform:scale(1.05);}
-.hotcar.new .hotcar-list .list-item .car-img {height:190px;line-height:160px;text-align:center;}
-.hotcar.new .hotcar-list .list-item .car-img img {min-width:90%;vertical-align:bottom;}
-.hotcar.new .hotcar-list .list-item .car-info {padding:0 0 2rem 0;}
-.hotcar.new .hotcar-list .list-item .car-info .name {font-weight:600;font-size:1.3rem;height:3rem;text-align:center;}
-.hotcar.new .hotcar-list .list-item .car-info > .price {font-weight:600;font-size:1rem;color:#000;padding:0.3rem 0;text-align:center;background-color:#ffde00}
+.hotcar.new .hotcar-list .list-item {position:relative;transition:all 0.5s;cursor:pointer;border:1px solid #eee;border-left:0 none;}
+.hotcar.new .hotcar-list li:first-child .list-item,
+.hotcar.new .hotcar-list li:nth-child(4n) .list-item {border-left:1px solid #eee;}
+.hotcar.new .hotcar-list .list-item .car-img {height:250px;line-height:210px;text-align:center;}
+.hotcar.new .hotcar-list .list-item .car-img img {width:80%;vertical-align:bottom;transition:all 0.5s;}
+.hotcar.new .hotcar-list .list-item:hover .car-img img {transform:scale(1.1);}
+.hotcar.new .hotcar-list .list-item .car-info {padding:1.5rem 0 2rem 0;border-top:1px solid #eee;background-color:#fafafa;}
+.hotcar.new .hotcar-list .list-item .car-info .name {font-weight:600;font-size:1.3rem;height:2rem;text-align:center;}
+.hotcar.new .hotcar-list .list-item .car-info > .price {font-weight:600;font-size:0.8rem;color:#888;padding-bottom:0.5rem;text-align:center;}
 .hotcar.new .hotcar-list .list-item .car-info .month-price {padding:3px 0;}
 .hotcar.new .hotcar-list .list-item .car-info .month-price:after {content:"";display:block;clear:both;}
 .hotcar.new .hotcar-list .list-item .car-info .month-price > div {float:left;width:50%;text-align:center;font-size:13px;font-weight:400;}
 .hotcar.new .hotcar-list .list-item .car-info .month-price > div .price {color:#0081d0;font-size:15px;font-weight:600;padding:0 3px 0 5px;}
-.hotcar.new .hotcar-list .list-item .etc{margin:5px 0;line-height:110%;white-space:normal;font-size:12px;color:#666;text-align:center;}
-.hotcar.new .hotcar-list .list-item .etc span{font-size:12px;color:#666;line-height:140%}
+.hotcar.new .hotcar-list .list-item .etc{margin:5px 0;line-height:110%;white-space:normal;font-size:12px;color:#666;text-align:center;padding:0 2.5rem;}
+.hotcar.new .hotcar-list .list-item .etc span{font-size:12px;color:#666;line-height:140%;display:inline-block;}
 .hotcar.new .hotcar-list .list-item .etc span:before{content:'';position:relative;top:1px;display:inline-block;margin:0 5px 0 3px;width:1px;height:9.5px;background:#ccc;font-size:12px;}
 .hotcar.new .hotcar-list .list-item .etc span:first-child:before{margin:0;width:0;height:0}
 
 
-.hotcar-btn {opacity:0;position:absolute;top:70px;left:50%;margin-left:-50px;cursor:default;}
-.hotcar-btn a {display:block;width:100px;height:100px;background-color:rgba(255,222,0,0.9);color:#000;border-radius:50%;text-align:center;}
-.hotcar-btn a i {font-size:32px;padding:25px 0 10px 0;}
-.hotcar-btn a span {display:block;}
-.hotcar-item:hover .hotcar-btn {opacity:0.9;transition:all 0.6s;cursor:pointer;}
-.hotcar-item:hover .car-img img {transform:scale(1.1);transition:all .5s;}
+.hotcar.new .hotcar-list .hotcar-btn {opacity:0;position:absolute;top:70px;left:50%;margin-left:-50px;cursor:default;}
+.hotcar.new .hotcar-list .hotcar-btn a {display:block;width:100px;height:100px;background-color:rgba(255,222,0,0.9);color:#000;border-radius:50%;text-align:center;}
+.hotcar.new .hotcar-list .hotcar-btn a i {font-size:32px;padding:25px 0 10px 0;}
+.hotcar.new .hotcar-list .hotcar-btn a span {display:block;}
+.hotcar.new .hotcar-list .list-item:hover .hotcar-btn {opacity:0.9;transition:all 0.6s;cursor:pointer;}
 
 /* Banner */
 .smart-mainbanner {position:relative;padding:80px 0;}
@@ -1178,6 +1176,26 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
     .brands-list .list-item .etc span{font-size:12px;color:#666;line-height:140%}
     .brands-list .list-item .etc span:before{content:'';position:relative;top:1px;display:inline-block;margin:0 5px 0 3px;width:1px;height:9.5px;background:#ccc;font-size:12px;}
     .brands-list .list-item .etc span:first-child:before{margin:0;width:0;height:0}
+
+    .hotcar.new .hotcar-list .list-item,
+    .hotcar.new .hotcar-list li:first-child .list-item,
+    .hotcar.new .hotcar-list li:nth-child(4n) .list-item {border:0 none;}
+    .hotcar.new .hotcar-list > ul > li {width:100%;padding:5px;}
+    .hotcar.new .hotcar-list .list-item {padding:15px;}
+    .hotcar.new .hotcar-list .list-item .car-img {min-width:70%;height:auto;line-height:100%;}
+    .hotcar.new .hotcar-list .list-item .car-img {vertical-align:middle;}
+    .hotcar.new .hotcar-list .list-item .car-img img {max-width:80%;}
+    .hotcar.new .hotcar-list .list-item .car-info {padding:0;border:0 none;background:transparent;}
+    .hotcar.new .hotcar-list .list-item .car-info .name {font-weight:500;font-size:18px;height:auto;padding-top:10px;}
+    .hotcar.new .hotcar-list .list-item .car-info .price {font-weight:500;font-size:15px;}
+    .hotcar.new .hotcar-list .list-item .etc{margin:5px 0;padding-bottom:10px;line-height:110%;white-space:normal;font-size:12px;color:#666;}
+    .hotcar.new .hotcar-list .list-item .etc span{font-size:12px;color:#666;line-height:140%}
+    .hotcar.new .hotcar-list .list-item .etc span:before{content:'';position:relative;top:1px;display:inline-block;margin:0 5px 0 3px;width:1px;height:9.5px;background:#ccc;font-size:12px;}
+    .hotcar.new .hotcar-list .list-item .etc span:first-child:before{margin:0;width:0;height:0}
+    .hotcar.new .hotcar-list .list-item .hotcar-btn {position:relative;top:auto;left:auto;margin-top:5px;margin-left:0;opacity:1;text-align:center;}
+    .hotcar.new .hotcar-list .list-item .hotcar-btn a {display:block;width:auto;height:auto;border-radius:2rem;padding:10px 25px 8px 25px;white-space:nowrap;}
+    .hotcar.new .hotcar-list .list-item .hotcar-btn a i {font-size:1rem;display:inline-block;padding:0 3px 0 0;}
+    .hotcar.new .hotcar-list .list-item .hotcar-btn a span {font-size:1rem;display:inline-block;}
 
     .magazine-list > ul > li {width:100%;}
     .magazine-list .list-item .item-img img {min-height:140px;}
