@@ -165,7 +165,7 @@
             </ul>
         </div>
         <div class="btn-tel"><a href="tel:1544-1928"><i class="i-phone"></i><span>1544-1928</span></a></div>
-        <div class="btn-estimate" onclick="location.href='contact.html'"><i class="i-clipboard"></i><span>견적문의</span></div>
+        <div class="btn-estimate"><i class="i-clipboard"></i><span>견적문의</span></div>
     </div>
 </div>
 <div class="content">
@@ -697,6 +697,9 @@
                 <li><a href="javascript:void"><img src="resources/img/social-blog.png" alt="Naver Blog"></a></li>
                 <li><a href="javascript:void"><img src="resources/img/social-kakaoplus.png" alt="Kakao Plus"></a></li>
                 <li><a href="javascript:void"><img src="resources/img/social-naverchat.png" alt="Naver Chat"></a></li>
+                <li><a href="javascript:void"><img src="resources/img/social-naverpost.png" alt="Naver Chat"></a></li>
+                <li><a href="javascript:void"><img src="resources/img/social-youtube.png" alt="Naver Chat"></a></li>
+                <li><a href="javascript:void"><img src="resources/img/social-navercast.png" alt="Naver Chat"></a></li>
             </ul>
         </div>
     </div>
@@ -883,8 +886,35 @@
         </div>
     </div> 
  </div>
-
-
+<div class="simple-contact">
+    <div class="simple-estimate" id="form-est">
+        <div class="btn-close"><i class="i-x"></i></div>
+        <form class="simple-estimate-form">
+            <h3><strong>견적문의</strong></h3>
+            <div class="form-input name">
+                <label>이름</label>
+                <input type="text" placeholder="이름">
+            </div>
+            <div class="form-input tel">
+                <label>연락처</label>
+                <input type="tel" placeholder="연락처">
+            </div>
+            <div class="form-input car-type">
+                <label>상담 요청 내용</label>
+                <input type="text" placeholder="상담 요청 내용">
+            </div>
+            <div class="form-input">
+                <button type="submit"><i class="i-clipboard"></i> 견적문의</button>
+            </div>
+            <div class="form-input checkbox">
+                <input type="checkbox" id="check_agree2" checked="checked">
+                <label for="check_agree2">개인 정보 수집/이용 동의</label>
+                <a href="javascript:void(0);" class="show-policy">[ 상세 보기 ]</a>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="simple-contact-shadow"></div>
 <script src="resources/js/jquery-2.2.4.min.js"></script>
 <script src="resources/js/jquery.themepunch.tools.min.js"></script>
 <script src="resources/js/jquery.themepunch.revolution.min.js"></script>
@@ -1085,6 +1115,17 @@ $(".close-sales").on('click',function(){
     $(".pop-sales").removeClass("on");
     $('body').css("overflow","auto");
 });
+
+$(".btn-estimate").on('click',function(){
+    $(".simple-contact").addClass("on");
+    $('body').css("overflow","hidden");
+});
+
+$(".simple-contact .btn-close").on('click',function(){
+    $(".simple-contact").removeClass("on");
+    $('body').css("overflow","auto");
+});
+
 
 $("#kakao_id_login").on("click", loginWithKakao);
 

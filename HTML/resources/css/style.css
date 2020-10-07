@@ -518,20 +518,20 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 
 
 .footer {background-color:#646464;}
-.footer-wrap {max-width:1200px;margin:0 auto;padding:30px 20px 50px 20px;}
+.footer-wrap {max-width:1200px;margin:0 auto;padding:30px 5px 50px 20px;}
 .footer-wrap:after {content:"";display:block;clear:both;}
 .footer-logo {float:left;padding-right:30px;}
 .footer-info {float:left;}
 .footer-info ul {margin:0;padding:0;}
 .footer-info li {line-height:22px;font-size:13px;font-weight:400;color:#ddd;}
-.footer-info li a {color:#fff;display:inline-block;padding-right:10px;font-weight:700;line-height:24px;font-size:15px;}
-.footer-info li a strong {font-size:24px;color:#ffde00;}
+.footer-info li a {color:#fff;display:inline-block;padding-right:7px;font-weight:700;line-height:24px;font-size:13px;}
+.footer-info li a strong {font-size:22px;color:#ffde00;}
 .footer-info li:last-child {padding-top:20px;}
 .footer-info li span {padding-right:10px;}
 .footer-social {float:right;}
 .footer-social ul {margin:0;padding:0;}
 .footer-social ul:after {content:"";display:block;clear:both;}
-.footer-social li {float:left;padding-left:15px;}
+.footer-social li {float:left;padding-left:10px;}
 
 
 /* Sub - About us */
@@ -972,6 +972,23 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .pop-sales .simple-estimate-form .form-input button {width:100%;margin-top:0;line-height:3rem;height:3rem;}
 .pop-sales .simple-estimate-form .form-input.checkbox input {width:20px !important;}
 
+.simple-contact {position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:90;width:300px;background-color:#fff;border-radius:10px;display:none;}
+.simple-contact.on {display:block;}
+.simple-contact .btn-close {position:absolute;right:0;top:0;width:50px;height:50px;cursor:pointer;line-height:50px;text-align:center;color:#333;font-size:2rem;}
+.simple-contact .simple-estimate {position:relative;bottom:auto;left:auto;right:auto;height:auto;background-color:transparent;padding:0.5rem;}
+.simple-contact .simple-estimate h3 {width:100%;text-align:center;padding:1.5rem 0 1rem;}
+.simple-contact .simple-estimate-form h3 strong {color:#333;}
+.simple-contact .simple-estimate-form .form-input {width:100%;padding:0.3rem 1.5rem;}
+.simple-contact .simple-estimate-form .form-input:nth-of-type(1) {margin-left:0;}
+.simple-contact .simple-estimate-form .form-input input[type="text"],
+.simple-contact .simple-estimate-form .form-input input[type="tel"] {width:100%;border:1px solid #ccc;}
+.simple-contact .simple-estimate-form .form-input.checkbox input {width:16px;height:16px;}
+.simple-contact .simple-estimate-form .form-input.checkbox label {color:#333;font-size:0.75rem;}
+.simple-contact .simple-estimate-form .form-input.checkbox a {color:#333;font-size:0.75rem;}
+.simple-contact .simple-estimate-form .form-input button {width:100%;}
+.simple-contact-shadow {position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.75);z-index:89;display:none;}
+.simple-contact.on + .simple-contact-shadow {display:block;}
+
 @media only screen and (max-width:750px) {
 
     html, body, h1, h2, h3, h4, h5, h6, p, div, img {font-family:'NanumSquare', sans-serif;font-weight:700;}
@@ -1032,6 +1049,8 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
     .simple-estimate-form .form-input input {width:100% !important;text-align:left;}
     .simple-estimate-form .form-input button {width:100%;margin-top:1rem;line-height:3rem;height:3rem;}
     .simple-estimate-form .form-input.checkbox input {width:20px !important;}
+
+    .simple-contact .simple-estimate-form {padding:0;}
 
     .rev_slider_wrapper {background-repeat:repeat-x;}
 
