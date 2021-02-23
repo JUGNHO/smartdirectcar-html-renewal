@@ -1605,7 +1605,12 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 
 .car-box.model {padding:0;color:#000;margin-top:20px;}
 .car-box.model h3 {padding:15px;font-size:16px;font-weight:700;text-align:left;background-color:#fff;}
-.car-box.model .model-list dt {position:relative;display:block;padding:15px 20px;border-top:1px dashed #ddd;font-weight:700;}
+.car-box.model .model-list dt {position:relative;display:block;padding:15px 20px 15px 40px;border-top:1px dashed #ddd;font-weight:700;font-size:18px;}
+.car-box.model .model-list dt i {color:#888;position:absolute;left:10px;top:50%;font-size:24px;transform:translateY(-35%);}
+.car-box.model .model-list dd {height:0;overflow:hidden;opacity:0;transition:all 0.5s;margin:0;}
+.car-box.model .model-list dt.on {background-color:#fafafa;}
+.car-box.model .model-list dt.on i:before {content:"\e931";color:#000;}
+.car-box.model .model-list dt.on + dd {height:auto;overflow:auto;opacity:1;}
 .car-box.model .model-list dd {margin:0;}
 .car-box.model .trim-list {padding:0 20px 15px 20px;background-color:#fafafa;}
 .car-box.model .trim-list ul:after {content:"";display:block;clear:both;}
@@ -1614,7 +1619,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .car-box.model .trim-list li:last-child label,
 .car-box.model .trim-list li:only-child label {margin-bottom:0;}
 .car-box.model .trim-list li .trim-tt {font-weight:700;padding-right:25px;font-size:16px;height:36px;line-height:18px;overflow:hidden;}
-.car-box.model .trim-list li .trim-price {display:inline-block;width:50%;font-size:14px;padding:10px 10px 0 0;text-align:right;box-sizing:border-box;}
+.car-box.model .trim-list li .trim-price {display:inline-block;width:50%;font-size:14px;padding:5px 5px 0 0;text-align:right;box-sizing:border-box;}
 .car-box.model .trim-list li .trim-price .price {display:inline-block;padding:0 3px;font-size:15px;font-weight:500;}
 .car-box.model .trim-list li .trim-price.car-price {font-size:13px;display:block;width:100%;text-align:right;}
 .car-box.model .trim-list li .trim-price.car-price:before {content:"(";padding:0 2px 0 0;font-weight:400;margin:0;font-size:13px;}
@@ -1647,7 +1652,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .car-box.color li label {display:block;padding:5px 10px 5px 0;text-align:left;color:#888;border-radius:5px;cursor:pointer;box-sizing:border-box;}
 .car-box.color li label .color-box {padding:5px 0 5px 0;display:inline-block;position:relative;}
 .car-box.color li label .color-box span {position:relative;display:inline-block;width:30px;height:30px;box-shadow:0 0 5px #ddd;}
-.car-box.color li label .color-tt {font-size:14px;position:absolute;top:15px;left:130px;display:none;color:#333;font-weight:700;color:#0081d0;}
+.car-box.color li label .color-tt {display:none;font-size:14px;position:absolute;top:15px;left:130px;color:#333;font-weight:700;color:#0081d0;}
 .car-box.color li label .color-price {display:inline-block;font-size:12px;padding-left:10px;font-weight:500;}
 .car-box.color li input:checked + label .color-box span:before {content:"";position:absolute;top:-2px;left:-2px;display:block;color:#0081d0;border:3px solid #0081d0;width:33px;height:33px;box-sizing:border-box;border-radius:2px;}
 .car-box.color li input:checked + label .color-box span:after {content:"\e92b";position:absolute;top:-7px;right:-7px;background-color:#0081d0;border-radius:50%;width:16px;height:16px;line-height:16px;color:#fff;font-family:"smart";font-size:12px;text-align:center;}
@@ -1718,6 +1723,9 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 
 @media only screen and (max-width:750px) {
 
+
+    .car-box.model .model-list dt {font-size:16px;}
+    .car-box.model .model-list dt i {transform:translateY(-50%);}
 
     .model-option .model-align.right {font-size:15px;float:none;width:100%;}
     .model-option .model-align.left,

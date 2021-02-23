@@ -173,91 +173,418 @@
         <!-- 트림 선택 -->
         <article class="car-box model">
             <h3>1. 모델 선택</h3>
-            <div class="model-list">
-                <dl>
-                    <dt class="on">2019년형 가솔린 3.3 RM</dt>
-                    <dd>
-                        <div class="trim-list">
-                            <ul class="trim-item">
-                                <li>
-                                    <input type="radio" id="car1" name="car-group" checked hidden>
-                                    <label for="car1">
-                                        <div class="trim-tt">기본형 (A/T)</div>
-                                        <div class="trim-price low">렌트<span class="price">323,000</span>원</div>
-                                        <div class="trim-price best">리스<span class="price">323,000</span>원</div>
-                                        <div class="trim-price car-price">차량가격<span class="price">39,203,000</span>원</div>
-                                        <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
-                                        <div class="etc">
-                                            <span>스포츠카/슈퍼카</span>
-                                            <span>가솔린</span>
-                                            <span>3456cc</span>
-                                            <span>복합연비 0㎞/ℓ</span>
-                                        </div>
+            <div class="model-list" id="model-list">
+                <dt class="on"><i class="i-chevron-down"></i>2020년형 디젤 2.2 4WD(개별소비세 3.5% 적용)</dt>
+                <dd>
+                    <div class="trim-list">
+                        <ul class="trim-item">
+                            <li>
+                                <input type="radio" id="69305" name="car-group" checked="checked" data-lineupno="46943" value="69305" hidden="">
+                                <label for="69305">
+                                    <div class="trim-tt">익스클루시브 (8인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">39,520,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>디젤</span>
+                                        <span>2199cc</span>
+                                        <span>복합연비 12㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69306" name="car-group" data-lineupno="46943" value="69306" hidden="">
+                                <label for="69306">
+                                    <div class="trim-tt">익스클루시브 (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">39,810,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>디젤</span>
+                                        <span>2199cc</span>
+                                        <span>복합연비 12㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69307" name="car-group" data-lineupno="46943" value="69307" hidden="">
+                                <label for="69307">
+                                    <div class="trim-tt">프레스티지 (8인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">44,920,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>디젤</span>
+                                        <span>2199cc</span>
+                                        <span>복합연비 12㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69308" name="car-group" data-lineupno="46943" value="69308" hidden="">
+                                <label for="69308">
+                                    <div class="trim-tt">프레스티지 (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">45,210,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>디젤</span>
+                                        <span>2199cc</span>
+                                        <span>복합연비 12㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69309" name="car-group" data-lineupno="46943" value="69309" hidden="">
+                                <label for="69309">
+                                    <div class="trim-tt">캘리그래피 (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">50,030,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>디젤</span>
+                                        <span>2199cc</span>
+                                        <span>복합연비 12㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="73480" name="car-group" data-lineupno="46943" value="73480" hidden="">
+                                <label for="73480">
+                                    <div class="trim-tt">VIP (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">55,620,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>디젤</span>
+                                        <span>2199cc</span>
+                                        <span>복합연비 12㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </dd>
+                <dt><i class="i-chevron-down"></i>2020년형 가솔린 3.8 2WD(개별소비세 3.5% 적용)</dt><dd>
+                    <div class="trim-list">
+                        <ul class="trim-item">
+                            <li>
+                                <input type="radio" id="69311" name="car-group" data-lineupno="46944" value="69311" hidden="">
+                                <label for="69311">
+                                    <div class="trim-tt">프레스티지 (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">41,420,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>가솔린</span>
+                                        <span>3778cc</span>
+                                        <span>복합연비 9㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69312" name="car-group" data-lineupno="46944" value="69312" hidden="">
+                                <label for="69312">
+                                    <div class="trim-tt">익스클루시브 (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">36,020,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>가솔린</span>
+                                        <span>3778cc</span>
+                                        <span>복합연비 10㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69313" name="car-group" data-lineupno="46944" value="69313" hidden="">
+                                <label for="69313">
+                                    <div class="trim-tt">프레스티지 (8인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">41,130,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>가솔린</span>
+                                        <span>3778cc</span>
+                                        <span>복합연비 9㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69314" name="car-group" data-lineupno="46944" value="69314" hidden="">
+                                <label for="69314">
+                                    <div class="trim-tt">익스클루시브 (8인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">35,730,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>가솔린</span>
+                                        <span>3778cc</span>
+                                        <span>복합연비 10㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69315" name="car-group" data-lineupno="46944" value="69315" hidden="">
+                                <label for="69315">
+                                    <div class="trim-tt">캘리그래피 (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">46,240,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>가솔린</span>
+                                        <span>3778cc</span>
+                                        <span>복합연비 9㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="73477" name="car-group" data-lineupno="46944" value="73477" hidden="">
+                                <label for="73477">
+                                    <div class="trim-tt">VIP (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">51,830,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>가솔린</span>
+                                        <span>3778cc</span>
+                                        <span>복합연비 9㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </dd>
+                <dt><i class="i-chevron-down"></i>2020년형 디젤 2.2 2WD(개별소비세 3.5% 적용)</dt>
+                <dd>
+                    <div class="trim-list">
+                        <ul class="trim-item">
+                            <li>
+                                <input type="radio" id="69342" name="car-group" data-lineupno="46950" value="69342" hidden="">
+                                <label for="69342">
+                                    <div class="trim-tt">캘리그래피 (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">47,720,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>디젤</span>
+                                        <span>2199cc</span>
+                                        <span>복합연비 12㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69343" name="car-group" data-lineupno="46950" value="69343" hidden="">
+                                <label for="69343">
+                                    <div class="trim-tt">프레스티지 (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">42,900,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>디젤</span>
+                                        <span>2199cc</span>
+                                        <span>복합연비 12㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69344" name="car-group" data-lineupno="46950" value="69344" hidden="">
+                                <label for="69344">
+                                    <div class="trim-tt">익스클루시브 (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">37,500,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>디젤</span>
+                                        <span>2199cc</span>
+                                        <span>복합연비 13㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69345" name="car-group" data-lineupno="46950" value="69345" hidden="">
+                                <label for="69345">
+                                    <div class="trim-tt">프레스티지 (8인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">42,610,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>디젤</span>
+                                        <span>2199cc</span>
+                                        <span>복합연비 12㎞/ℓ</span>
+                                    </div>
                                     </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="car2" name="car-group" hidden>
-                                    <label for="car2">
-                                        <div class="trim-tt">럭셔리 (A/T)</div>
-                                        <div class="trim-price">렌트<span class="price">323,000</span>원</div>
-                                        <div class="trim-price">리스<span class="price">323,000</span>원</div>
-                                        <div class="trim-price car-price">차량가격<span class="price">39,203,000</span>원</div>
-                                        <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
-                                        <div class="etc">
-                                            <span>2019.07 출시</span>
-                                            <span>소형SUV</span>
-                                            <span>가솔린, 디젤</span>
-                                            <span>1,582~1,591cc</span>
-                                            <span>복합연비 ㎞/ℓ</span>
-                                        </div>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                    </dd>
-                    <dt>2019년형 가솔린 3.5 RM</dt>
-                    <dd>
-                        <div class="trim-list">
-                            <ul class="trim-item">
-                                <li>
-                                    <input type="radio" id="car3" name="car-group" hidden>
-                                    <label for="car3">
-                                        <div class="trim-tt">기본형 (A/T)</div>
-                                        <div class="trim-month-price"><div class="lent-price"></div><div class="lease-price"></div></div>
-                                        <div class="trim-price low">렌트<span class="price">39,203,000</span>원</div>
-                                        <div class="trim-price">리스<span class="price">39,203,000</span>원</div>
-                                        <div class="trim-price"><span class="price">39,203,000</span>원</div>
-                                        <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
-                                        <div class="etc">
-                                            <span>2019.07 출시</span>
-                                            <span>소형SUV</span>
-                                            <span>가솔린, 디젤</span>
-                                            <span>1,582~1,591cc</span>
-                                            <span>복합연비 ㎞/ℓ</span>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="car4" name="car-group" hidden>
-                                    <label for="car4">
-                                        <div class="trim-tt">럭셔리 (A/T)</div>
-                                        <div class="trim-price">렌트<span class="price">323,000</span>원</div>
-                                        <div class="trim-price best">리스<span class="price">323,000</span>원</div>
-                                        <div class="trim-price car-price">차량가격<span class="price">39,203,000</span>원</div>
-                                        <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
-                                        <div class="etc">
-                                            <span>2019.07 출시</span>
-                                            <span>소형SUV</span>
-                                            <span>가솔린, 디젤</span>
-                                            <span>1,582~1,591cc</span>
-                                            <span>복합연비 ㎞/ℓ</span>
-                                        </div>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                    </dd>
-                </ul>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="69346" name="car-group" data-lineupno="46950" value="69346" hidden="">
+                                        <label for="69346">
+                                    <div class="trim-tt">익스클루시브 (8인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">37,210,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>디젤</span>
+                                        <span>2199cc</span>
+                                        <span>복합연비 12㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="73479" name="car-group" data-lineupno="46950" value="73479" hidden="">
+                                <label for="73479">
+                                    <div class="trim-tt">VIP (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">53,310,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>디젤</span>
+                                        <span>2199cc</span>
+                                        <span>복합연비 12㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </dd>
+                <dt><i class="i-chevron-down"></i>2020년형 가솔린 3.8 4WD(개별소비세 3.5% 적용)</dt>
+                <dd>
+                    <div class="trim-list">
+                        <ul class="trim-item">
+                            <li>
+                                <input type="radio" id="69349" name="car-group" data-lineupno="46951" value="69349" hidden="">
+                                <label for="69349">
+                                    <div class="trim-tt">캘리그래피 (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">48,550,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>가솔린</span>
+                                        <span>3778cc</span>
+                                        <span>복합연비 9㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69350" name="car-group" data-lineupno="46951" value="69350" hidden="">
+                                <label for="69350">
+                                    <div class="trim-tt">익스클루시브 (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">38,330,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>가솔린</span>
+                                        <span>3778cc</span>
+                                        <span>복합연비 9㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69351" name="car-group" data-lineupno="46951" value="69351" hidden="">
+                                <label for="69351">
+                                    <div class="trim-tt">프레스티지 (8인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">43,440,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>가솔린</span>
+                                        <span>3778cc</span>
+                                        <span>복합연비 9㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69352" name="car-group" data-lineupno="46951" value="69352" hidden="">
+                                <label for="69352">
+                                    <div class="trim-tt">프레스티지 (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">43,730,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>가솔린</span>
+                                        <span>3778cc</span>
+                                        <span>복합연비 9㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="69353" name="car-group" data-lineupno="46951" value="69353" hidden="">
+                                <label for="69353">
+                                    <div class="trim-tt">익스클루시브 (8인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">38,040,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>가솔린</span>
+                                        <span>3778cc</span>
+                                        <span>복합연비 9㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="73478" name="car-group" data-lineupno="46951" value="73478" hidden="">
+                                <label for="73478">
+                                    <div class="trim-tt">VIP (7인승)</div>
+                                    <div class="trim-price">렌트<span class="price">0</span>원</div>
+                                    <div class="trim-price">리스<span class="price">0</span>원</div>
+                                    <div class="trim-price car-price">차량가격<span class="price">54,140,000</span>원</div>
+                                    <a href="javascirpt:void(0);" class="more-info"><i class="i-info"></i></a>
+                                    <div class="etc">
+                                        <span>대형SUV</span>
+                                        <span>가솔린</span>
+                                        <span>3778cc</span>
+                                        <span>복합연비 9㎞/ℓ</span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </dd>
             </div>
         </article>
     </div>
@@ -658,6 +985,11 @@ $('.sub-menu').on("mouseleave", function() {
 $(".hbtn.menu").on('click',function(){
     $('#sidemenu').addClass('on');
     $(body).style('overflow','hidden');
+});
+
+$(".model-list dt").on('click', function() {
+    //$(".model-list dt").removeClass('on');
+    $(this).toggleClass('on');
 });
 
 $(".more-info").on('mouseover',function(){
