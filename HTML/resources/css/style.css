@@ -1649,11 +1649,11 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 
 .car-box.color ul {overflow:auto;padding:10px 20px;-webkit-overflow-scrolling:touch;font-size:0;}
 .car-box.color li {display:inline-block;}
-.car-box.color li label {display:block;padding:5px 10px 5px 0;text-align:left;color:#888;border-radius:5px;cursor:pointer;box-sizing:border-box;}
-.car-box.color li label .color-box {padding:5px 0 5px 0;display:inline-block;position:relative;}
-.car-box.color li label .color-box span {position:relative;display:inline-block;width:30px;height:30px;box-shadow:0 0 5px #ddd;}
-.car-box.color li label .color-tt {display:none;font-size:14px;position:absolute;top:15px;left:130px;color:#333;font-weight:700;color:#0081d0;}
-.car-box.color li label .color-price {display:inline-block;font-size:12px;padding-left:10px;font-weight:500;}
+.car-box.color li input + label {display:block;padding:5px 10px 5px 0;text-align:left;color:#888;border-radius:5px;cursor:pointer;box-sizing:border-box;}
+.car-box.color li input + label .color-tt {display:none;font-size:14px;position:absolute;top:15px;left:130px;color:#333;font-weight:700;color:#0081d0;}
+.car-box.color li input + label .color-price {display:inline-block;font-size:12px;padding-left:10px;font-weight:500;}
+.car-box.color li input + label .color-box {padding:5px 0 5px 0;display:inline-block;position:relative;}
+.car-box.color li input + label .color-box span {position:relative;display:inline-block;width:30px;height:30px;box-shadow:0 0 5px #ddd;}
 .car-box.color li input:checked + label .color-box span:before {content:"";position:absolute;top:-2px;left:-2px;display:block;color:#0081d0;border:3px solid #0081d0;width:33px;height:33px;box-sizing:border-box;border-radius:2px;}
 .car-box.color li input:checked + label .color-box span:after {content:"\e92b";position:absolute;top:-7px;right:-7px;background-color:#0081d0;border-radius:50%;width:16px;height:16px;line-height:16px;color:#fff;font-family:"smart";font-size:12px;text-align:center;}
 .car-box.color li input:checked + label .color-tt {display:block;}
