@@ -1279,7 +1279,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
     .product-search .select-brand ul li {width:auto;padding:0 1rem;display:table-cell;}
     .product-search .select-brand ul li:first-child i {height:51px;}
 
-    .footer-wrap {text-align:center;}
+    .footer-wrap {text-align:center;padding-bottom:110px;}
     .footer-logo {width:100%;padding-right:0;}
 
     .footer-info {padding-bottom:1rem;}
