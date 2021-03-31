@@ -991,6 +991,10 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
 .simple-contact-shadow {position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.75);z-index:89;display:none;}
 .simple-contact.on + .simple-contact-shadow {display:block;}
 
+.kakao_contact {display:none;position:fixed;bottom:0;left:0;width:100%;height:60px;text-align:center;z-index:99;background-color: #f9e000;border-top: 2px solid #000;}
+.kakao_contact img {height:80%;vertical-align:middle;}
+.kakao_contact span {font-family:'NanumSquare', sans-serif;display:inline-block;font-size:20px;vertical-align:middle;font-weight:800;line-height:60px;}
+
 @media only screen and (max-width:750px) {
 
     html, body, h1, h2, h3, h4, h5, h6, p, div, img {font-family:'NanumSquare', sans-serif;font-weight:700;}
@@ -1375,7 +1379,7 @@ textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:no
     .main-awards .award-list-m .award-mitem p strong {display:block;font-size:16px;}
     .main-awards .award-list-m .award-mitem p span {display:block;font-size:13px;color:#565656;}
 
-
+    .kakao_contact {display:block;}
 }
 
 /* added by JhOh 2018.12.23 */
